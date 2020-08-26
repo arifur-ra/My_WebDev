@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: 'fa-regular';
+  src: url('fonts/fa-regular-400.woff')format('woff');
+
+}
+
 /* starting styling Header & navbar */
 
 .navbar {
@@ -11,10 +17,12 @@
   width: 100%;
   /* height: 15%; */
 }
+
 .item {
   background: black;
   padding: 1rem;
 }
+
 .left {
   display: flex;
   justify-content: flex-start;
@@ -22,33 +30,40 @@
   color: beige;
   padding-left: 9rem;
 }
+
 .left p,
 img,
 option {
   padding: 0 0.75rem;
 }
+
 .left select {
   background-color: black;
   color: beige;
   border: none;
   cursor: pointer;
 }
+
 .right {
   width: 50%;
   display: flex;
   justify-content: center;
 }
+
 .right li a {
   list-style: none;
   text-decoration: none;
   color: beige;
   padding: 0 1.3rem;
   font-size: 14px;
+  font-family: 'fa-regular';
 }
+
 .navbar1 {
   width: 100%;
   display: flex;
 }
+
 .item1 {
   padding: 1rem;
 }
@@ -72,6 +87,7 @@ option {
   align-items: center;
   list-style: none;
 }
+
 .nav-mid li a {
   text-decoration: none;
   padding: 0 1rem;
@@ -89,9 +105,17 @@ option {
 .nav-right input {
   padding: 0 0.5rem;
   border-radius: 10vw;
-  width: 10rem;
+  width: 12rem;
   height: 2rem;
   border: 1px solid rgb(199, 197, 192);
+}
+
+.nav-right input+i {
+  position: absolute;
+  left: 78%;
+  font-size: 1rem;
+  color: rgb(78, 76, 76);
+  /* opacity: 0.5; */
 }
 
 .nav-right i {
@@ -116,15 +140,19 @@ option {
   background-size: cover;
   height: 600px;
 }
+
 .container {
   display: flex;
 }
+
 .container .img1 {
   width: 50%;
 }
+
 .container .img1 img {
   height: 600px;
 }
+
 .container .info {
   width: 50%;
   /* justify-content: center;
@@ -137,6 +165,7 @@ option {
   font-size: 60px;
   font-weight: bold;
 }
+
 .info button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -158,33 +187,41 @@ option {
 .shop {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
+  min-width: 500px;
 }
+
 .shop .item {
   margin: 30px 0 10rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+
+  padding: 4rem;
 }
-.shop .shop_left {
+
+.shop_left {
   background-image: url(./img/categories/cat1.jpg);
   background-repeat: no-repeat;
-  height: 300px;
-  width: 400px;
+  width: 100%;
+
 }
-.shop .shop_center {
+
+.shop_center {
   background-image: url(./img/categories/cat2.jpg);
   background-repeat: no-repeat;
-  height: 300px;
-  width: 400px;
+  width: 100%;
+
 }
-.shop .shop_right {
+
+.shop_right {
   background-image: url(./img/categories/cat3.jpg);
   background-repeat: no-repeat;
-  height: 300px;
-  width: 400px;
+  width: 100%;
+
+
 }
+
 .item button {
   padding: 5px 20px;
   background-color: yellow;
@@ -192,7 +229,8 @@ option {
   border: none;
   margin-top: 10px;
 }
-.shop_center > h2 {
+
+.shop_center>h2 {
   margin: 10px 0;
   font-size: 28px;
 }
@@ -203,9 +241,11 @@ option {
   width: 60%;
   margin: 0 auto;
 }
+
 .l_head {
   display: flex;
 }
+
 .l_head h1 {
   width: 40%;
   /* justify-content: flex-start; */
@@ -220,8 +260,62 @@ option {
   align-items: center;
   list-style: none;
 }
+
 .l_head ul a {
   text-decoration: none;
   padding: 0 0.5rem;
   color: black;
+}
+
+.main_product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.l_product {
+  margin-top: 2rem;
+  width: 30%;
+
+}
+
+.l_product p,
+h5 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+h5 {
+  color: yellow;
+}
+
+strong {
+  color: black;
+}
+
+.price {
+  color: red;
+  text-decoration-line: line-through;
+}
+
+
+.l_product img {
+  width: 100%;
+  height: 300px;
+}
+
+
+.card-man {
+  background-image: url(./img/categories/card.png);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 50px;
+}
+
+.card-man img {
+  height: 500px;
+  padding-left: 2rem;
+
 }
