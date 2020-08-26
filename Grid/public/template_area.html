@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gird Temple-area</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .gird {
+            display: grid;
+            gap: 1rem;
+            grid-template-areas:
+                'header header header header'
+                'content content content sidebar'
+                'item1 item2 item3 item4'
+                'footer footer footer footer';
+
+        }
+
+        .header,
+        .content,
+        .sidebar,
+        .item1,
+        .item2,
+        .item3,
+        .item4,
+        .footer {
+            border: 1px solid rgb(131, 129, 129);
+            padding: 1rem;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .content {
+            grid-area: content;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .item1 {
+            grid-area: item1;
+        }
+
+        .item2 {
+            grid-area: item2;
+        }
+
+        .item3 {
+            grid-area: item3;
+        }
+
+        .item4 {
+            grid-area: item4;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="gird">
+        <header class="header">
+            <h1>My Website</h1>
+        </header>
+        <section class="content">
+            <h3>Welcome to My website</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi temporibus tenetur natus odio, dolorem,
+                repudiandae quo placeat id vel autem laboriosam aliquid. Iste illo accusantium temporibus ducimus ad in
+                iusto!</p>
+        </section>
+        <aside class="sidebar">
+            <h2>Contact Us</h2>
+            <ul>
+                <li> AS Company</li>
+                <li> Danziger Str <br> 10407, Berlin</li>
+                <li> example@yahoo.com</li>
+                <li> Hundy:+4901712341415</li>
+            </ul>
+        </aside>
+        <div class="item1">
+            <h3>Heading1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, ipsum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tenetur rerum dolorum similique
+                fugiat laboriosam quaerat nesciunt soluta debitis officia.
+            </p>
+        </div>
+        <div class="item2">
+            <h3>Heading2</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, ipsum!</p>
+        </div>
+        <div class="item3">
+            <h3>Heading3</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, ipsum!</p>
+        </div>
+        <div class="item4">
+            <h3>Heading4</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, ipsum!</p>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; ararif2020 </p>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

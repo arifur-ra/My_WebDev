@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+header h1 {
+    background-color: purple;
+    padding: 50px 0 50px 10px;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+}
+
+div.main {
+    width: 100%;
+}
+
+aside {
+    float: left;
+    width: 25%;
+}
+
+aside ul li {
+    list-style: none;
+    padding: 10px 0;
+    margin: 10px 0;
+    background-color: lightseagreen;
+    font-size: small;
+    cursor: pointer;
+}
+
+aside ul li a {
+    text-decoration: none;
+    /* background-color: blue; */
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+aside ul li:hover {
+    background-color: rgb(57, 189, 57);
+    padding: 10px 0;
+}
+
+p {
+    font-size: 500;
+}
+
+article {
+    width: 60%;
+    float: left;
+    margin-left: 5%;
+    padding: 20px;
+}
+
+article h1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+div.info {
+    width: 100%;
+    clear: both;
+    padding-top: 30px;
+}
+
+div.info h1 {
+    font-weight: bold;
+}
+
+div.info div {
+    float: left;
+    padding: 30px;
+}
+
+.para {
+    /* position: absolute; */
+
+    clear: both;
+    float: left;
+    margin-bottom: 140px;
+}
+
+footer {
+    bottom: 0;
+    padding: 20px;
+    position: fixed;
+    background-color: indigo;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+    /* clear: both; */
+}

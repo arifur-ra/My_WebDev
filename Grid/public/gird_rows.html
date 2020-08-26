@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gird Row</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .gird {
+            display: grid;
+            /* grid-template-columnks: 40% 60%; */
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-template-rows: 1fr 2fr 1fr;
+            grid-template-columns: repeat(2, auto);
+            /* grid-auto-rows: 1fr; */
+            gap: 1rem;
+        }
+
+        .item {
+            padding: 4rem;
+            background-color: rgb(226, 225, 212);
+            border: 1px solid rgb(110, 104, 104);
+            font-weight: bold;
+            font-size: xx-large;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <h1> Gird rows</h1>
+    <div class="gird">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gird Column</title>
+
+    <style>
+        .gird {
+            display: grid;
+            /* grid-template-columnks: 40% 60%; */
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-template-columns: 1fr 1fr auto;
+            gap: 1rem;
+        }
+
+        .item {
+            padding: 4rem;
+            background-color: rgb(226, 225, 212);
+            border: 1px solid rgb(110, 104, 104);
+            font-weight: bold;
+            font-size: xx-large;
+            text-align: center;
+
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1rem;
+            border: 1px solid olive;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <h1> Gird Column</h1>
+    <div class="gird">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+    <main>
+        <section>
+            <h1>Welcome to my website</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate atque alias at expedita dolor minus
+                laudantium vero dignissimos suscipit, neque pariatur quis! Quam autem est, sapiente minima culpa libero
+                ipsa.</p>
+        </section>
+        <aside>
+            <h3>Contact Us</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </aside>
+    </main>
+</body>
+
+</html>

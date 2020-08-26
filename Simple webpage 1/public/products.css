@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 1%; */
+    margin: 1.5%;
+}
+
+.navbar {
+    width: 100%;
+    height: 90px;
+    box-shadow: 1px 0px 10px rgb(116, 107, 91);
+    padding: 2%;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.navbar ul li {
+    padding: 0px 25px;
+    margin-top: -2%;
+}
+
+.navbar ul li a {
+    font-size: 22px;
+    color: rgb(88, 81, 81);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main {
+    width: 100%;
+    /* display: flex;
+    align-items: baseline; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+}
+
+div.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    width: 33%;
+    height: 250px;
+    box-shadow: 1px 0px 10px rgb(116, 107, 91);
+    margin: 1.5% auto;
+}
+
+.item img {
+    width: 50%;
+    height: 250px;
+    position: relative;
+    padding: 1%;
+
+
+}
+
+
+.info {
+    margin: 8% 2% 1% 2%;
+}
+
+.info h3,
+p {
+    padding: 10px 5px;
+    /* float: right; */
+}
+
+strong {
+    color: red;
+    text-decoration-line: line-through;
+}
+
+.info h4 {
+    background-color: green;
+    color: ivory;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.info h4:hover {
+    background-color: rgb(155, 236, 24);
+    color: rgb(7, 7, 6);
+
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    margin-top: 0.5%;
+    height: 250px;
+    background-color: rgb(46, 36, 36);
+    padding: 2%;
+}
+
+.item2 {
+    width: 32%;
+    /* float: left; */
+    color: white;
+}
+
+.item2 li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.item2 a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.item2 button {
+    background-color: rgb(13, 182, 159);
+    margin-top: 10px;
+    padding: 5px 20px;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.item2 button:hover {
+    background-color: rgb(198, 218, 26);
+
+    color: rgb(0, 0, 0);
+
+}
+
+.item2 input {
+    background-color: rgb(53, 48, 48);
+    font-size: 20px;
+    color: white;
+    padding: 8px 2px;
+    font-weight: bold;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gird Spam</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .gird {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+        }
+
+        .item {
+            padding: 4rem;
+            background-color: rgb(226, 225, 212);
+            border: 1px solid rgb(110, 104, 104);
+            font-weight: bold;
+            font-size: xx-large;
+            text-align: center;
+
+        }
+
+        .item:first-child {
+            /* grid-column-start: 1;
+            grid-column-end: 3;*/
+            grid-column: 1/ span 3;
+            grid-row: 1/ span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Gird Spam</h1>
+    <div class="gird">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+</body>
+
+</html>

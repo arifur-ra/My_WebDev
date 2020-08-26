@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo-Layout using Grid</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            padding: 5px;
+            gap: 5px;
+            background-color: white;
+            display: grid;
+            width: 80%;
+            margin: 10% auto;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+
+        }
+
+        img {
+
+            width: 250px;
+            height: 250px;
+            cursor: pointer;
+        }
+
+        img:hover {
+            opacity: .5;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Image Gallery using Grid</h1>
+
+    <div class="container">
+
+        <img src="https://picsum.photos/200" alt="">
+        <img src="https://picsum.photos/201" alt="">
+        <img src="https://picsum.photos/203" alt="">
+        <img src="https://picsum.photos/204" alt="">
+        <img src="https://picsum.photos/205" alt="">
+        <img src="https://picsum.photos/206" alt="">
+        <img src="https://picsum.photos/207" alt="">
+        <img src="https://picsum.photos/208" alt="">
+
+    </div>
+
+</body>
+
+</html>
