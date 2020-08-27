@@ -551,6 +551,22 @@ img {
 .footer_main img {
   margin-left: -0.25rem;
 }
+
+.quick_links > h3 {
+  margin-bottom: 1rem;
+}
+.quick_links ul li {
+  list-style: none;
+
+  margin-bottom: 1rem;
+}
+
+.quick_links ul li a {
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .footer_main p {
   color: gray;
 }
