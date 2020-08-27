@@ -483,6 +483,9 @@ p,
 i {
   padding: 8px 0;
 }
+.item_main p {
+  color: gray;
+}
 .item_main i {
   font-size: 28px;
 }
