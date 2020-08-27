@@ -13,7 +13,7 @@
             margin: 10% auto;
             border: 2px solid black;
             border-radius: 10%;
-            box-shadow: 0px 1px 8px;
+            box-shadow: 0px 1px 8px red;
 
         }
 
@@ -41,14 +41,19 @@
             font-size: 20px;
             border-radius: 10px;
         }
+
+        h3 {
+            font-size: 25px;
+            color: red;
+        }
     </style>
 </head>
 
 <body>
     <div class="Container">
         <h1> Mini Calculator</h1>
-        <input type="text" placeholder="Enter First Value" id="firstValue"> <br>
-        <input type="text" placeholder="Enter Second Value" id="secondValue"> <br>
+        <input type="number" placeholder="Enter First Value" id="firstValue"> <br>
+        <input type="number" placeholder="Enter Second Value" id="secondValue"> <br>
         <div>
             <button onclick="plus()">+</button>
             <button onclick="minus()">-</button>
@@ -60,8 +65,12 @@
     </div>
 
     <script>
+        // define  two variable input to get ID 
+        // fValue, lValue
+        //
         let fValue = document.getElementById("firstValue");
         let lValue = document.getElementById("secondValue");
+
         let result = document.getElementById("result");
 
         function plus() {
