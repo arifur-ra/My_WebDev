@@ -13,7 +13,6 @@
 /* starting styling Header & navbar */
 
 .navbar {
-
   /* position: fixed; */
   display: flex;
   width: 100%;
@@ -58,14 +57,14 @@ option {
   color: beige;
   padding: 0 1.3rem;
   font-size: 14px;
-  font-family: 'fa-regular';
+  font-family: "fa-regular";
 }
 
 .navbar1 {
-
   /* position: fixed; */
   width: 100%;
   display: flex;
+  height: 75px;
 }
 
 .item1 {
@@ -104,6 +103,7 @@ option {
   width: 35%;
   display: flex;
   justify-content: flex-start;
+  margin-top: 0.5rem;
 }
 
 .nav-right input {
@@ -114,7 +114,7 @@ option {
   border: 1px solid rgb(199, 197, 192);
 }
 
-.nav-right input+i {
+.nav-right input + i {
   position: absolute;
   left: 78%;
   font-size: 1rem;
@@ -128,7 +128,7 @@ option {
   padding: 8px;
 }
 
-.nav-right button {
+.button_nav1 {
   padding: 0px 20px;
   background-color: blue;
   border-radius: 20px;
@@ -163,9 +163,8 @@ option {
   align-items: center; */
   margin-top: 10rem;
 }
-
 .info h1 {
-  margin-top: 20px;
+  margin-top: 1rem;
   font-size: 60px;
   font-weight: bold;
 }
@@ -192,7 +191,6 @@ option {
   display: flex;
   justify-content: space-evenly;
   min-width: 500px;
-
 }
 
 .shop .item {
@@ -209,22 +207,18 @@ option {
   background-image: url(./img/categories/cat1.jpg);
   background-repeat: no-repeat;
   width: 100%;
-
 }
 
 .shop_center {
   background-image: url(./img/categories/cat2.jpg);
   background-repeat: no-repeat;
   width: 100%;
-
 }
 
 .shop_right {
   background-image: url(./img/categories/cat3.jpg);
   background-repeat: no-repeat;
   width: 100%;
-
-
 }
 
 .item button {
@@ -235,7 +229,7 @@ option {
   margin-top: 10px;
 }
 
-.shop_center>h2 {
+.shop_center > h2 {
   margin: 10px 0;
   font-size: 28px;
 }
@@ -282,7 +276,6 @@ option {
 .l_product {
   margin-top: 2rem;
   width: 30%;
-
 }
 
 .l_product p,
@@ -304,16 +297,14 @@ strong {
   text-decoration-line: line-through;
 }
 
-
 .l_product img {
   width: 100%;
   height: 300px;
 }
 
-
 /* stating styling blog section  */
 #blog {
-  margin-top: 15rem;
+  margin-top: 1rem;
 }
 
 .blog_main {
@@ -331,7 +322,6 @@ strong {
   width: 30%;
   display: flex;
   justify-content: flex-end;
-
 }
 
 .card-man img {
@@ -370,7 +360,7 @@ strong {
 /* starting styling Page Section */
 #pages {
   width: 65%;
-  margin: 10rem auto;
+  margin: 13rem auto;
 }
 
 .main-page {
@@ -400,7 +390,6 @@ strong {
 
 .page-center {
   width: 20%;
-
 }
 
 .page-center img {
@@ -413,17 +402,13 @@ strong {
   width: 35%;
   margin-left: 6rem;
   text-align: end;
-
 }
 
-.page-right p,
-button {
-
+.page-right p {
   margin: 4rem 0;
 }
 
 .page-right button {
-
   background-color: blue;
   color: white;
   padding: 10px;
@@ -437,17 +422,111 @@ button {
 
 .page-right1 img {
   margin: 1.2rem 0;
-
 }
 
-/* Styling Contact section */
+/* Styling Contact section*/
+
 #contact {
-  width: 90%;
-  margin: 0 auto;
 }
 
 .main-contact {
+  width: 90%;
+  margin: 0 auto;
   background-image: url(./img/collection/latest-offer.png);
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
+}
+.main_img {
+  width: 20%;
+}
+.contact_info {
+  width: 30%;
+  display: block;
+
+  margin: 10rem 0 0-10rem;
+}
+.contact_info h2 {
+  font-size: 35px;
+}
+.contact_button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contact_button input {
+  padding: 10px 50px 10px 20px;
+  border-radius: 20px;
+  border: none;
+  margin-left: -2rem;
+}
+.contact_button button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  margin-left: -5rem;
+}
+
+.main_info {
+  width: 65%;
+  margin: 10rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.item_info {
+  margin: 0 2rem;
+}
+.item_main h4,
+p,
+i {
+  padding: 8px 0;
+}
+.item_main i {
+  font-size: 28px;
+}
+
+.photo_gallery {
+  width: 90%;
+  margin: 10rem auto;
+  display: flex;
+  justify-content: flex-start;
+}
+.photo_gallery img {
+  width: 20%;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* styling main footer */
+.footer_main {
+  width: 65%;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_main h3,
+p,
+img {
+  padding: 8px 0;
+}
+.footer_main p {
+  color: gray;
+}
+
+.footer_last {
+  width: 65%;
+  margin: 5rem auto;
+  display: flex;
+}
+.foot1 {
+  width: 70%;
+  justify-content: flex-start;
+  color: gray;
+}
+.footer_last .foot_icon {
+  display: flex;
+  width: 30%;
+  justify-content: flex-end;
 }
