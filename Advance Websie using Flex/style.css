@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
 /* @font-face {
@@ -119,7 +119,7 @@ option {
   border: 1px solid rgb(199, 197, 192);
 }
 
-.nav-right input+i {
+.nav-right input + i {
   position: absolute;
   left: 78%;
   font-size: 1rem;
@@ -134,7 +134,7 @@ option {
 }
 
 .button_nav1 {
-  padding: 0px 20px;
+  padding: 0px 25px;
   background-color: blue;
   border-radius: 20px;
   color: white;
@@ -228,14 +228,16 @@ option {
 }
 
 .item button {
-  padding: 5px 20px;
+  padding: 7px 20px;
   background-color: yellow;
   border-radius: 20px;
   border: none;
   margin-top: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 
-.shop_center>h2 {
+.shop_center > h2 {
   margin: 10px 0;
   font-size: 28px;
 }
@@ -411,7 +413,7 @@ strong {
 }
 
 .page-right p {
-  margin: 4rem 0;
+  margin: 5.5rem 0;
 }
 
 .page-right button {
@@ -427,12 +429,13 @@ strong {
 }
 
 .page-right1 img {
-  margin: 1.2rem 0;
+  margin: 0.5rem 0;
 }
 
 /* Styling Contact section*/
 
-#contact {}
+#contact {
+}
 
 .main-contact {
   width: 90%;
