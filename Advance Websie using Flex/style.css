@@ -39,8 +39,7 @@ select {
 }
 
 .left p,
-img,
-option {
+img {
   padding: 0 0.75rem;
 }
 
@@ -555,4 +554,8 @@ img {
   display: flex;
   width: 30%;
   justify-content: flex-end;
+  cursor: pointer;
+}
+.foot_icon i {
+  padding: 0 0.2rem;
 }
