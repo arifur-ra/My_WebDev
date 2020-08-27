@@ -185,6 +185,7 @@ img {
   color: white;
   border: none;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 /* starting styling Category section  */
@@ -493,6 +494,7 @@ strong {
   border-radius: 20px;
   border: none;
   margin-left: -3rem;
+  cursor: pointer;
 }
 
 .main_info {
@@ -546,7 +548,9 @@ p,
 img {
   padding: 8px 0;
 }
-
+.footer_main img {
+  margin-left: -0.25rem;
+}
 .footer_main p {
   color: gray;
 }
