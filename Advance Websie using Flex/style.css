@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 /* @font-face {
@@ -32,6 +33,11 @@
   padding-left: 9rem;
 }
 
+.left img,
+select {
+  margin-top: -7px;
+}
+
 .left p,
 img,
 option {
@@ -56,7 +62,7 @@ option {
   text-decoration: none;
   color: beige;
   padding: 0 1.3rem;
-  font-size: 14px;
+  font-size: 12px;
   font-family: "fa-regular";
 }
 
@@ -95,8 +101,7 @@ option {
   text-decoration: none;
   padding: 0 1rem;
   color: black;
-  font-weight: 800;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .navbar1 .nav-right {
@@ -114,7 +119,7 @@ option {
   border: 1px solid rgb(199, 197, 192);
 }
 
-.nav-right input + i {
+.nav-right input+i {
   position: absolute;
   left: 78%;
   font-size: 1rem;
@@ -163,6 +168,7 @@ option {
   align-items: center; */
   margin-top: 10rem;
 }
+
 .info h1 {
   margin-top: 1rem;
   font-size: 60px;
@@ -229,7 +235,7 @@ option {
   margin-top: 10px;
 }
 
-.shop_center > h2 {
+.shop_center>h2 {
   margin: 10px 0;
   font-size: 28px;
 }
@@ -426,8 +432,7 @@ strong {
 
 /* Styling Contact section*/
 
-#contact {
-}
+#contact {}
 
 .main-contact {
   width: 90%;
@@ -437,29 +442,35 @@ strong {
   background-size: cover;
   display: flex;
 }
+
 .main_img {
   width: 20%;
 }
+
 .contact_info {
   width: 30%;
   display: block;
 
   margin: 10rem 0 0-10rem;
 }
+
 .contact_info h2 {
   font-size: 35px;
 }
+
 .contact_button {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+
 .contact_button input {
   padding: 10px 50px 10px 20px;
   border-radius: 20px;
   border: none;
   margin-left: -2rem;
 }
+
 .contact_button button {
   padding: 10px 20px;
   background-color: blue;
@@ -475,17 +486,21 @@ strong {
   display: flex;
   justify-content: space-between;
 }
+
 .item_info {
   margin: 0 2rem;
 }
+
 .item_main h4,
 p,
 i {
   padding: 8px 0;
 }
+
 .item_main p {
   color: gray;
 }
+
 .item_main i {
   font-size: 28px;
 }
@@ -496,6 +511,7 @@ i {
   display: flex;
   justify-content: flex-start;
 }
+
 .photo_gallery img {
   width: 20%;
   padding: 0px;
@@ -509,11 +525,13 @@ i {
   display: flex;
   justify-content: space-between;
 }
+
 .footer_main h3,
 p,
 img {
   padding: 8px 0;
 }
+
 .footer_main p {
   color: gray;
 }
@@ -523,11 +541,13 @@ img {
   margin: 5rem auto;
   display: flex;
 }
+
 .foot1 {
   width: 70%;
   justify-content: flex-start;
   color: gray;
 }
+
 .footer_last .foot_icon {
   display: flex;
   width: 30%;
