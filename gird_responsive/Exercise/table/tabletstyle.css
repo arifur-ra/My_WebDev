@@ -1,0 +1,20 @@
+caption {
+    font-size: medium;
+}
+
+
+
+thead tr th {
+    font-size: medium;
+}
+
+tbody tr th,
+td {
+    padding: 1rem;
+    font-size: medium;
+
+}
+
+.footer td {
+    font-size: medium;
+}

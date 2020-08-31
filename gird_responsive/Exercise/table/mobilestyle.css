@@ -6,9 +6,54 @@
 
 }
 
-table {
-    border: 1px solid red;
+body {
+    margin: 1.5%;
+}
+
+caption {
     width: 100%;
+    background-color: rgb(70, 105, 114);
+    color: white;
+    padding: 2%;
+    font-weight: bold;
+    font-size: xx-small;
+}
+
+
+
+.customer-table {
     margin-top: 20%;
-    padding: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead tr th {
+    background-color: rgb(37, 47, 70);
+    color: white;
+    font-weight: bold;
+    padding: 2% 0;
+    font-size: xx-small;
+}
+
+tbody tr th,
+td {
+    padding: 0.5rem 0.25rem;
+    text-align: center;
+    font-size: xx-small;
+
+}
+
+tr:nth-child(even) {
+    background-color: rgb(199, 190, 199);
+}
+
+.footer {
+    background-color: rgb(199, 190, 199);
+    padding: 0;
+    text-align: left;
+
+}
+
+.footer td {
+    font-size: xx-small;
 }
