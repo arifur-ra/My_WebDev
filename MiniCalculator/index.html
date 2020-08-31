@@ -1,99 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Calculator</title>
 
     <style>
-        .Container {
-            text-align: center;
-            width: 30%;
-            margin: 10% auto;
-            border: 2px solid black;
-            border-radius: 10%;
-            box-shadow: 0px 1px 8px red;
+      .Container {
+        text-align: center;
+        width: 30%;
+        margin: 10% auto;
+        border: 2px solid black;
+        border-radius: 10%;
+        box-shadow: 0px 1px 8px red;
+      }
 
-        }
+      button:nth-child(even) {
+        color: rgb(0, 0, 0);
+        background-color: rgb(233, 218, 85);
+      }
 
-        button:nth-child(even) {
-            color: rgb(0, 0, 0);
-            background-color: rgb(233, 218, 85);
+      button:nth-child(odd) {
+        color: rgb(0, 0, 0);
+        background-color: rgb(163, 151, 148);
+      }
 
-        }
+      input {
+        margin: 0.5rem;
+        padding: 0.5rem;
+      }
 
-        button:nth-child(odd) {
-            color: rgb(0, 0, 0);
-            background-color: rgb(163, 151, 148);
-        }
+      button {
+        padding: 10px 15px;
+        margin: 0.5rem;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 10px;
+      }
 
-        input {
-            margin: 0.5rem;
-            padding: 0.5rem;
-        }
-
-        button {
-            padding: 10px 15px;
-            margin: 0.5rem;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 20px;
-            border-radius: 10px;
-        }
-
-        h3 {
-            font-size: 25px;
-            color: red;
-        }
+      h3 {
+        font-size: 25px;
+        color: red;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="Container">
-        <h1> Mini Calculator</h1>
-        <input type="number" placeholder="Enter First Value" id="firstValue"> <br>
-        <input type="number" placeholder="Enter Second Value" id="secondValue"> <br>
-        <div>
-            <button onclick="plus()">+</button>
-            <button onclick="minus()">-</button>
-            <button onclick="divide()">/</button>
-            <button onclick="multi()">*</button>
-        </div>
-        <h3 id="result"> Your Result:</h3>
-        <!-- <input type="reset" value="Reset"> -->
+      <h1>Mini Calculator</h1>
+      <input type="number" placeholder="Enter First Value" id="firstValue" />
+      <br />
+      <input type="number" placeholder="Enter Second Value" id="secondValue" />
+      <br />
+      <div>
+        <button onclick="plus()">+</button>
+        <button onclick="minus()">-</button>
+        <button onclick="divide()">/</button>
+        <button onclick="multi()">*</button>
+      </div>
+      <h3 id="result">Your Result:</h3>
+      <!-- <input type="number " id="result1" name="result1" /> -->
+      <!-- <input type="reset" value="Reset"> -->
     </div>
 
     <script>
-        // define  two variable input to get ID 
-        // fValue, lValue
-        //
-        let fValue = document.getElementById("firstValue");
-        let lValue = document.getElementById("secondValue");
+      // define  two variable input to get ID
+      // fValue, lValue
+      //
+      let fValue = document.getElementById("firstValue");
+      let lValue = document.getElementById("secondValue");
 
-        let result = document.getElementById("result");
+      let result = document.getElementById("result");
 
-        function plus() {
-            result.innerHTML = parseInt(fValue.value) + parseInt(lValue.value);
+      function plus() {
+        result.innerHTML = parseInt(fValue.value) + parseInt(lValue.value);
+      }
 
-        }
+      function minus() {
+        result.innerHTML = parseInt(fValue.value) - parseInt(lValue.value);
+      }
 
-        function minus() {
-            result.innerHTML = parseInt(fValue.value) - parseInt(lValue.value);
+      function divide() {
+        result.innerHTML = parseInt(fValue.value) / parseInt(lValue.value);
+      }
 
-        }
-
-        function divide() {
-
-            result.innerHTML = parseInt(fValue.value) / parseInt(lValue.value);
-        }
-
-        function multi() {
-            result.innerHTML = parseInt(fValue.value) * parseInt(lValue.value);
-
-        }
+      function multi() {
+        result.innerHTML = parseInt(fValue.value) * parseInt(lValue.value);
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
