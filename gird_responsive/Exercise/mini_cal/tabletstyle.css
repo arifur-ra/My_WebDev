@@ -1,0 +1,38 @@
+header {
+    max-width: 600px;
+
+}
+
+div.main {
+    max-width: 600px;
+
+}
+
+input#firstNumber {
+    grid-area: input1;
+    margin: 1rem 3rem;
+}
+
+input#secondNumber {
+    grid-area: input2;
+    margin: 1rem 3rem;
+}
+
+div.main>input {
+    font-size: 0.75rem;
+    width: 8rem;
+    height: 4rem;
+
+}
+
+button.btn1,
+button.btn2,
+button.btn3,
+button.btn4 {
+    margin: auto;
+    width: 8rem;
+    height: 8rem;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
