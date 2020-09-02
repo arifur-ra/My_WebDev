@@ -1,0 +1,166 @@
+body{
+    margin: 2%;
+}
+
+.Container {
+    padding: 2% 0;
+    text-align: center;
+    width: 90%;
+    margin: 10% auto;
+    border: 2px solid black;
+    border-radius: 2%;
+    box-shadow: 0px 1px 8px rgb(53, 19, 19);
+  }
+h1{
+    padding: 1rem;
+    color: rgb(100, 0, 0);
+    font-size: 20px;
+}
+  button:nth-child(even) {
+    color: rgb(47, 2, 2);
+    background-color: rgb(236, 232, 200);
+  }
+
+  button:nth-child(odd) {
+    color: rgb(0, 0, 0);
+    background-color: rgb(236, 228, 226);
+  }
+
+  input {
+    max-width: 80%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    color: crimson;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0;
+  }
+
+  button {
+    margin: 0.5rem  1.4rem;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 50%;
+  }
+
+  h3 {
+    
+    font-size: 25px;
+    background-color: rgb(193, 204, 188);
+    width: 60%;
+    padding: 0.75rem 0;
+    margin: 0 auto;
+    border: 1px solid rgb(59, 4, 4);
+    border-radius: 5px;
+  }
+  button:hover {
+     transform: scale(1.1);
+   
+  }
+
+  @media screen and (min-width: 422px){
+    .Container {
+        background-color: rgb(138, 129, 128);
+        width: 70%;
+       
+      }
+      h1{
+        padding: 1rem;
+        font-size: 25px;
+    }
+
+
+    button {
+        margin: 0.5rem  1rem;
+        padding: 15px 30px;
+        font-size: 25px;
+       
+      }
+
+      input {
+        width: 80%;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        text-align: center;
+        color: crimson;
+        font-weight: bold;
+        border-radius: 0.25rem;
+        padding: 0.5rem 0;
+      }
+  }
+  @media screen and (min-width: 760px){
+    .Container {
+        
+        width: 70%;
+        background-color: rgb(61, 61, 37);
+       
+      }
+
+      h1{
+        padding: 1rem;
+        font-size: 25px;
+        color:#fff;
+    }
+    button {
+        margin: 0.5rem  1.2rem;
+        padding: 15px 30px;
+        font-size: 25px;
+       
+      }
+
+      input {
+        width: 100%;
+        margin: 0.5rem;
+        padding: 1.5rem;
+        text-align: center;
+        color: crimson;
+        font-weight: bold;
+        border-radius: 0.25rem;
+        padding: 0.5rem 0;
+      }
+
+      @media screen and (min-width: 970px){
+        .Container {
+            
+            width: 60%;
+            background-color: rgb(104, 104, 92);
+           
+          }
+    
+          h1{
+            padding: 1rem;
+            font-size: 35px;
+            color:#fff;
+        }
+        button {
+            margin: 0.5rem  1.2rem;
+            padding: 25px 30px;
+            font-size: 25px;
+           
+          }
+    
+          input {
+            width: 80%;
+            margin: 0.5rem;
+            padding: 1.5rem;
+            text-align: center;
+            color: crimson;
+            font-weight: bold;
+            border-radius: 0.25rem;
+            padding: 0.5rem 0;
+          }
+
+          h3 {
+    
+            font-size: 25px;
+            background-color: rgb(193, 204, 188);
+            width: 60%;
+            padding: 0.75rem 0;
+            margin: 0 auto;
+            border: 1px solid rgb(59, 4, 4);
+            border-radius: 5px;
+          }
+  }

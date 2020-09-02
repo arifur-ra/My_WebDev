@@ -1,99 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mini Calculator</title>
 
-    <style>
-      .Container {
-        padding: 2% 0;
-        text-align: center;
-        width: 30%;
-        margin: 10% auto;
-        border: 2px solid black;
-        border-radius: 2%;
-        box-shadow: 0px 1px 8px rgb(53, 19, 19);
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="mobileStyle.css">
+  <title>Mini Calculator</title>
 
-      button:nth-child(even) {
-        color: rgb(0, 0, 0);
-        background-color: rgb(233, 218, 85);
-      }
 
-      button:nth-child(odd) {
-        color: rgb(0, 0, 0);
-        background-color: rgb(163, 151, 148);
-      }
+</head>
 
-      input {
-        margin: 0.5rem;
-        padding: 0.5rem;
-      }
-
-      button {
-        padding: 12px 20px;
-        margin: 0.5rem;
-        cursor: pointer;
-        font-weight: bold;
-        font-size: 20px;
-        border-radius: 10px;
-      }
-
-      h3 {
-        font-size: 25px;
-        background-color: rgb(193, 204, 188);
-        width: 50%;
-        height: 50px;
-        margin: 0 auto;
-        border: 1px solid black;
-        border-radius: 5px;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="Container">
-      <h1>Mini Calculator</h1>
-      <input type="number" placeholder="Enter First Value" id="firstValue" />
-      <br />
-      <input type="number" placeholder="Enter Second Value" id="secondValue" />
-      <br />
-      <div>
-        <button onclick="plus()">+</button>
-        <button onclick="minus()">-</button>
-        <button onclick="divide()">/</button>
-        <button onclick="multi()">*</button>
-      </div>
-      <h3 id="result"></h3>
-      <!-- <input type="number " id="result1" name="result1" /> -->
-      <!-- <input type="reset" value="Reset"> -->
+<body>
+  <div class="Container">
+    <h1>Mini Calculator</h1>
+    <input type="number" placeholder="Enter First Value" id="firstValue" />
+    <br />
+    <input type="number" placeholder="Enter Second Value" id="secondValue" />
+    <br />
+    <div>
+      <button onclick="plus()">+</button>
+      <button onclick="minus()">-</button>
+      <button onclick="divide()">/</button>
+      <button onclick="multi()">*</button>
     </div>
+    <h3 id="result">0</h3>
+    <!-- <input type="number " id="result1" name="result1" /> -->
+    <!-- <input type="reset" value="Reset"> -->
+  </div>
 
-    <script>
-      // define  two variable input to get ID
-      // fValue, lValue
-      //
-      let fValue = document.getElementById("firstValue");
-      let lValue = document.getElementById("secondValue");
+  <script>
+    // define  two variable input to get ID
+    // fValue, lValue
+    //
+    let fValue = document.getElementById("firstValue");
+    let lValue = document.getElementById("secondValue");
 
-      let result = document.getElementById("result");
+    let result = document.getElementById("result");
 
-      function plus() {
-        result.innerHTML = parseInt(fValue.value) + parseInt(lValue.value);
-      }
+    function plus() {
+      result.innerHTML = parseInt(fValue.value) + parseInt(lValue.value);
+    }
 
-      function minus() {
-        result.innerHTML = parseInt(fValue.value) - parseInt(lValue.value);
-      }
+    function minus() {
+      result.innerHTML = parseInt(fValue.value) - parseInt(lValue.value);
+    }
 
-      function divide() {
-        result.innerHTML = parseInt(fValue.value) / parseInt(lValue.value);
-      }
+    function divide() {
+      result.innerHTML = parseInt(fValue.value) / parseInt(lValue.value);
+    }
 
-      function multi() {
-        result.innerHTML = parseInt(fValue.value) * parseInt(lValue.value);
-      }
-    </script>
-  </body>
+    function multi() {
+      result.innerHTML = parseInt(fValue.value) * parseInt(lValue.value);
+    }
+  </script>
+</body>
+
 </html>
