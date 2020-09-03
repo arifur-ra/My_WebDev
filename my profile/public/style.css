@@ -42,10 +42,13 @@ h1 {
 
 
 #about {
-  padding: 10vh;
   background-image: url(images/bakhome.jpg);
   background-size: cover;
 
+}
+
+#about .about1 {
+  padding: 24vh 5vh;
 }
 
 #about h2,
@@ -173,7 +176,6 @@ footer p {
   }
 
 
-
   #project .container {
     width: 80vw;
     margin: auto;
@@ -187,7 +189,6 @@ footer p {
 
   }
 
-
   .img-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -196,13 +197,20 @@ footer p {
 
 
 
-
-
   #about {
-    padding: 29vh;
-
+    width: 100%;
+    padding: 35vh 10vh;
 
   }
+
+  #abou .about1 {
+    width: 100%;
+    padding: 25vh;
+
+  }
+
+
+
 
   #about h1 {
     margin: 10vh 0;
