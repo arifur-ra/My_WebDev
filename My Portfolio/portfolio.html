@@ -10,8 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/54a9e652b6.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" media=" screen and (mix-width:425px)" href="../css/mobileStyle.css">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mobileStyle.css">
+  <!-- <link rel="stylesheet" href="../css/portfolio.css"> -->
   <style>
     /* For a smooth scrolling effect */
     html {
@@ -27,7 +27,24 @@
 </head>
 
 <body>
-  <nav class="nav">
+  <header>
+    <div class="hmenu">
+      <input type="checkbox" id="menu_toggle">
+      <label for="menu_toggle" class="menu_btn">
+        <span></span>
+      </label>
+      <ul class="menu_box">
+        <li class="menu_item"><a href="index.html">Home</a></li>
+        <li class="menu_item"><a href="#aboutme">About me</a></li>
+        <li class="menu_item"><a href="#itskills">IT Skills</a></li>
+        <li class="menu_item"><a href="#project">Project</a></li>
+
+      </ul>
+
+    </div>
+  </header>
+
+  <!-- <nav class="nav">
     <ul>
       <li><a href="../index.html">Home</a></li>
       <li><a href="#aboutme">About Me</a></li>
@@ -36,13 +53,13 @@
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#others">Others</a></li>
     </ul>
-  </nav>
+  </nav> -->
   <main>
     <section id="aboutme">
       <h1>Who am I ?</h1>
       <hr />
       <div class="pic">
-        <img src="../image/arif.jpg" alt="" />
+        <img src="./image/arif.jpg" alt="" />
         <h4>
           <i class="fas fa-database"></i> Full Stack Web Developer
           <i class="fas fa-code"></i>
@@ -84,7 +101,7 @@
         <div class="it-info">
           <h3><i class="fab fa-js"></i>Java Script</h3>
           <p>
-            <i class="far fa-hand-point-right"></i> Basic Knowledge about
+            <i class="far fa-hand-point-right"></i>Basic Knowledge about
             JavaScript <br />
             <i class="far fa-hand-point-right"> </i> Starting Level <br />
             <i class="far fa-hand-point-right"></i> 30% <br />
@@ -113,64 +130,40 @@
             <i class="far fa-hand-point-right"></i> good Knowledge about Git &
             Github <br />
             <i class="far fa-hand-point-right"> </i> Advance Level <br />
-            <i class="far fa-hand-point-right"></i> 50% <br />.
+            <i class="far fa-hand-point-right"></i> 50% <br />
           </p>
         </div>
       </div>
 
     </section>
-    <section id="experience">
-      <h1>What Experience I have ?</h1>
+    <section id="project">
+      <h1>My Project</h1>
       <hr />
-      <div class="ex-content">
-        <div class="info-ex">
+      <div class="my-project">
+        <div>
+          <img src="image/1.PNG" alt="">
+          <a href="https://arifur-ra.github.io/github_Web/My%20Portfolio/index.html">Portfolio</a>
         </div>
-        <div class="info-ex">
+
+        <div>
+          <img src="image/cal.PNG" alt="">
+          <a href="https://arifur-ra.github.io/github_Web/gird_responsive/Exercise/mini_cal/index.html">Calculator</a>
         </div>
-        <div class="info-ex">
+        <div>
+          <img src="image/sign in.PNG" alt="">
+          <a href="https://arifur-ra.github.io/github_Web/gird_responsive/Exercise/sign-up/signup.html">
+            Sign In form</a>
         </div>
-        <div class="info-ex">
-        </div>
-        <div class="info-ex">
-        </div>
-        <div class="info-ex">
+        <div>
+          <img src="image/cal1.PNG" alt="">
+          <a href="https://arifur-ra.github.io/github_Web/MiniCalculator/index.html">
+            Mini Calculator</a>
         </div>
       </div>
 
     </section>
-    <section id="gallery">
-      <h1>Photo Gallery</h1>
-      <hr />
 
-      <div class="ex-content">
-        <div class="info-photo">
-        </div>
-        <div class="info-photo">
-        </div>
-        <div class="info-photo">
-        </div>
-        <div class="info-photo">
-        </div>
-        <div class="info-photo">
-        </div>
-        <div class="info-photo">
-        </div>
-      </div>
-    </section>
-    <section id="others">
-      <h1>Others Activities</h1>
-      <hr />
 
-      <div class="info">
-        <h3>Arifur Rahman Arif</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero eos
-          reprehenderit eveniet? Nam quos, officia excepturi exercitationem
-          illo veritatis sapiente earum fugiat ipsa aut quo tenetur deleniti
-          aperiam nesciunt labore.
-        </p>
-      </div>
-    </section>
   </main>
 
   <div class="footer">
