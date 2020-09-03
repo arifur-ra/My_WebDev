@@ -199,24 +199,17 @@ footer p {
 
   #about {
     width: 100%;
-    padding: 35vh 10vh;
+    padding: 15vh;
 
   }
 
-  #abou .about1 {
-    width: 100%;
-    padding: 25vh;
-
-  }
-
-
-
-
-  #about h1 {
+  #about .about1 {
     margin: 10vh 0;
-    padding: 25vh;
+
 
   }
+
+
 
   #about p {
     word-spacing: 4px;
@@ -310,7 +303,7 @@ footer p {
 
   #about {
     width: 100%;
-    padding: 25vh;
+    padding: 10vh;
 
   }
 
