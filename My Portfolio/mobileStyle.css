@@ -81,7 +81,7 @@ body {
     text-align: center;
     opacity: 0.9;
     width: 100%;
-    height: 32%;
+    height: 40%;
     margin: 0;
     /* padding: 10px 0; */
     list-style: none;
@@ -104,11 +104,13 @@ body {
     background-color: rgb(98, 22, 15);
     color: white;
     padding: 10px 22px;
+    transition: 0.6;
 }
 
 #aboutme {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
     width: 80%;
     margin: 0 auto;
     /* box-shadow: 1px 0px 4px red; */
@@ -122,8 +124,7 @@ body {
 }
 
 #aboutme .pic {
-    margin-top: 10%;
-    float: left;
+    /* margin-top: 10%; */
     width: 100%;
     /* height: 450px; */
     box-shadow: 0px 1px 5px rgb(133, 13, 13);
@@ -131,11 +132,10 @@ body {
 }
 
 #aboutme .pic img {
-    float: left;
     width: 100%;
-    height: 300px;
+    height: 250px;
     border-radius: 50%;
-    padding: 2%;
+    padding: 5%;
 }
 
 #aboutme .pic h4,
@@ -143,12 +143,11 @@ i {
     text-align: center;
     padding: 10px;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 #aboutme .info {
     width: 100%;
-    float: right;
     margin-top: 10%;
     box-shadow: 0px 0px 10px rgb(133, 13, 13);
     /* border: 2px solid red; */
@@ -171,7 +170,7 @@ li {
 #itskills div {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    column-gap: 5rem;
+    gap: 3rem;
     width: 100%;
 
 
@@ -246,7 +245,7 @@ li {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
+    gap: 3rem;
     margin: auto;
 }
 

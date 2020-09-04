@@ -55,7 +55,7 @@ nav i:hover {
 h1 {
   padding: 2rem 0;
   font-size: 25px;
-  color: rgb(199, 228, 230);
+  color: rgb(255, 255, 255);
   text-align: center;
 
 
@@ -64,7 +64,7 @@ h1 {
 h2 {
   padding: 2rem 0;
   font-size: 18px;
-  color: rgb(114, 36, 36);
+  color: rgb(255, 248, 248);
   text-align: center;
 
 
@@ -82,7 +82,7 @@ h2 {
   font-size: 16px;
   color: rgb(255, 254, 254);
   background-color: brown;
-  margin-left: 2rem;
+  margin-left: 3rem;
   padding: 5px 10px;
   border-radius: 5px;
 
@@ -93,6 +93,19 @@ h2 {
   color: white;
   transform: scale(1.1);
   transition: 0.4s;
+}
+
+
+.footer {
+  margin-top: 30vh;
+  width: 105%;
+  background-color: rgb(58, 3, 3);
+}
+
+.footer p {
+  text-align: center;
+  color: white;
+  padding: 1rem;
 }
 
 @media screen and (min-width:750px) {
