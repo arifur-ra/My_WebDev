@@ -218,7 +218,7 @@ li {
     justify-content: center;
     color: white;
     background-color: rgb(133, 13, 13);
-    /* border-radius: 10px; */
+    border-radius: 10px;
     cursor: pointer;
     font-size: 20px;
     height: 3rem;
@@ -298,3 +298,5 @@ img {
     color: white;
     padding: 1rem;
 }
+
+@media screen and (min-width:750px) {}
