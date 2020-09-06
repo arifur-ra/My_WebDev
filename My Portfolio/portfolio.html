@@ -1,53 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to My Portfolio</title>
-    <!-- google front -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet"> -->
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to My Portfolio</title>
+  <!-- google front -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet"> -->
 
-    <!-- front awesome -->
-    <script
-      src="https://kit.fontawesome.com/54a9e652b6.js"
-      crossorigin="anonymous"
-    ></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="mobileStyle.css" />
-    <style>
-      /* For a smooth scrolling effect */
-      html {
-        scroll-behavior: smooth;
-      }
+  <!-- front awesome -->
+  <script src="https://kit.fontawesome.com/54a9e652b6.js" crossorigin="anonymous"></script>
 
-      /* This ensures that each section fills at least 100% of the browser window height (vh = viewport height). Can be removed if enough content is inserted into the sections. */
-      section {
-        min-height: 120vh;
-        scroll-margin-top: 80px;
-      }
-    </style>
-  </head>
+  <link rel="stylesheet" href="mobileStyle.css" />
+  <style>
+    /* For a smooth scrolling effect */
+    html {
+      scroll-behavior: smooth;
+    }
 
-  <body>
-    <header>
-      <div class="hmenu">
-        <input type="checkbox" id="menu_toggle" />
-        <label for="menu_toggle" class="menu_btn">
-          <span></span>
-        </label>
-        <ul class="menu_box">
-          <li class="menu_item"><a href="index.html">Home</a></li>
-          <li class="menu_item"><a href="#aboutme">About me</a></li>
-          <li class="menu_item"><a href="#itskills">IT Skills</a></li>
-          <li class="menu_item"><a href="#project">Project</a></li>
-        </ul>
-      </div>
-      <!-- <div class="navbar">
+    /* This ensures that each section fills at least 100% of the browser window height (vh = viewport height). Can be removed if enough content is inserted into the sections. */
+    section {
+      min-height: 120vh;
+      scroll-margin-top: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="hmenu">
+      <input type="checkbox" id="menu_toggle" />
+      <label for="menu_toggle" class="menu_btn">
+        <span></span>
+      </label>
+      <ul class="menu_box">
+        <li class="menu_item"><a href="index.html">Home</a></li>
+        <li class="menu_item"><a href="#aboutme">About me</a></li>
+        <li class="menu_item"><a href="#itskills">IT Skills</a></li>
+        <li class="menu_item"><a href="#project">Project</a></li>
+      </ul>
+    </div>
+    <!-- <div class="navbar">
         <ul>
           <li><a href="index.html"></a>Home</li>
           <li><a href="#aboutme"></a> About Me</li>
@@ -55,147 +50,136 @@
           <li><a href="#project"></a>Project</li>
         </ul>
       </div> -->
-    </header>
+  </header>
 
-    <main>
-      <section id="aboutme">
-        <h1>Who am I ?</h1>
+  <main>
+    <section id="aboutme">
+      <h1>Who am I ?</h1>
+      <hr />
+      <div class="pic">
+        <img src="./image/arif.jpg" alt="" />
+        <h4>
+          <i class="fas fa-database"></i> Full Stack Web Developer
+          <i class="fas fa-code"></i>
+        </h4>
+      </div>
+
+      <div class="info">
+        <h3>Hello good People,</h3>
+        <p>
+          I am Arifur Rahman Arif.<br />
+          I am student of DCI(Digital Career Institute) in Berlin. and
+          Learning Full stack Web Developer with a Creative Twist. I have a
+          good Knowledge about <b> JavaScript ,HTML & CSS </b>as a frontend
+          developer.
+        </p>
         <hr />
-        <div class="pic">
-          <img src="./image/arif.jpg" alt="" />
-          <h4>
-            <i class="fas fa-database"></i> Full Stack Web Developer
-            <i class="fas fa-code"></i>
-          </h4>
-        </div>
-
-        <div class="info">
-          <h3>Hello good People,</h3>
-          <p>
-            I am Arifur Rahman Arif.<br />
-            I am student of DCI(Digital Career Institute) in Berlin. and
-            Learning Full stack Web Developer with a Creative Twist. I have a
-            good Knowledge about <b> JavaScript ,HTML & CSS </b>as a frontend
-            developer.
-          </p>
-          <hr />
-          <p>
-            A web developer is a programmer who specializes in, or is
-            specifically engaged in, the development of World Wide Web
-            applications using a client–server model. The applications typically
-            use HTML, CSS and JavaScript in the client, Node.js React or
-            JavaScript in the server, and http for communications between client
-            and server. A web content management system is often used to develop
-            and maintain web applications.
-          </p>
-          <hr />
-          <p>
-            I have knowledge about control version system like
-            <b>Git & Github</b>
-          </p>
-        </div>
-      </section>
-      <section id="itskills">
-        <h1>IT- Skills</h1>
+        <p>
+          A web developer is a programmer who specializes in, or is
+          specifically engaged in, the development of World Wide Web
+          applications using a client–server model. The applications typically
+          use HTML, CSS and JavaScript in the client, Node.js React or
+          JavaScript in the server, and http for communications between client
+          and server. A web content management system is often used to develop
+          and maintain web applications.
+        </p>
         <hr />
-        <div class="info-content">
-          <div class="it-info">
-            <h3><i class="fab fa-html5"></i>HTML</h3>
-            <p>
-              <i class="far fa-hand-point-right"></i>Strong Knowledge about HTML
-              <i class="far fa-hand-point-right"> </i> Advance Level. <br />
-              <i class="far fa-hand-point-right"></i> 80% <br />
-            </p>
-          </div>
-          <div class="it-info">
-            <h3><i class="fab fa-css3-alt"></i>CSS</h3>
-            <p>
-              <i class="far fa-hand-point-right"></i> Good Knowledge about CSS
-              <br />
-              <i class="far fa-hand-point-right"> </i> Very good in Design
-              <br />
-              <i class="far fa-hand-point-right"></i> 70% <br />
-            </p>
-          </div>
-          <div class="it-info">
-            <h3><i class="fab fa-js"></i>Java Script</h3>
-            <p>
-              <i class="far fa-hand-point-right"></i>Basic Knowledge about
-              JavaScript <br />
-              <i class="far fa-hand-point-right"> </i> Starting Level <br />
-              <i class="far fa-hand-point-right"></i> 30% <br />
-            </p>
-          </div>
-          <div class="it-info">
-            <h3><i class="fab fa-node"></i>Node.je</h3>
-            <p>
-              <i class="far fa-hand-point-right"></i> Basic Knowledge about
-              Node.je <br />
-              <i class="far fa-hand-point-right"> </i> Very Starting Level
-              <br />
-              <i class="far fa-hand-point-right"></i> 20% <br />
-            </p>
-          </div>
-          <div class="it-info">
-            <h3><i class="fab fa-mdb"></i>MongoDB</h3>
-            <p>
-              <i class="far fa-hand-point-right"></i> No Idea about MongoDB<br />
-              <i class="far fa-hand-point-right"> </i> Starting Level <br />
-              <i class="far fa-hand-point-right"></i> No Knowledge <br />
-            </p>
-          </div>
-          <div class="it-info">
-            <h3><i class="fab fa-github"></i>Git & Github</h3>
-            <p>
-              <i class="far fa-hand-point-right"></i> good Knowledge about Git &
-              Github <br />
-              <i class="far fa-hand-point-right"> </i> Advance Level <br />
-              <i class="far fa-hand-point-right"></i> 50% <br />
-            </p>
-          </div>
+        <p>
+          I have knowledge about control version system like
+          <b>Git & Github</b>
+        </p>
+      </div>
+    </section>
+    <section id="itskills">
+      <h1>IT- Skills</h1>
+      <hr />
+      <div class="info-content">
+        <div class="it-info">
+          <h3><i class="fab fa-html5"></i>HTML</h3>
+          <p>
+            <i class="far fa-hand-point-right"></i>Strong Knowledge about HTML
+            <i class="far fa-hand-point-right"> </i> Advance Level. <br />
+            <i class="far fa-hand-point-right"></i> 80% <br />
+          </p>
         </div>
-      </section>
-      <section id="project">
-        <h1>My Project</h1>
-        <hr />
-        <div class="my-project">
-          <div>
-            <img src="image/1.PNG" alt="" />
-            <a
-              href="https://arifur-ra.github.io/github_Web/My%20Portfolio/index.html"
-              >Portfolio</a
-            >
-          </div>
-
-          <div>
-            <img src="image/cal.PNG" alt="" />
-            <a
-              href="https://arifur-ra.github.io/github_Web/gird_responsive/Exercise/mini_cal/index.html"
-              >Calculator</a
-            >
-          </div>
-          <div>
-            <img src="image/sign in.PNG" alt="" />
-            <a
-              href="https://arifur-ra.github.io/github_Web/gird_responsive/Exercise/sign-up/signup.html"
-            >
-              Sign In form</a
-            >
-          </div>
-          <div>
-            <img src="image/cal1.PNG" alt="" />
-            <a
-              href="https://arifur-ra.github.io/github_Web/MiniCalculator/index.html"
-            >
-              Mini Calculator</a
-            >
-          </div>
+        <div class="it-info">
+          <h3><i class="fab fa-css3-alt"></i>CSS</h3>
+          <p>
+            <i class="far fa-hand-point-right"></i> Good Knowledge about CSS
+            <br />
+            <i class="far fa-hand-point-right"> </i> Very good in Design
+            <br />
+            <i class="far fa-hand-point-right"></i> 70% <br />
+          </p>
         </div>
-      </section>
-    </main>
+        <div class="it-info">
+          <h3><i class="fab fa-js"></i>Java Script</h3>
+          <p>
+            <i class="far fa-hand-point-right"></i>Basic Knowledge about
+            JavaScript <br />
+            <i class="far fa-hand-point-right"> </i> Starting Level <br />
+            <i class="far fa-hand-point-right"></i> 30% <br />
+          </p>
+        </div>
+        <div class="it-info">
+          <h3><i class="fab fa-node"></i>Node.js</h3>
+          <p>
+            <i class="far fa-hand-point-right"></i> Very basic Knowledge about
+            Node.js <br />
+            <i class="far fa-hand-point-right"> </i> Very Starting Level
+            <br />
+            <i class="far fa-hand-point-right"></i> 20% <br />
+          </p>
+        </div>
+        <div class="it-info">
+          <h3><i class="fab fa-mdb"></i>MongoDB</h3>
+          <p>
+            <i class="far fa-hand-point-right"></i> No Idea about MongoDB<br />
+            <i class="far fa-hand-point-right"> </i> Starting Level <br />
+            <i class="far fa-hand-point-right"></i> No Knowledge <br />
+          </p>
+        </div>
+        <div class="it-info">
+          <h3><i class="fab fa-github"></i>Git & Github</h3>
+          <p>
+            <i class="far fa-hand-point-right"></i> good Knowledge about Git &
+            Github <br />
+            <i class="far fa-hand-point-right"> </i> Advance Level <br />
+            <i class="far fa-hand-point-right"></i> 50% <br />
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="project">
+      <h1>My Project</h1>
+      <hr />
+      <div class="my-project">
+        <div>
+          <img src="image/1.PNG" alt="" />
+          <a href="https://arifur-ra.github.io/github_Web/My%20Portfolio/index.html">Portfolio</a>
+        </div>
 
-    <div class="footer">
-      <p>&copy; Copyrights 2020. design by @ararif</p>
-    </div>
-  </body>
+        <div>
+          <img src="image/cal.PNG" alt="" />
+          <a href="https://arifur-ra.github.io/github_Web/gird_responsive/Exercise/mini_cal/index.html">Calculator</a>
+        </div>
+        <div>
+          <img src="image/sign in.PNG" alt="" />
+          <a href="https://arifur-ra.github.io/github_Web/gird_responsive/Exercise/sign-up/signup.html">
+            Sign In form</a>
+        </div>
+        <div>
+          <img src="image/cal1.PNG" alt="" />
+          <a href="https://arifur-ra.github.io/github_Web/MiniCalculator/index.html">
+            Mini Calculator</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer">
+    <p>&copy; Copyrights 2020 & design by @ararif</p>
+  </div>
+</body>
+
 </html>

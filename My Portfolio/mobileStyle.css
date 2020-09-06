@@ -176,7 +176,7 @@ p {
     /* box-shadow: 1px 0px 4px red; */
 }
 
-#itskills div {
+#itskills .info-content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
@@ -200,26 +200,26 @@ p {
 } */
 
 .it-info {
-    height: 250px;
+    height: 230px;
     box-shadow: 1px 2px 3px red;
-    /* margin: 1.5%; */
+    margin: 1.5%;
     border-radius: 10px;
     cursor: pointer;
 }
 
-/* .it-info:nth-of-type(1),
+.it-info:nth-of-type(1),
 .it-info:nth-of-type(3),
 .it-info:nth-of-type(5) {
     box-shadow: none;
-    border: 2px solid rgb(100, 53, 53);
+    border: 2px solid rgb(126, 30, 30);
 }
 
 .it-info:nth-of-type(2):hover,
 .it-info:nth-of-type(4):hover,
 .it-info:nth-of-type(6):hover {
     transform: scale(1.1);
-    transition: 0.4s;
-} */
+    transition: 0.5s;
+}
 
 .it-info h3 {
     display: flex;
@@ -235,7 +235,7 @@ p {
 }
 
 .it-info p {
-    font-size: 15px;
+    font-size: 14px;
 
 }
 
