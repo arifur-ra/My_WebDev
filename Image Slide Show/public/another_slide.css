@@ -1,0 +1,71 @@
+* {
+    background-color: whitesmoke;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 1%;
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider>figure>img {
+    width: 20%;
+    height: 500px;
+    float: left;
+}
+
+#slider>figure {
+    position: relative;
+    margin: 0;
+    left: 0;
+    width: 500%;
+    animation-name: slider;
+    animation-duration: 15s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
