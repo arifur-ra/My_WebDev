@@ -124,7 +124,7 @@ body {
 
     #page-1>p {
         font-size: 1rem;
-        padding: 4rem 1rem 2.5rem 1rem;
+        padding: 4rem 1rem 1.5rem 1rem;
         text-align: justify;
 
     }
@@ -140,9 +140,10 @@ body {
         padding: 2rem 1rem;
     }
 
+
     #page-2>p {
         font-size: 1rem;
-        padding: 2rem 1rem 5.5rem 1rem;
+        padding: 2rem 1rem 4rem 1rem;
         text-align: justify;
 
     }
