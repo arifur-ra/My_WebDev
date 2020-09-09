@@ -1,7 +1,6 @@
 {
-  "name": "Project_task",
+  "name": "project_task",
   "version": "1.0.0",
-  "description": "",
   "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,5 +13,7 @@
     "connect-livereload": "^0.6.1",
     "express": "^4.17.1",
     "livereload": "^0.9.1"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }

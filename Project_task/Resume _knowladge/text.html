@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+    <style>
+        /* create line*/
+        ul li {
+            list-style: none;
+            position: relative;
+            width: 6px;
+            margin: 0 auto;
+            background: rgb(7, 0, 0);
+        }
+
+        ul li div {
+            position: relative;
+            width: 400px;
+            padding: 1rem;
+            background: rgb(109, 133, 177);
+            transition: all 0.5s ease-in-out;
+            visibility: visible;
+            opacity: 1;
+            border-radius: 0.5rem;
+            margin-left: 1.5rem;
+        }
+
+        /* Arrows Base */
+        div:before {
+            content: "";
+            position: absolute;
+            bottom: 5px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+
+        ul li div:before {
+            left: -15px;
+            border-width: 8px 16px 8px 0;
+            border-color: transparent red transparent transparent;
+        }
+
+        /* Dots */
+        ul li:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 20px;
+            height: 20px;
+            background-color: rgb(156, 6, 6);
+            /* background: inherit; */
+            transform: translateX(-50%);
+            border-radius: 50%;
+            /* transition: background 0.5s ease-in-out; */
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <div>
+                <h3>HTML5 & CSS3</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident reiciendis quaerat assumenda eius
+                    a nam quasi voluptas? Tenetur animi incidunt maxime unde laborum corrupti cupiditate facilis ducimus
+                    eum. Possimus, perspiciatis.</p>
+            </div>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <div>
+                <h3>HTML5 & CSS3</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident reiciendis quaerat assumenda eius
+                    a nam quasi voluptas? Tenetur animi incidunt maxime unde laborum corrupti cupiditate facilis ducimus
+                    eum. Possimus, perspiciatis.</p>
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html>

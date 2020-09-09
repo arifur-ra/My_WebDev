@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(99, 124, 179);
+}
+
+body>div {
+    margin: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    visibility: hidden;
+}
+
+div.selector {
+    /* gap: 1rem; */
+    display: grid;
+    grid-template-areas:
+        'happy-card lovers-card'
+        'happy-pick lovers-pick';
+
+}
+
+label.card {
+    background-color: #fff;
+    height: 16rem;
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 0px 2px 8px;
+}
+
+label.happy-card {
+    right: -20px;
+}
+
+label.lovers-card {
+    left: -15px;
+}
+
+label h1 {
+    color: rgb(44, 29, 29);
+    padding: 0.5rem 1rem;
+}
+
+label ul {
+    line-height: 1.4rem;
+    color: rgb(26, 20, 20);
+    padding: 1.7rem;
+    margin-left: 2rem;
+}
+
+label p {
+    color: rgb(26, 20, 20);
+    background-color: rgb(179, 214, 228);
+    text-align: center;
+    padding: .7rem;
+    font-weight: bold;
+}
+
+.happy-pick,
+.lovers-pick {
+    position: relative;
+    margin-top: 4rem;
+    border: 1px solid white;
+    padding: .7rem;
+    background-color: rgb(228, 122, 214);
+    color: white;
+    border-radius: 10rem;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+
+#happy-radio:checked~.selector>.happy-card,
+#lovers-radio:checked~.selector>.lovers-card {
+    /* background-color: rgb(138, 87, 87); */
+    z-index: 1;
+    /* font-size: 1.3em; */
+    transform: scale(1.1);
+    transition: 0.6s;
+    animation-name: swing-forwards;
+}
+
+@keyframes swing-forwards {
+    0% {
+        z-index: 1;
+        /* start behind other card */
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: translateX(var(--swing));
+    }
+
+    100% {
+        z-index: 2;
+        /* end in front of other card */
+        transform: translateX(var(--overlap)) scale(1.1);
+    }
+}
