@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+table.blueTable {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse; }
+
+thead tr {
+  background-color: #1c6ea4; }
+  thead tr th {
+    color: #fff;
+    padding: .25rem; }
+
+tbody tr td {
+  padding: .5rem; }
+
+tbody tr:nth-child(even) {
+  background-color: #d0e4f5; }
+
+tfoot {
+  text-align: right; }
+  tfoot a {
+    background-color: #1c6ea4;
+    color: #fff;
+    padding: .25rem .5rem;
+    font-weight: bold;
+    border-radius: .25rem; }

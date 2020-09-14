@@ -70,6 +70,10 @@ h6 {
   border: 2px solid red;
 } */
 
+#main-nav .social {
+  justify-self: right;
+
+}
 
 #main-nav .social a {
   color: gray;
@@ -91,7 +95,8 @@ h6 {
   color: var(--dark-color);
   padding: .75rem 1.3rem;
   /* align-items: flex-end; */
-  margin: 0 .5rem;
+  margin: 0 .15rem;
+  border-radius: .15rem;
 }
 
 .current {
