@@ -1,0 +1,86 @@
+@import 'variable';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    margin-top: 10rem;
+    padding: 3rem;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+    margin: 2rem;
+}
+
+table.blueTable {
+    border: 1px solid #1c6ea4;
+    background-color: $table-background-color;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+
+    & td,
+    & th {
+        border: 1px solid #aaaaaa;
+        padding: .3rem .2rem;
+    }
+
+    &tbody td {
+        font-size: 13px;
+    }
+
+    & tr:nth-child(even) {
+        background-color: #d0e4f5;
+    }
+
+    & thead {
+        background-color: #1c6ea4;
+
+        & th {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #ffffff;
+            border-left: 2px solid #d0e4f5;
+        }
+
+        & th :first-child {
+            border-left: 1px solid #aaaaaa;
+        }
+    }
+
+    & tfoot {
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+        background-color: #d0e4f5;
+        border-top: 2px solid #444444;
+
+        & td {
+            font-size: 1rem;
+        }
+
+        & div.links {
+            text-align: right;
+
+            & a {
+                display: inline-block;
+                background-color: #1c6ea4;
+                color: #ffffff;
+                padding: .2rem .8rem;
+                border-radius: 5px;
+
+                & :active {
+                    color: red;
+                }
+            }
+
+        }
+
+    }
+
+}

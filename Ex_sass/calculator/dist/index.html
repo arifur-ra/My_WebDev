@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Mini Calculator</title>
+</head>
+
+<body>
+  <div class="Container">
+    <h1>Mini Calculator</h1>
+
+    <h3 id="result">0</h3>
+    <br />
+    <input type="number" placeholder="Enter First Value" id="firstValue" />
+    <br />
+    <input type="number" placeholder="Enter Second Value" id="secondValue" />
+    <br />
+
+    <div class="button">
+      <button onclick="plus()">Plus</button>
+      <button onclick="minus()">Minus</button>
+      <button onclick="divide()">Devide</button>
+      <button onclick="multi()">Multi</button>
+    </div>
+
+    <!-- <input type="number " id="result1" name="result1" /> -->
+    <!-- <input type="reset" value="Reset"> -->
+  </div>
+
+  <script>
+    // define  two variable input to get ID
+    // fValue, lValue
+    //
+    let fValue = document.getElementById("firstValue");
+    let lValue = document.getElementById("secondValue");
+
+    let result = document.getElementById("result");
+
+    function plus() {
+      result.innerHTML = parseInt(fValue.value) + parseInt(lValue.value);
+    }
+
+    function minus() {
+      result.innerHTML = parseInt(fValue.value) - parseInt(lValue.value);
+    }
+
+    function divide() {
+      result.innerHTML = parseInt(fValue.value) / parseInt(lValue.value);
+    }
+
+    function multi() {
+      result.innerHTML = parseInt(fValue.value) * parseInt(lValue.value);
+    }
+  </script>
+</body>
+
+</html>

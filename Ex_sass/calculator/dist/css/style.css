@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.Container {
+  margin: 10rem auto;
+  width: 25%;
+  background-color: #75aca4;
+  padding: 1rem;
+  border-radius: .5rem;
+  box-shadow: 0 0 .5rem; }
+  .Container h1 {
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    text-align: center; }
+  .Container h3 {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+    color: #fff; }
+  .Container input {
+    text-align: center;
+    padding: .75rem .25rem;
+    margin: .5rem 0;
+    width: 96%; }
+  .Container .button {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem; }
+    .Container .button button {
+      padding: .75rem 0;
+      cursor: pointer;
+      border-radius: .5rem;
+      color: #333;
+      font-weight: bold; }
+
+@media screen and (max-width: 430px) {
+  .Container {
+    margin: 2rem auto;
+    width: 90%;
+    background-color: #75aca4;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .5rem; }
+    .Container h1 {
+      background-color: #f4f4f4;
+      padding: 1.5rem;
+      font-size: 1.5rem; } }
