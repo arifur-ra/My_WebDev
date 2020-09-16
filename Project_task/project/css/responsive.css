@@ -1,0 +1,198 @@
+@media screen and (max-width:425px) {
+    #main-nav .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem;
+    }
+
+    #main-nav .container .social {
+        display: none;
+
+    }
+
+
+    #main-nav .container ul li {
+
+
+        margin-top: 1rem;
+
+    }
+
+    #main-nav .container ul li a {
+
+        font-size: .8rem;
+        font-weight: 900;
+        padding: .5rem .8rem;
+
+    }
+
+
+    /* Index page Styling*/
+    /*Showcase*/
+    #showcase {
+        background-image: url(../img/featured.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 70vh;
+    }
+
+    #showcase .container {
+        padding: 10%;
+        width: 100%;
+    }
+
+    #showcase .container .category-sports {
+        width: 6rem;
+        padding: 0.3rem 1.5rem;
+
+    }
+
+    #showcase .showcase-content h1,
+    p {
+        font-size: 1rem;
+        color: var(--light-color);
+        margin: 1rem 0;
+        text-align: justify;
+    }
+
+    .btn-primary {
+        padding: 0.4rem 1.5rem;
+    }
+
+    /* Index page Styling*/
+    /*Home Article*/
+
+    #home-articles {
+        /* background-color: rgb(245, 212, 212); */
+        padding: 5% 2%;
+    }
+
+    #home-articles .container h2 {
+        color: var(--dark-color);
+        font-size: 1.5rem;
+        /* margin-bottom: 1rem; */
+        padding: 0.5rem;
+    }
+
+    #home-articles .container .articles-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* background-color: #806565; */
+        gap: 0.5rem;
+        color: var(--dark-color);
+    }
+
+    #home-articles .articles-container>*:first-child,
+    #home-articles .articles-container>*:last-child {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+        align-items: flex-start;
+        grid-column: 1 /2;
+    }
+
+    /* Index page Styling*/
+    /*The Footer*/
+    #main-footer .footer-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        padding: 3% 5%;
+    }
+
+    #main-footer img {
+        width: 70%;
+        height: 2.5rem;
+    }
+
+    #main-footer .footer-container>*:last-child {
+        display: grid;
+        grid-column: 1/1;
+
+        /* box-shadow: 0px 1px 5px; */
+        background-color: gray;
+        padding: 0.1rem;
+    }
+
+    #main-footer .footer-container>*:last-child p {
+        font-size: .9rem;
+        text-align: center;
+    }
+
+    #main-footer .footer-container input[type="email"] {
+        width: 100%;
+        padding: 0.3rem;
+    }
+
+    #main-footer .footer-container input[type="submit"] {
+        width: 100%;
+        margin-top: 10px;
+        /* padding: -5px; */
+    }
+
+    #main-footer .footer-container h3,
+    h2 {
+        color: var(--light-color);
+    }
+
+    .site-link ul {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .site-link ul li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid gray;
+    }
+
+    .site-link ul li a {
+        text-decoration: none;
+        color: var(--light-color);
+    }
+
+    .join_footer a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .btn-secondary {
+        display: block;
+        width: 50%;
+        background-color: var(--secondary-color);
+        text-align: center;
+        padding: 0.25rem;
+        color: var(--light-color);
+    }
+
+    /*  Styling About Pages */
+    /* About section */
+
+    #about .container .page-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .card-info {
+        background-color: wheat;
+        grid-column: 1/2;
+    }
+
+    .l-heading {
+        font-size: 1.5rem;
+    }
+
+    .bg-primary {
+        background-color: var(--primary-color);
+        padding: 1rem;
+        height: 40vh;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+
+}

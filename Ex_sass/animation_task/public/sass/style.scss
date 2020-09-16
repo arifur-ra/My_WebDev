@@ -1,0 +1,144 @@
+@import 'function';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.rainy-days {
+    background-image: url("../images/raindrops.jpg");
+    background-repeat: repeat;
+
+    height: 30vh;
+    position: relative;
+    animation: raindrops 5s infinite;
+
+    img {
+        width: 5rem;
+        animation: slide 5s infinite;
+        position: absolute;
+        bottom: .2rem;
+        right: 1rem;
+
+
+    }
+
+}
+
+@keyframes slide {
+    100% {
+        right: 25rem;
+    }
+}
+
+@keyframes raindrops {
+
+    0% {
+        @include transform(translate(0, 0));
+
+    }
+
+    100% {
+
+        @include transform(translate(0, 2rem));
+
+    }
+}
+
+// @keyframes raindrops {
+//     0% {
+//         background-position-y: 0%;
+//     }
+
+//     10% {
+//         background-position-y: -10%;
+//     }
+
+//     20% {
+//         background-position-y: -20%;
+//     }
+
+//     30% {
+//         background-position-y: -30%;
+//     }
+
+//     40% {
+//         background-position-y: -40%;
+//     }
+
+//     50% {
+//         background-position-y: -50%;
+//     }
+
+//     60% {
+//         background-position-y: -60%;
+//     }
+
+//     70% {
+//         background-position-y: -70%;
+//     }
+
+//     80% {
+//         background-position-y: -80%;
+//     }
+
+//     90% {
+//         background-position-y: -90%;
+//     }
+
+//     100% {
+//         background-position-y: -100%;
+//     }
+// }
+
+.digital-bck {
+    margin-top: 3rem;
+    background-image: url("../images/isometric.png");
+    height: 50vh;
+
+
+
+    .trucks {
+        position: relative;
+        animation: drive 5s infinite linear;
+
+        img {
+            width: 4rem;
+            position: absolute;
+        }
+
+        &-1 {
+            top: 1.1rem;
+            left: 2.8rem;
+            z-index: 1;
+        }
+
+        &-2 {
+            top: 0.6rem;
+            left: 3.9rem;
+        }
+
+        &-3 {
+            top: 3rem;
+            left: 8rem;
+        }
+
+        &-4 {
+            top: 3.7rem;
+            left: 7rem;
+        }
+    }
+}
+
+@keyframes drive {
+    0% {
+        @include transform(translate(0, 0));
+        // transform: translate(5rem, 5rem);
+    }
+
+    100% {
+        @include transform(translate(5rem, 5rem));
+        // transform: translate(5rem, 5rem);
+
+    }
+}
