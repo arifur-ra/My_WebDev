@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Trade+Winds&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background: #b7c4d1; }
+
+.slidershow {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.navigation {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex; }
+
+.bar {
+  width: 60px;
+  height: 10px;
+  border: 2px solid #f2f7f1;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s; }
+
+.bar:hover {
+  background: #910707; }
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden; }
+
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex; }
+
+.slide {
+  width: 20%;
+  transition: 0.6s;
+  position: relative; }
+  .slide img {
+    width: 100%;
+    height: 100%; }
+
+.info {
+  background-color: #333;
+  padding: 1rem;
+  top: 0;
+  left: 20rem;
+  position: absolute;
+  width: 45%;
+  height: 38%;
+  opacity: .8;
+  border-radius: 1rem;
+  transform: translateY(200px);
+  transition: all 0.8s ease; }
+  .info h1 {
+    color: #fff;
+    font-weight: bold;
+    padding: .15rem 0;
+    font-family: "Trade Winds", cursive; }
+  .info p {
+    color: #fff;
+    font-weight: bold; }
+  .info h2 {
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 4px solid #ec1034;
+    width: 60%;
+    font-family: "Trade Winds", cursive;
+    font-style: italic;
+    font-weight: 400; }
+  .info button {
+    padding: .35rem .75rem;
+    background-color: #d61939;
+    color: black;
+    border-radius: 1rem;
+    margin-left: 40%;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none; }
+  .info button:hover {
+    background-color: #ff4f09;
+    color: #fffefe;
+    transition: .3s; }
+
+#r1:checked ~ .s1 .info {
+  margin-left: 0; }
+
+#r2:checked ~ .s1 {
+  margin-left: -20%; }
+
+#r3:checked ~ .s1 {
+  margin-left: -40%; }
+
+#r4:checked ~ .s1 {
+  margin-left: -60%; }
+
+#r5:checked ~ .s1 {
+  margin-left: -80%; }
