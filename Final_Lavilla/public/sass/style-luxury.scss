@@ -1,0 +1,164 @@
+@import 'style';
+
+body.luxury {
+
+    h1,
+    h2,
+    h3 {
+        color: $footer_blue_color;
+    }
+
+    form button,
+    footer .footer_info {
+        background-color: $footer_blue_color;
+    }
+}
+
+#lux-main {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        background-image: url('../image/Fashion\ \(2\).jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        // background: linear-gradient(to right();
+        z-index: -2;
+        transform: scaleX(-1);
+    }
+
+    aside {
+        position: relative;
+        width: 35%;
+        // padding-top: 2.5rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+
+        // background: linear-gradient(to right, #fff);
+        background: linear-gradient(to right, rgb(254, 254, 255) 0%, rgb(255, 255, 255) 35%, rgb(248, 248, 248) 100%);
+        // linear-gradient(to right, blue 0%, white 90%),
+
+        .logo {
+            text-align: right;
+            margin-right: 1rem;
+            position: relative;
+
+            img {
+                width: 150px;
+            }
+
+            &::after {
+                content: 'FASHION';
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                transform: translateY(100%);
+            }
+        }
+
+        .aside-title {
+            text-transform: uppercase;
+
+            .img-title {
+                width: 200px;
+            }
+        }
+
+        .aside-info {}
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin: 0 auto;
+
+
+            input {
+                outline: none;
+                border: none;
+                padding: .65rem;
+                margin: .25rem 0;
+                background-color: rgb(167, 167, 172);
+            }
+
+            ::placeholder {
+                color: black;
+            }
+
+            button {
+
+                padding: .65rem;
+                color: $light-color;
+                font-weight: bold;
+                border: none;
+
+            }
+        }
+    }
+}
+
+// Styling Lux-image -gallery
+#lux-image-gallery {
+    width: 80%;
+    margin: 0 auto;
+
+    & h2 {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.7rem;
+        padding-top: 1.5rem;
+        text-align: center;
+
+        .header-subtitle {
+            font-weight: normal;
+        }
+    }
+
+    & p {
+        width: 80%;
+        margin: 0 auto;
+        padding: 1.5rem 0;
+        text-align: center;
+
+
+        em {
+            font-weight: bold;
+            font-style: normal;
+        }
+
+    }
+
+    & .images {
+        display: flex;
+        justify-content: space-around;
+
+        img {
+            width: 320px;
+            height: 300px;
+            border-radius: .5rem;
+            cursor: pointer;
+        }
+
+        img:last-child {
+            transform: scaleX(-1);
+        }
+
+        img:hover {
+            background-color: #fff;
+            opacity: .6;
+            transition: 1s;
+        }
+
+    }
+}
