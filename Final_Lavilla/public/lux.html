@@ -2,11 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luxury Solution</title>
-    <link rel="stylesheet" href="css/style-luxury.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" media="screen">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
 </head>
 
 <body class="luxury">
@@ -19,17 +23,18 @@
         <div class="link">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="lux.html">Luxury Solution</a></li>
+                <li class="active"><a href="lux.html">Luxury Solution</a></li>
             </ul>
         </div>
     </nav>
 
     <main id="lux-main">
+        <div class="shade"></div>
+
         <aside>
             <div class="logo">
                 <img src="image/logo-maybe-transparent.png" alt="" />
             </div>
-
             <div class="aside-title">
                 <img class="img-title" src="image/loro-piana.jpg" alt="" />
                 <h1>Compilmentary Loro Piana Fabric</h1>
@@ -38,40 +43,62 @@
 
             <div class="aside-info">
                 <h3>Redeem the Promotion Now!</h3>
-                <p>To redeem this promotion, simply start by booking a free consultation with one of our tailors. Call
-                    us on 04 3389147 or request a call back by completing the form here.</p>
+                <p>
+                    To redeem this promotion, simply start by booking a free
+                    consultation with one of our tailors. Call us on 04 3389147 or
+                    request a call back by completing the form here.
+                </p>
             </div>
             <form name="contact-form" id="contact-form" action="#" method="post">
-                <input type="text" placeholder="Full Name">
-                <input type="text" placeholder="Email Address">
-                <input type="text" placeholder="Telephone Number">
-                <input type="text" placeholder="Client Code">
+                <input type="text" placeholder="Full Name" />
+                <input type="text" placeholder="Email Address" />
+                <input type="text" placeholder="Telephone Number" />
+                <input type="text" placeholder="Client Code" />
                 <button type="button">SEND</button>
             </form>
         </aside>
     </main>
 
     <section id="lux-image-gallery">
-        <h2>Compilmentary Loro Piana Fabric <span class="header-subtitle">For Your Bespoke Suit!</span></h2>
-        <p>Come to visit us with a friend and get the ultimate made in Italy design, hand crafted to fit perfectly from
-            exclusive choice of fabric. For each suit ordered La Villa will gift you an elegant Loro Piana fabric*.</p>
+        <h2>
+            Compilmentary Loro Piana Fabric
+            <span class="header-subtitle">For Your Bespoke Suit!</span>
+        </h2>
+        <p>
+            Come to visit us with a friend and get the ultimate made in Italy
+            design, hand crafted to fit perfectly from exclusive choice of fabric.
+            For each suit ordered La Villa will gift you an elegant Loro Piana
+            fabric*.
+        </p>
 
         <div class="images">
-            <img src="./image/Fashion (3).jpg" alt="" />
-            <img src="./image/Fashion (6).jpg" alt="" />
-            <img src="./image/Fashion (4).jpg" alt="" />
+            <img src="image/Fashion (3).jpg" alt="" />
+            <img src="image/Fashion (6).jpg" alt="" />
+            <img src="image/Fashion (4).jpg" alt="" />
         </div>
 
-        <p>la Villa assists you from the desire of a new style till the final fitting of the perfect outfit. We realize
-            full hand-made garments created in Italy on purpose for you by the best tailors. our products are:</p>
+        <p>
+            la Villa assists you from the desire of a new style till the final
+            fitting of the perfect outfit. We realize full hand-made garments
+            created in Italy on purpose for you by the best tailors. our products
+            are:
+        </p>
 
-        <p><em>100% HANDMADE</em>, this gives you the feeling of an extraordinary comfort, like a second skin;</p>
+        <p>
+            <em>100% HANDMADE</em>, this gives you the feeling of an extraordinary
+            comfort, like a second skin;
+        </p>
 
-        <p><em>BESPOKE</em>, which means that you are buying something unique, created for you from scratch.</p>
+        <p>
+            <em>BESPOKE</em>, which means that you are buying something unique,
+            created for you from scratch.
+        </p>
 
-        <p class="star-details">* A limited range of Loro Piana fabrics will be available for this campaign. In case you
-            choose a fabric out the selected range, an integration on the final price might apply. Limited offer.</p>
-
+        <p class="star-details">
+            * A limited range of Loro Piana fabrics will be available for this
+            campaign. In case you choose a fabric out the selected range, an
+            integration on the final price might apply. Limited offer.
+        </p>
     </section>
 
     <section>
@@ -88,25 +115,31 @@
 
     <footer>
         <div class="map">
-            <img src="./image/Screen Shot 2018-02-07 at 16.14.23.png" alt="" />
-            <div class="footer_info">
-                <p>
-                    Jumeirah Beach Road, Villa 734 - Dubai | 04 3389147 |
-                    info@lavilla.ae
-                </p>
+            <img id="map" src="image/Screen Shot 2018-02-07 at 16.14.23.png" alt="" />
+        </div>
+        <div class="footer_info">
+            <p>
+                Jumeirah Beach Road, Villa 734 - Dubai | 04 3389147 |
+                info@lavilla.ae
+            </p>
 
-                <div class="social">
-                    <a href="https://www.facebook.com/LaVillaDubai" target="_blank"><i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/la-villa-dubai/" target="_blank"><i
-                            class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://www.instagram.com/lavilladubai/" target="_blank"><i class="fab fa-instagram"></i>
-                    </a>
-                </div>
+            <div class="social">
+                <a href="https://www.facebook.com/LaVillaDubai" target="_blank"><i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/la-villa-dubai/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/lavilladubai/" target="_blank"><i class="fab fa-instagram"></i>
+                </a>
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/vendor/imgViewer2.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

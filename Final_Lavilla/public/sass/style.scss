@@ -22,9 +22,30 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'fbw39';
+    color: $default-text-color;
 }
 
 // styling  Menu part with logo 
+i {
+    color: unset;
+}
+
+.fab {
+    font-weight: 900;
+}
+
+.shade {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+
+}
+
+// header {
+//     display: none;
+// }
 
 #home {
     height: 100vh;
@@ -36,8 +57,7 @@
         position: absolute;
         width: 100%;
         height: 100%;
-
-        background-image: url("../image/Interior\ -\ Grande.jpg");
+        background-image: url('../image/Interior\ -\ Grande.jpg');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -46,14 +66,7 @@
 
     }
 
-    .shade {
-        background-color: rgba(255, 255, 255, 0.2);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: -1;
 
-    }
 
 
     & .offer {
@@ -80,17 +93,28 @@
     }
 
     .logo {
-
+        position: relative;
         margin: 4rem 2.5rem 0 0;
-        //justify-self: flex-end;
-        // background-color: #fff;
         text-align: right;
         padding: .5rem;
-        border-radius: .5rem;
+
 
         // opacity: .6;
         & img {
             width: 250px;
+        }
+
+        &::after {
+            content: 'DESIGN';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: translateY(100%);
+            font-size: 2rem;
+            color: $footer_color;
+            opacity: .7;
+
+
         }
 
     }
@@ -101,6 +125,7 @@ nav {
     // transform: scaleX(-1);
     background-color: $dark-color-o;
     width: 100%;
+    // height: 8vh;
     display: flex;
     position: fixed;
     justify-content: space-between;
@@ -119,6 +144,7 @@ nav {
             color: $light-color;
             margin: .25rem;
             border-radius: .25rem;
+            text-decoration: none;
         }
     }
 
@@ -139,18 +165,20 @@ nav {
             font-weight: bold;
             opacity: .7;
             border-radius: .25rem;
-
-            transition: 1.3s;
+            transition: .7s;
         }
 
         & a:hover {
             background-color: $gold-color;
             color: $dark-color;
-            transform: scale(1.2);
+            // transform: scale(1.2);
+
         }
 
 
     }
+
+
 
 
 
@@ -173,21 +201,24 @@ nav {
     }
 
     .images {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+        display: flex;
+        // grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;
 
         img {
             width: 320px;
-            height: 320px;
+            height: 300px;
             border-radius: .5rem;
             cursor: pointer;
+        }
+
+        img:last-child {
+            transform: scaleX(-1);
         }
 
         img:hover {
             background-color: #fff;
             opacity: .6;
-            transform: scale(1.0);
             transition: 1s;
         }
     }
@@ -226,6 +257,10 @@ nav {
             display: flex;
             justify-content: flex-end;
 
+            & label {
+                width: 50%;
+            }
+
             & input {
                 width: 35%;
                 border: none;
@@ -238,6 +273,7 @@ nav {
                 &:focus {
                     outline: none;
                 }
+
             }
 
             & button {
@@ -257,6 +293,8 @@ nav {
                 &:hover {
                     background-color: $font-color;
                     color: $button-bg_color;
+                    transition: .6s;
+
                 }
             }
 
@@ -273,7 +311,7 @@ nav {
 }
 
 .bg_info {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
 
@@ -285,9 +323,8 @@ nav {
     }
 
     p {
-        color: $font-color;
         line-height: 1.5rem;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         padding: .5rem;
         text-align: justify;
 
@@ -297,57 +334,74 @@ nav {
 // Footer Styling starts here 
 // Setting the Footer Background Image
 footer {
-
+    position: relative;
 
     & .map {
-        /* background-image: url("../image/Screen\ Shot\ 2018-02-07\ at\ 16.14.23.png");
-        background-repeat: no-repeat;
-        background-size: auto;
-        background-position: center; */
         position: relative;
         opacity: 0.8;
         margin-top: 1rem;
 
-        img {
+        // .map-container {
+        //     width: 100%;
+        //     height: 80vh;
+        //     position: relative;
+        //     margin: auto;
+
+
+        // }
+
+        #map {
             width: 100%;
-            height: 90vh
+            height: 70vh;
+
+            margin-bottom: 5vh;
+            // display: block;
+            // position: relative;
+            // object-fit: cover;
+
+            &::after {}
         }
 
-        // Styling the Footer Info
-        & .footer_info {
-            position: absolute;
-            background-color: $footer-color;
-            align-items: center;
-            width: 100%;
-            opacity: 0.8;
-            bottom: 0;
-            color: $light-color;
-            font-weight: bold;
-            text-align: center;
-            padding: 1.5rem;
+
+    }
+
+    // Styling the Footer Info
+    & .footer_info {
+        position: absolute;
+        background-color: $footer-color;
+        align-items: center;
+        width: 100%;
+        // opacity: .8;
+        bottom: 0;
+        color: $light-color;
+        font-weight: bold;
+        text-align: center;
+        padding: 1.5rem;
+
+        z-index: 9999;
 
 
-            p {
-                padding: .5rem;
-            }
+        p {
+            padding: .5rem;
+            color: inherit;
+        }
 
-            // Styling the social media links inside the footer
-            .social {
+        // Styling the social media links inside the footer
+        .social {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+
+            a {
+                text-decoration: none;
+                border: 1px solid $light-color;
+                color: $light-color;
+                font-weight: bold;
+                width: 2rem;
+                height: 2rem;
                 display: flex;
-                gap: 1rem;
                 justify-content: center;
-
-                a {
-                    text-decoration: none;
-                    border: 1px solid white;
-                    color: $light-color;
-                    font-weight: bold;
-                    width: 2rem;
-                    height: 2rem;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
+                align-items: center;
             }
         }
     }
