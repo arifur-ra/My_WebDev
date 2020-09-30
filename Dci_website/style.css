@@ -90,3 +90,63 @@ footer {
     font-weight: bold;
     /* clear: both; */
 }
+
+@media only screen and (max-width: 430px) {
+    header h1 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+
+
+    aside {
+        width: 85%;
+    }
+
+    aside ul li {
+        list-style: none;
+        padding: 10px 0;
+        margin: 10px 0;
+        background-color: lightseagreen;
+        font-size: small;
+        cursor: pointer;
+    }
+
+    aside ul li a {
+        text-decoration: none;
+        /* background-color: blue; */
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+    }
+
+    aside ul li:hover {
+        background-color: rgb(57, 189, 57);
+        padding: 10px 0;
+    }
+
+    p {
+        font-size: 500;
+    }
+
+    article {
+        width: 100%;
+        margin: 5% auto;
+
+    }
+
+    article h1 {
+        font-size: 20px;
+    }
+
+    div.info h1 {
+        text-align: left;
+        font-size: 1.3rem;
+    }
+
+    footer {
+        text-align: center;
+        font-size: .7rem;
+    }
+
+}
