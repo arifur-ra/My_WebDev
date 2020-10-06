@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Script Element</title>
+
+    <style>
+      h3 {
+        color: red;
+      }
+      button {
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>JavaScript</h1>
+    <input
+      type="text"
+      name="input1"
+      id="input1"
+      placeholder="enter your Lastname"
+    />
+    <br />
+    <input
+      type="text"
+      name="input2"
+      id="input2"
+      placeholder="Enter your LastName"
+    />
+    <br />
+    <button onclick="print()">Show me my name</button>
+    <h3 id="firstName">here you will See your First name</h3>
+    <h3 id="lastName">here you will See your Last name</h3>
+
+    <script>
+      // let variableOne = 10;
+      // const variableTwo = "TeamWB";
+      // var variableThree = {
+      //   firstName: "Arifur Rahman",
+      //   lastName: "Arif",
+      // };
+      // console.log(variableThree);
+
+      let firstName = document.getElementById("input1");
+      let lastName = document.getElementById("input2");
+
+      function print() {
+        let name1 = document.getElementById("firstName");
+        let name2 = document.getElementById("lastName");
+
+        name1.innerHTML = firstName.value;
+        name2.innerHTML = lastName.value;
+
+        //console.log(input.value);
+      }
+    </script>
+  </body>
+</html>

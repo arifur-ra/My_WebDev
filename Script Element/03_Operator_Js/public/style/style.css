@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+.first {
+    background-color: rgb(62, 151, 3);
+    padding: 4rem;
+    width: 10rem;
+    margin: 2rem 0;
+}
+
+.second {
+    background-color: red;
+    padding: 4rem;
+    width: 10rem;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_DOM_Operators</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <h1 id="display"> Display</h1>
+    <div id="cool" class="first"></div>
+    <div id="bad" class="second"></div>
+
+    <hr>
+
+    <h2>String Method</h2>
+    <form action="#">
+        <div>
+            <label for="first" id="firstName"></label>
+            <input type="text" id="first" placeholder="First Name">
+            <label for="last" id="lastName"></label>
+            <input type="text" id="last" placeholder="Last Name">
+        </div>
+        <div>
+            <label for="gender">Your Gender:</label>
+            <select name="gender" id="gender">
+                <option value="Mr.">Male</option>
+                <option value="Mrs.">Female</option>
+            </select>
+        </div>
+        <!-- 
+        <div id="gender">
+            <label for="male">Mr.</label>
+            <input type="radio" id="male" name="gender" value="Mr.">
+            <label for="female">Mrs.</label>
+            <input type="radio" id="female" name="gender" value="Mr.">
+        </div> -->
+
+
+
+        <button type="submit" onclick="printName(event)">Greeting</button>
+        <div id="fullName">
+            <p id="greeting"></p>
+        </div>
+    </form>
+
+    <script src="scripts/oparetors.js"></script>
+</body>
+
+</html>
