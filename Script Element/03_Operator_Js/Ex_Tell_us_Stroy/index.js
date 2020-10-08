@@ -13,7 +13,7 @@ function showDetails(event) {
     //     gender = 'Mr.';
     // }
 
-    showStory.innerHTML = `<p> Here is My Story: <br> ${firstStory.value} and ${secondStory.value} <br> ${thirdStory.value}  <br> ${lastStory.value}  <br> Thanks :)</p>`;
+    showStory.innerHTML = `<p> Here is My Story: <br> ${firstStory.value}  ${secondStory.value} <br> ${thirdStory.value}  <br> ${lastStory.value}  <br> Thanks :)</p>`;
     //showStory.style.background = 'snow';
     showStory.style.padding = '1rem';
     showStory.style.marginTop = '1rem';
