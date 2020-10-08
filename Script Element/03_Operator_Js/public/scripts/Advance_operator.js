@@ -56,9 +56,52 @@ val = lastName.substring(0, 3);
 string = 'That is nice'
 let index = string.search('nice');
 console.log(string[index]);
-val = string.substring(string.search('nice'), string.search('nice') + 4);
+// val = string.substring(string.search('nice'), string.search('nice') + 4);
+val = string.substring(index, index + 4);
 console.log(val);
 console.log(index);
+
+
+// Replace()  replace the new value.
+
+let originalString = 'That is nice ';
+let searchString = 'nice';
+let replaceString = 'awesome';
+let returnString = '';
+
+
+returnString = originalString.replace(searchString, replaceString);
+
+// console.log(`The origin String: ${originalString}`);
+// console.table(`The Replace String: ${returnString}`);
+
+
+//replaceALl()
+
+originalString = 'Hello Fbw39 awesome awesome team ';
+searchString = 'awesome';
+replaceString = 'nice';
+returnString = '';
+
+
+returnString = originalString.replace(searchString, replaceString);
+
+console.log(`The origin String: ${originalString}`);
+console.log(`The Replace String: ${returnString}`);
+
+
+//  
+let Persons = 'Arif, Adam, Matheus, Manon, Jon, Gabor';
+
+function isNameHere(name, text) {
+    // String method includes()
+    // return boolean value true, false;
+
+    return text.includes(name);
+}
+let answer = isNameHere('Saima', Persons);
+
+console.log(answer);
 
 
 

@@ -16,7 +16,7 @@ console.log(secret);
 
 /**
  * search for the substring 'try' using search method
- * save it using substruibg method ina variable :
+ * save it using substring method ina variable :
  * save the index in a variable
  * substring (start:index, end:index+3)
  * **/
