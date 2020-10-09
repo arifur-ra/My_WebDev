@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="form.css" />
+    <title>Registration Form</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="form.css">
-    <title> Registration Form</title>
-</head>
-
-<body>
-
+  <body>
     <div class="signup">
-        <h2>Sign In</h2>
+      <h2>Sign In</h2>
 
-        <form action="#">
-            <div>
-                <input type="text" id="firstName" placeholder="Enter your First Name">
-                <input type="text" id="lastName" placeholder="Enter your Last Name">
-            </div>
-            <div>
-                <input type="email" id="email" placeholder="Enter your Email">
+      <form action="#">
+        <div>
+          <input
+            type="text"
+            id="firstName"
+            placeholder="Enter your First Name"
+          />
+          <input type="text" id="lastName" placeholder="Enter your Last Name" />
+        </div>
+        <div>
+          <input type="email" id="email" placeholder="Enter your Email" />
+        </div>
+        <div>
+          <input type="password" id="password" placeholder="Password" />
+        </div>
+        <div>
+          <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirm Password"
+          />
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox" />
+          <label>I agree the term for User</label>
+        </div>
 
-            </div>
-            <div>
-                <input type="password" id="password" placeholder="Password">
-
-            </div>
-            <div>
-                <input type="password" id="confirmPassword" placeholder="Confirm Password">
-
-            </div>
-            <div>
-                <input type="checkbox" id="checkbox"> <Label>I agree the term for User</Label>
-            </div>
-
-            <button type="submit" onclick="Result(event)"> Sign Up</button>
-            <button type="reset"> Resent</button>
-
-        </form>
-
+        <button type="submit" onclick="Result(event)">Sign Up</button>
+        <button type="reset">Reset</button>
+      </form>
     </div>
-    <div id="showResult">
-
-    </div>
+    <div id="showResult"></div>
 
     <script src="form.js"></script>
-</body>
-
+  </body>
 </html>

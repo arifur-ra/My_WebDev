@@ -81,3 +81,50 @@ button:hover {
     top: 0;
     padding: 2rem;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .signup {
+        width: 92%;
+    }
+
+    h2 {
+
+        font-size: 1.1rem;
+    }
+
+    form {
+        padding: 2rem 1.5rem;
+    }
+
+    #showResult {
+        width: 40%;
+        /* position: absolute; */
+        margin: 2rem auto;
+        padding: 2rem;
+    }
+
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 790px) {
+    .signup {
+        width: 60%;
+        margin: 2rem auto;
+
+    }
+
+    form {
+        padding: 2rem 1.5rem;
+    }
+
+    #showResult {
+        width: 30%;
+        position: absolute;
+        margin: 2rem auto;
+        right: 2rem;
+        top: 0;
+        padding: 2rem;
+    }
+
+}
