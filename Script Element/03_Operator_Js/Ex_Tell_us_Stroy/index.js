@@ -3,6 +3,7 @@ let firstStory = document.getElementById('firststory');
 let secondStory = document.getElementById('secondstory');
 let thirdStory = document.getElementById('thirdstory');
 let lastStory = document.getElementById('laststory');
+
 let showStory = document.getElementById('showstory');
 
 
