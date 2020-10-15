@@ -17,7 +17,7 @@ body {
     margin: 10% auto;
     position: relative;
     background-color: #fff;
-    border-radius: .25rem;
+    border-radius: .75rem;
 }
 
 h2 {
@@ -35,12 +35,15 @@ input {
     padding: .75rem;
     margin: .5rem;
     outline: none;
+    border: none;
     border: 1px rgb(53, 6, 1) solid;
+    */
 }
 
 ::placeholder {
     text-align: center;
-    color: black;
+    color: rgb(3, 0, 0);
+
 }
 
 #firstName,
@@ -49,7 +52,10 @@ input {
 #password,
 #confirmPassword {
     width: 100%;
+    /* background-color: rgb(160, 77, 17); */
+    color: rgb(0, 0, 0);
 }
+
 
 
 button {
@@ -119,12 +125,13 @@ button:hover {
     }
 
     #showResult {
-        width: 30%;
+        background-color: #4a920f;
+        width: 45%;
         position: absolute;
         margin: 2rem auto;
         right: 2rem;
         top: 0;
-        padding: 2rem;
+        padding: 1rem;
     }
 
 }

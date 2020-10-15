@@ -1,52 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="form.css" />
-    <title>Registration Form</title>
-  </head>
 
-  <body>
-    <div class="signup">
-      <h2>Sign Up</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="form.css" />
+  <title>Registration Form</title>
+</head>
 
-      <form action="#">
-        <div>
-          <input
-            type="text"
-            id="firstName"
-            placeholder="Enter your First Name"
-          />
-          <input type="text" id="lastName" placeholder="Enter your Last Name" />
-        </div>
-        <div>
-          <input type="email" id="email" placeholder="Enter your Email" />
-        </div>
-        <div>
-          <input type="password" id="password" placeholder="Password" />
-        </div>
-        <div>
-          <input
-            type="password"
-            id="confirmPassword"
-            placeholder="Confirm Password"
-          />
-        </div>
-        <div>
-          <input type="checkbox" id="checkbox" />
-          <label>I agree the term for User</label>
-        </div>
+<body>
+  <div class="signup">
+    <h2>Sign Up</h2>
 
-        <button type="submit" onclick="Result(event)">Submit</button>
-      </form>
-    </div>
-    <div id="showResult"></div>
+    <form action="#">
+      <div>
+        <input type="text" id="firstName" placeholder="Enter your First Name" required />
+        <input type="text" id="lastName" placeholder="Enter your Last Name" required />
+      </div>
+      <div>
+        <input type="email" id="email" placeholder="Enter your Email" required />
+      </div>
+      <div>
+        <input type="password" id="password" placeholder="Password" required />
+      </div>
+      <div>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+      </div>
+      <div>
+        <input type="checkbox" id="checkbox" checked />
+        <label>I agree the term for User</label>
+      </div>
 
-    <script src="form.js"></script>
-  </body>
+      <button type="submit" onclick="Result(event)">Submit</button>
+    </form>
+  </div>
+  <div id="showResult"></div>
+
+  <script src="form.js"></script>
+</body>
+
 </html>

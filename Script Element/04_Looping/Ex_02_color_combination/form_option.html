@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Color Combination</title>
+
+    <style>
+        body {
+            background-color: #15021d;
+        }
+
+        form {
+            margin-left: 13rem;
+        }
+
+        input {
+            margin: 0 1.5rem;
+
+        }
+
+        label {
+            font-size: 1.5rem;
+        }
+
+        label:nth-of-type(1) {
+            color: red;
+        }
+
+        label:nth-of-type(2) {
+            color: blue;
+        }
+
+        label:nth-of-type(3) {
+            color: green;
+        }
+
+        label:nth-of-type(4) {
+            color: yellow;
+        }
+
+        label:nth-of-type(5) {
+            color: pink;
+        }
+
+        div {
+            padding: 5rem;
+            width: 2rem;
+            height: 2rem;
+            /* border: 2px solid rgb(68, 2, 2); */
+            margin: 1rem auto;
+            display: inline-block;
+            font-weight: bold;
+            box-shadow: 1px 2px 6px rgb(47, 0, 255);
+
+        }
+
+        button {
+            display: block;
+            margin: 2rem 0;
+            padding: .5rem 1.5rem;
+            background-color: rgb(190, 41, 41);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            outline: none;
+            border-radius: .25rem;
+            margin-left: 25rem;
+        }
+
+        button:hover {
+            background-color: yellowgreen;
+            color: rgb(0, 0, 0);
+            transition: .6s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="#">
+        <h4 id="options">
+            <input type="checkbox" id="option1" name="option1" value="red">
+            <label for="option1">Red</label>
+            <input type="checkbox" id="option2" name="option2" value="blue">
+            <label for="option2">Blue</label>
+            <input type="checkbox" id="option3" name="option3" value="green">
+            <label for="option3">Green</label>
+            <input type="checkbox" id="option4" name="option4" value="yellow">
+            <label for="option4">Yellow</label>
+            <input type="checkbox" id="option5" name="option5" value="pink">
+            <label for="option5">Pink</label>
+        </h4>
+
+    </form>
+
+    <div> </div>
+    <div> </div>
+    <div> </div>
+    <div> </div>
+    <div> </div>
+    <button onclick="countOptions(event)">Color Count</button>
+
+    <script src="form_option.js"></script>
+</body>
+
+</html>
