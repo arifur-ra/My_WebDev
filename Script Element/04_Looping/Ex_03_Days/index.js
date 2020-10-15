@@ -19,13 +19,13 @@ function showDays(event) {
         if (options[i].checked) {
             div[i].innerHTML = options[i].value;
             div[i].style.backgroundColor = colors[i];
-
+            div[i].style.fontWeight = 'bold';
             counter++;
 
         } else {
-
+            div[i].innerHTML = null;
             div[i].style.backgroundColor = null;
         }
     }
-    list.innerHTML = (`<h1> The number of days Selected : ${counter}</h1>`);
+    list.innerHTML = (`<h2> The number of days Selected : ${counter}</h2>`);
 }

@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Week plan Combination</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week plan Combination</title>
 
     <style>
         * {
@@ -19,7 +19,6 @@
 
         input {
             margin: 0 1.5rem;
-
         }
 
         label {
@@ -56,55 +55,57 @@
 
         #container {
             display: flex;
-
         }
 
         .box {
             position: relative;
             width: 10rem;
-            height: 10rem;
+            height: 8rem;
             border: 1px solid rgb(68, 2, 2);
-            margin: .5rem;
+            margin: 0.5rem;
             font-weight: bold;
-            box-shadow: 1px 2px 6px rgb(47, 0, 255);
-            justify-content: center;
-            align-items: center;
-
+            box-shadow: 1px 2px 6px rgb(110, 36, 1);
+            text-align: center;
+            /*justify-content: center;
+            align-items: center; */
         }
 
         button {
-            width: 20%;
             margin: 2rem 0;
-            padding: .5rem 2.5rem;
+            padding: 0.5rem 1.5rem;
             background-color: rgb(190, 41, 41);
             color: white;
             border: none;
             cursor: pointer;
             font-weight: bold;
             outline: none;
-            border-radius: .25rem;
+            border-radius: 0.25rem;
             text-align: center;
-            margin-left: 25rem;
-            font-size: 1.5rem;
+            margin-left: 35rem;
+            font-size: 1.2rem;
         }
 
         button:hover {
             background-color: yellowgreen;
             color: rgb(0, 0, 0);
-            transition: .6s;
+            transition: 0.6s;
+        }
+
+        p {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
         }
 
         @media only screen and (max-width: 600px) {
             #container {
                 flex-direction: column;
-
             }
 
             input {
                 margin: 0 1.5rem;
                 display: flex;
                 flex-direction: column;
-
             }
 
             button {
@@ -113,51 +114,45 @@
                 right: 1rem;
                 width: 50%;
                 margin: 0;
-                padding: .5rem 1.5rem;
-                font-size: .75rem;
-
+                padding: 0.5rem 1.5rem;
+                font-size: 0.75rem;
             }
-
         }
     </style>
 </head>
 
 <body>
-
     <form action="#">
         <h4 id="options">
-            <input type="checkbox" id="option1" name="option1" value="Saturday">
+            <input type="checkbox" id="option1" name="option1" value="Saturday" />
             <label for="option1">Saturday</label>
-            <input type="checkbox" id="option2" name="option2" value="Sunday">
+            <input type="checkbox" id="option2" name="option2" value="Sunday" />
             <label for="option2">Sunday</label>
-            <input type="checkbox" id="option3" name="option3" value="Monday">
+            <input type="checkbox" id="option3" name="option3" value="Monday" />
             <label for="option3">Monday</label>
-            <input type="checkbox" id="option4" name="option4" value="Tuesday">
+            <input type="checkbox" id="option4" name="option4" value="Tuesday" />
             <label for="option4">Tuesday</label>
-            <input type="checkbox" id="option5" name="option5" value="Wednesday">
+            <input type="checkbox" id="option5" name="option5" value="Wednesday" />
             <label for="option5">Wednesday</label>
-            <input type="checkbox" id="option6" name="option5" value="Thursday">
+            <input type="checkbox" id="option6" name="option5" value="Thursday" />
             <label for="option5">Thursday</label>
-            <input type="checkbox" id="option7" name="option5" value="Friday">
+            <input type="checkbox" id="option7" name="option5" value="Friday" />
             <label for="option5">Friday</label>
-
         </h4>
-
     </form>
 
     <div id="container">
-        <div class="box"> </div>
-        <div class="box"> </div>
-        <div class="box"> </div>
-        <div class="box"> </div>
-        <div class="box"> </div>
-        <div class="box"> </div>
-        <div class="box"> </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
     </div>
     <button onclick="showDays(event)">Show Days</button>
 
-
-    <p id="list"> </p>
+    <p id="list"></p>
     <script src="index.js"></script>
 </body>
 
