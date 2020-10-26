@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Structure </title>
+
+    <style>
+        .container-input {
+            width: 30%;
+            margin: 5rem 10rem;
+            box-shadow: 0 0 4px;
+            padding: 2rem;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            position: absolute;
+            right: 20rem;
+            top: 2rem;
+
+        }
+
+        input {
+            padding: .5rem;
+            outline: none;
+
+
+        }
+
+        button {
+            padding: .5rem .75rem;
+            cursor: pointer;
+            background-color: rgb(240, 186, 38);
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            border: none;
+            outline: none;
+            border-radius: .25rem;
+
+        }
+
+        button:hover {
+            background-color: red;
+            color: white;
+            transition: .5s;
+        }
+
+        ::placeholder {
+            text-align: center;
+        }
+
+        .btn {
+            margin: 1rem 12rem;
+
+        }
+
+        .btn button {
+            margin: 0 .5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container-input">
+        <input type="text" id="product" placeholder="Product Name">
+        <button onclick="addProduct()">Add Product</button> <br> <br>
+
+        <input type="number" id="priceList" placeholder="Price List">
+        <button onclick="addPrice()">Add Price</button> <br> <br>
+
+        <input type="text" id="category" placeholder="Categories">
+        <button onclick="addCategory()">Add categories</button> <br> <br>
+    </div>
+
+
+
+    <div class="btn">
+        <button onclick="showProduct()">Show Product</button>
+        <button onclick="showPrice()">Show Price</button>
+        <button onclick="showCategory()">Show Categories</button>
+    </div>
+
+
+    <div class="container">
+        <h2> The Result of Item:</h2>
+        <ul id="showProduct"> </ul>
+
+        <ul id="showPrice"> </ul>
+
+        <ul id="showCategory"> </ul>
+    </div>
+
+
+
+
+
+
+    <script src="assingnment.js"></script>
+</body>
+
+</html>

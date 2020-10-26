@@ -64,7 +64,7 @@
             border: 1px solid rgb(68, 2, 2);
             margin: 0.5rem;
             font-weight: bold;
-            box-shadow: 1px 2px 6px rgb(110, 36, 1);
+            box-shadow: 1px 2px 6px rgb(58, 19, 0);
             text-align: center;
             /*justify-content: center;
             align-items: center; */
@@ -111,10 +111,10 @@
             button {
                 position: fixed;
                 top: 2rem;
-                right: 1rem;
-                width: 50%;
+                right: .25rem;
+                width: 40%;
                 margin: 0;
-                padding: 0.5rem 1.5rem;
+                padding: 0.5rem 1rem;
                 font-size: 0.75rem;
             }
         }
@@ -124,20 +124,20 @@
 <body>
     <form action="#">
         <h4 id="options">
-            <input type="checkbox" id="option1" name="option1" value="Saturday" />
-            <label for="option1">Saturday</label>
-            <input type="checkbox" id="option2" name="option2" value="Sunday" />
-            <label for="option2">Sunday</label>
-            <input type="checkbox" id="option3" name="option3" value="Monday" />
-            <label for="option3">Monday</label>
-            <input type="checkbox" id="option4" name="option4" value="Tuesday" />
-            <label for="option4">Tuesday</label>
-            <input type="checkbox" id="option5" name="option5" value="Wednesday" />
-            <label for="option5">Wednesday</label>
-            <input type="checkbox" id="option6" name="option5" value="Thursday" />
-            <label for="option5">Thursday</label>
-            <input type="checkbox" id="option7" name="option5" value="Friday" />
-            <label for="option5">Friday</label>
+            <input type="checkbox" id="option1" name="option1" value="Samstag" />
+            <label for="option1">Samstag</label>
+            <input type="checkbox" id="option2" name="option2" value="Sonntag" />
+            <label for="option2">Sonntag</label>
+            <input type="checkbox" id="option3" name="option3" value="Montag" />
+            <label for="option3">Montag</label>
+            <input type="checkbox" id="option4" name="option4" value="Dienstag" />
+            <label for="option4">Dienstag</label>
+            <input type="checkbox" id="option5" name="option5" value="Mittwoch" />
+            <label for="option5">Mittwoch</label>
+            <input type="checkbox" id="option6" name="option5" value="Donnerstag" />
+            <label for="option5">Donnerstag</label>
+            <input type="checkbox" id="option7" name="option5" value="Fritag" />
+            <label for="option5">Fritag</label>
         </h4>
     </form>
 
@@ -151,6 +151,8 @@
         <div class="box"></div>
     </div>
     <button onclick="showDays(event)">Show Days</button>
+    <!-- <button type="reset">Reset</button> -->
+
 
     <p id="list"></p>
     <script src="index.js"></script>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@200&display=swap" rel="stylesheet">
+
+    <title>Product Details</title>
+
+    <style>
+        * {
+            font-family: 'Grandstander', cursive;
+        }
+
+        .container-input {
+            /* background-color: #584a0b; */
+            background-image: linear-gradient(300deg, #992890, #473535, #095009, black, #1b577a, #330303, #383804, #5a0553);
+            width: 25%;
+            margin: 5rem;
+            /* box-shadow: 0 0 4px; */
+            padding: 2rem;
+            border-radius: .75rem;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #3d3822;
+        }
+
+
+
+        input {
+            padding: .75rem .5rem;
+            width: 92%;
+            border-radius: .35rem;
+            outline: none;
+            border: none;
+
+        }
+
+        button {
+            margin: 2rem .35rem 0 .6rem;
+            padding: .6rem .75rem;
+            cursor: pointer;
+            background-color: #f0ba26;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            border: none;
+            outline: none;
+            border-radius: .25rem;
+            font-weight: bolder;
+            font-size: .8rem;
+
+        }
+
+        button:hover {
+            background-color: red;
+            color: white;
+            transition: .5s;
+        }
+
+        ::placeholder {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 1rem;
+
+        }
+
+        .container {
+            position: absolute;
+            right: 10rem;
+            top: 4rem;
+            color: #fffb06;
+            font-weight: bolder;
+            font-size: 1rem;
+        }
+
+        h2 {
+
+            text-align: center;
+            color: #f0ba26;
+            padding: 1rem 1.5rem;
+            border-radius: .35rem;
+            box-shadow: 0 0 2px;
+            margin-bottom: 3rem;
+
+
+        }
+
+        /* hr {
+            margin-bottom: 3rem;
+        } */
+
+
+        @media only screen and (max-width:430px) {
+            body {
+                margin: 1rem;
+
+            }
+
+            .container-input {
+                width: 90%;
+                margin: 1rem auto;
+                padding: 1rem;
+            }
+
+            input {
+                padding: .5rem;
+                outline: none;
+                width: 95%;
+            }
+
+            .container {
+                position: relative;
+                padding: .5rem;
+
+
+
+            }
+
+            button {
+                margin: .5rem .75rem;
+
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-input">
+        <h2> Fill the Product fields</h2>
+        <!-- <hr> -->
+        <input type="text" id="product" placeholder=" Product Name" required><br> <br>
+        <input type="number" id="priceList" placeholder=" Product Price (€) " required><br> <br>
+        <input type="text" id="category" placeholder="Categories" required><br> <br>
+
+
+        <button onclick="addProductItem(event)">Add Product Item</button>
+        <button onclick="showProductItem()">Show Product Item</button>
+    </div>
+
+
+    <div class="container">
+        <h2> The List of Item:</h2>
+        <ul id="showProductItems">
+
+        </ul>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="product.js"></script>
+</body>
+
+</html>

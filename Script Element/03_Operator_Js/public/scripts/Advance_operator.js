@@ -90,7 +90,7 @@ console.log(`The origin String: ${originalString}`);
 console.log(`The Replace String: ${returnString}`);
 
 
-//  
+// String method includes()
 let Persons = 'Arif, Adam, Matheus, Manon, Jon, Gabor';
 
 function isNameHere(name, text) {
