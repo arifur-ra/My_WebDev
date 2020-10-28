@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+
+
+    <style>
+        .show {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0 0 4px;
+            padding: 1rem;
+            background-color: rgb(8, 83, 52);
+
+        }
+
+        button {
+            cursor: pointer;
+            padding: .75rem 1.2rem;
+            margin: .5rem;
+            border: none;
+            outline: none;
+            background-color: rgb(0, 0, 0);
+            border-radius: .25rem;
+            color: #ffffff;
+            font-weight: bold;
+            transition: .6s;
+        }
+
+        button:hover {
+            background-color: rgb(206, 202, 15);
+            color: red;
+        }
+
+        #display {
+            position: absolute;
+            top: 0;
+            right: 10rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="show">
+        <table id="display">
+            <thead>
+                <tr>
+
+                    <th>
+                        <button onclick="showData(event)"> Show Data</button>
+                    </th>
+                    <th>
+                        <button onclick="sortName(event)"> Sort data by Name</button>
+
+                    </th>
+                    <th>
+                        <button onclick="sortType(event)"> Sort data by Type</button>
+
+                    </th>
+                    <th>
+                        <button onclick="sortRank(event)"> Sort data by Rank</button>
+
+                    </th>
+
+                    <!-- <button onclick="showData(event)"> Show Data</button>
+
+                    <button onclick="sortName(event)"> Sort data by Name</button>
+                    <button onclick="sortType(event)"> Sort data by Type</button>
+                    <button onclick="sortRank(event)"> Sort data by Rank</button> -->
+                </tr>
+
+            </thead>
+
+        </table>
+    </div>
+    <br><br>
+
+
+    <!-- 
+    <div class="info">
+        <table id="display">
+            <!-- <tr>
+
+                <th>
+                    <button onclick="showData(event)"> Show Data</button>
+                </th>
+                <th>
+                    <button onclick="sortName(event)"> Sort data by Name</button>
+
+                </th>
+                <th>
+                    <button onclick="sortType(event)"> Sort data by Type</button>
+
+                </th>
+                <th>
+                    <button onclick="sortRank(event)"> Sort data by Rank</button>
+
+                </th>
+            </tr> -->
+    <!-- </table> -->
+
+    -->
+
+
+    </div>
+
+
+
+    <script src="assignment1.js"></script>
+</body>
+
+</html>

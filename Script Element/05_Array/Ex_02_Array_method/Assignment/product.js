@@ -29,22 +29,26 @@ function addProductItem(event) {
     categories: category,
   };
   products.push(productObject);
-  console.log("The Product Item Arry is:", products);
+  console.table("The Product Item Arry is:", products);
 }
+
 
 function showProductItem() {
   let showItem = document.getElementById("showProductItems");
   showItem.innerHTML = ``; // delete old item and make a new list
-
-  for (i = 0; i < products.length; i++) {
-    showItem.innerHTML += `<table>
-        <tr> 
+  showItem.innerHTML = `<table>
+          <tr> 
             <th>  Product No.</th> 
             <th>  Product Name</th>
             <th>  Product Price(€) </th>
             <th>  Categories</th>
-        </tr>
-         
+         </tr>
+  
+  </table>`;
+
+  for (i = 0; i < products.length; i++) {
+    showItem.innerHTML += `<table>
+        
         <tr>
             <td>${i + 1}</td>
             <td>${products[i].ProductName}</td>
@@ -52,6 +56,7 @@ function showProductItem() {
             <td>${products[i].categories}</td>
        </tr>
     </table>
+    
     <style>
     table {
         border-collapse: collapse;
@@ -64,13 +69,18 @@ function showProductItem() {
         text-align: center;
         padding: .75rem;
       }
-      tr:nth-child(odd) {
+      th {
         background-color:#245015;
         font-weight:bold;
       }
       
-      tr:nth-child(even) {
+      td:nth-child(even) {
         background-color: #6D463E;
+        color:white;
+        font-weight:bold;
+      }
+      td:nth-child(odd) {
+        background-color: #black;
         color:white;
         font-weight:bold;
       }

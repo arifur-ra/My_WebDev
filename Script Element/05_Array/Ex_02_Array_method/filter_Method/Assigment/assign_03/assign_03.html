@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Filtering_Assignments</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(175, 167, 167);
+        }
+
+        table {
+            margin: 10px;
+            padding: 1rem;
+            border-collapse: collapse;
+
+        }
+
+        th,
+        td {
+            margin: 0 1rem;
+            background-color: rgb(92, 25, 25);
+            padding: .5rem 1rem;
+            color: yellow;
+            border: 1px solid white;
+        }
+
+        td:nth-child(even) {
+            background-color: rgb(51, 48, 2);
+            color: white;
+        }
+
+        .btn {
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: .5rem 2rem;
+        }
+
+        button:focus {
+            background-color: #e6c81e;
+            color: rgb(8, 8, 0);
+        }
+
+
+
+        #filteredTable {
+            position: absolute;
+            top: 2.5rem;
+            right: 5rem;
+        }
+
+        h2 {
+            position: absolute;
+            top: 0rem;
+            right: 13rem;
+
+        }
+
+        #filteredTable th {
+            margin: 0 1rem;
+            background-color: #4b3d21;
+            padding: .5rem 2rem;
+            color: #f0a911;
+
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 1rem;
+        }
+
+        input {
+            padding: .5rem 0;
+            border-radius: .35rem;
+            outline: 0;
+            border: 2px solid #250101;
+        }
+
+        button {
+            padding: .5rem 1.5rem;
+            border: 0;
+            background-color: #4a4b06;
+            color: #f0a911;
+            outline: 0;
+            border-radius: .3rem;
+            font-weight: 800;
+            cursor: pointer;
+
+        }
+
+        #keyWords {
+            /* display: inline-flex; */
+
+            width: 20%;
+            background-color: #4b3d21;
+            font-weight: 900;
+            padding: 1rem;
+            font-size: 1rem;
+            border-radius: .5rem;
+        }
+
+        ::placeholder {
+            text-align: center;
+            color: black;
+            font-size: 1rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Assignments A</h1>
+    <!-- <button onclick="showData()">Show Data</button> -->
+    <!-- <button onclick="sortByName()">Sort Data By Name</button> -->
+    <!-- <button onclick="sortByType()">Sort Data By Type</button> -->
+    <!-- <button onclick="sortByRank()">Sort Data By Rank</button> -->
+
+    <table id="table">
+        <thead>
+            <tr>
+                <th><button class="btn" onclick="showDataHandler()">MainData</button></th>
+                <th><button class="btn" onclick="sortByNameHandler()">SortByName</button>
+                </th>
+                <th> <button class="btn" onclick="sortByTypeHandler()">SortByType</button>
+                </th>
+                <th><button class="btn" onclick="sortByRankHandler()">SortByRank</button></th>
+            </tr>
+
+        </thead>
+        <tbody id="display">
+
+        </tbody>
+    </table>
+
+    <div>
+        <label for="filter">Type a Filter Word</label>
+        <input type="text" id="filter" placeholder=" Type below word!!">
+
+        <button onclick="dataFilter()">Filter</button>
+    </div>
+    <br>
+    <br>
+    <div>
+        <label>Choose your word from the below list Type</label>
+        <ul id="keyWords"></ul>
+    </div>
+    <h2> After Filtering</h2>
+    <table id="filteredTable">
+
+
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Name </th>
+                <th>Type </th>
+                <th>Rank</th>
+            </tr>
+
+        </thead>
+        <tbody id="filteredDisplay">
+
+        </tbody>
+    </table>
+
+
+
+    <script src="assign_03.js"></script>
+
+</body>
+
+</html>

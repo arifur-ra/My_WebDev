@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Filter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Noto Sans JP", sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            padding: 5rem;
+            text-align: center;
+        }
+
+        .inputForm {
+            width: 50%;
+            height: 2rem;
+            font-size: 1.4rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .list-inline {
+            list-style: none;
+            padding: 0;
+        }
+
+        .list-inline>li {
+            display: inline;
+            font-size: 1.4rem;
+        }
+
+        .list-pipe>li:not(:last-child)::after {
+            content: "|";
+            margin: 0 .25em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <input type="text" class="inputForm" placeholder="Please write here to filter" onchange=search()>
+
+        <ul class="list list-inline list-pipe">
+        </ul>
+    </div>
+
+    <!-- <script src="words.js"></script> -->
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments A</title>
+    <style>
+        table {
+            padding: 0;
+            margin: 10px;
+        }
+
+        th,
+        td {
+            text-align: center;
+            padding: 4px 8px;
+            border-bottom: #777 solid 1px;
+            white-space: nowrap;
+            font-size: 13px;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightblue;
+        }
+
+        button {
+            border: none;
+            outline: none;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        button:focus {
+            background-color: pink;
+        }
+
+        .data {
+            background-color: greenyellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Assignments A</h1>
+    <!-- <button onclick="showData()">Show Data</button> -->
+    <!-- <button onclick="sortByName()">Sort Data By Name</button> -->
+    <!-- <button onclick="sortByType()">Sort Data By Type</button> -->
+    <!-- <button onclick="sortByRank()">Sort Data By Rank</button> -->
+
+    <table id="table">
+        <thead>
+            <tr>
+                <th><button onclick="showData()">Data</button></th>
+                <th><button onclick="sortByName()">Name</button>
+                </th>
+                <th> <button onclick="sortByType()">Type</button>
+                </th>
+                <th><button onclick="sortByRank()">Rank</button></th>
+            </tr>
+
+
+        </thead>
+        <tbody id="display">
+
+        </tbody>
+    </table>
+
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
