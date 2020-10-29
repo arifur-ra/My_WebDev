@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Filter</title>
+  <link rel="stylesheet" href="style.css"> 
+  <link 
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" 
+  rel="stylesheet"
+  />
+</head>
+<body>
+  
+  <div class="container">
+    <input type="text" class="inputForm" placeholder="Please write here to filter"  onkeyup="search()" onchange="search()"> 
+     <ul class="list list-inline list-pipe">
+    </ul>
+  </div>
+
+   <script src="words.js"></script> 
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Noto Sans JP", sans-serif;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 5rem;
+    text-align: center;
+  }
+  
+  .inputForm {
+    width: 50%;
+    height: 2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .list-inline {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list-inline > li {
+    display: inline;
+    font-size: 1.4rem;
+  }
+  .list-pipe > li:not(:last-child)::after {
+    content: "|";
+    margin: 0 .25em;
+  }

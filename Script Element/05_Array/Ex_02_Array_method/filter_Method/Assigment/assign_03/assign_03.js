@@ -1,6 +1,7 @@
-/*------------- Assignment----------------- */
+/*------------- Assignemnt----------------- */
 
-const myData = [{
+const myData = [
+  {
     name: "ReactJS",
     type: "javascript",
     rank: 2,
@@ -47,13 +48,6 @@ const myData = [{
   },
 ];
 
-/**
- * @author ArArif
- * @param {Array<{name:string,type:string,rank:number}>} data  the array containing the value that should be display
- * @param {HTMLElement} resultDisplay
- * @param {string} word
- * @returns {Array}
- */
 //Show Data function :
 
 //showData : defining the tool
@@ -87,7 +81,7 @@ function sortByName(data) {
   });
 }
 
-//sortByType()please create this tool
+//sortByType()
 function sortByType(data) {
   // take isolated copy keep the reference safe
   let sortedByType = data.slice();
@@ -103,21 +97,11 @@ function sortByType(data) {
 
 //sortByRank()-- please create this tool
 
-/**
- * 
- * @param {Array<name:string,type:string,rank:number>} data  the array containing the value that should be display sorted by Rank
- * @returns {Array<name:string,type:string,rank:number>}  return a sorted by rank array
- */
-
 function sortByRank(data) {
   // take isolated copy keep the reference safe
   let sortedByRank = data.slice();
-
   return sortedByRank.sort(function (a, b) {
     //make case insensitive compare
-
-    // return a.rank-b.rank;     // shorter solution;
-
     if (a.rank < b.rank) {
       return -1;
     } else {
@@ -129,32 +113,28 @@ function sortByRank(data) {
 
 function showDataHandler() {
   // using the tool
-  showData(myData, document.getElementById("display"));
+  showData(myData, display);
 }
 
 // sortByNameHandler by using sortBYName()
 
 function sortByNameHandler() {
   let sorted = sortByName(myData);
-  showData(sorted, document.getElementById("display"));
+  showData(sorted, display);
 }
 // sortByTypeHandler by using sortBYType()
 
 function sortByTypeHandler() {
   let sorted = sortByType(myData);
-  showData(sorted, document.getElementById("display"));
+  showData(sorted, display);
 }
 
 // change sortByRankHandler by using sortByRank() and showData()
 
 function sortByRankHandler() {
   let sorted = sortByRank(myData);
-  showData(sorted, document.getElementById("display"));
+  showData(sorted, display);
 }
-
-
-
-
 
 // create a filter input with a button , have a list of types, to filter according to the input value , and the result is sorted by type and then presented to the filtered table
 
@@ -194,7 +174,9 @@ function filterArray(someArr, word) {
 }
 // Handel the click event of filter button
 function dataFilter() {
+  //make a safe copy
   let filteredArray = myData.slice();
+  // getting the word typed in the input element
   let filterWord = document.getElementById("filter").value;
 
   // use a filter tool
@@ -203,11 +185,11 @@ function dataFilter() {
   // re-using the sort by type, name rank tool
 
   let sortedNameArray = sortByName(filteredArray);
-  //let sortedTypeArray = sortByType(filteredArray);
-  //let sortedRankArray = sortByRank(filteredArray);
+  let sortedTypeArray = sortByType(filteredArray);
+  let sortedRankArray = sortByRank(filteredArray);
 
   // re-using the show data tool
-  //showData(sortedNameArray, filteredDisplay);
-  showData(sortedNameArray, document.getElementById('filteredDisplay'));
-  // showData(sortedRankArray, filteredDisplay);
+  showData(sortedNameArray, filteredDisplay);
+  showData(sortedTypeArray, filteredDisplay);
+  showData(sortedRankArray, filteredDisplay);
 }
