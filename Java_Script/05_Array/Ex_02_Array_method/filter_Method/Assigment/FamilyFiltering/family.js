@@ -1,106 +1,105 @@
 let familyMembers = [{
-        name: 'Habibur Rahman Munshi',
-        profession: 'Businessman',
-        age: 55,
-        nationality: 'Bangladeshi',
-        place: 'Faridpur',
-        height: '172cm',
-        code: 01
-    },
-    {
-        name: 'Tahmina Begum',
-        profession: 'House Wife',
-        age: 45,
-        nationality: 'Bangladeshi',
-        place: 'Faridpur',
-        height: '152cm',
-        code: 02
-    },
-    {
-        name: 'Musfiqur Rahman Tonu',
-        profession: 'Businessman',
-        age: 25,
-        nationality: 'Bangladeshi',
-        place: 'Faridpur',
-        height: '177cm',
-        code: 03
-    },
+    name: "Habibur Rahman Munshi",
+    profession: "Businessman",
+    age: 55,
+    nationality: "Bangladeshi",
+    place: "Faridpur",
+    height: "172cm",
+    code: 01,
+  },
+  {
+    name: "Tahmina Begum",
+    profession: "House Wife",
+    age: 45,
+    nationality: "Bangladeshi",
+    place: "Faridpur",
+    height: "152cm",
+    code: 02,
+  },
+  {
+    name: "Musfiqur Rahman Tonu",
+    profession: "Businessman",
+    age: 25,
+    nationality: "Bangladeshi",
+    place: "Faridpur",
+    height: "177cm",
+    code: 03,
+  },
 
-    {
-        name: 'Shuborna Rahman',
-        profession: 'House Wife',
-        age: 27,
-        nationality: 'Bangladeshi',
-        place: 'Dhaka',
-        height: '157cm',
-        code: 04
-    },
+  {
+    name: "Shuborna Rahman",
+    profession: "House Wife",
+    age: 27,
+    nationality: "Bangladeshi",
+    place: "Dhaka",
+    height: "157cm",
+    code: 04,
+  },
 
-    {
-        name: 'Sakib Jaman',
-        profession: 'Protocol Officer',
-        age: 33,
-        nationality: 'Bangladeshi',
-        place: 'Dhaka',
-        height: '168cm',
-        code: 05
-    },
+  {
+    name: "Sakib Jaman",
+    profession: "Protocol Officer",
+    age: 33,
+    nationality: "Bangladeshi",
+    place: "Dhaka",
+    height: "168cm",
+    code: 05,
+  },
 
-    {
-        name: 'Sayara Rahman',
-        profession: 'Student',
-        age: 5,
-        nationality: 'Bangladeshi',
-        place: 'Dhaka',
-        height: '90cm',
-        code: 06
-    },
+  {
+    name: "Sayara Rahman",
+    profession: "Student",
+    age: 5,
+    nationality: "Bangladeshi",
+    place: "Dhaka",
+    height: "90cm",
+    code: 06,
+  },
 
-    {
-        name: 'Arifur Rahman Arif',
-        profession: 'Software Developer',
-        age: 30,
-        nationality: 'Bangladeshi',
-        place: 'Berlin',
-        height: '178cm',
-        code: 07
-    },
-    {
-        name: 'Saima Uddin',
-        profession: 'Fashion Designer',
-        age: 24,
-        nationality: 'Deutsche',
-        place: 'Berlin',
-        height: '155cm',
-        code: 08
-    },
+  {
+    name: "Arifur Rahman Arif",
+    profession: "Software Developer",
+    age: 30,
+    nationality: "Bangladeshi",
+    place: "Berlin",
+    height: "178cm",
+    code: 07,
+  },
+  {
+    name: "Saima Uddin",
+    profession: "Fashion Designer",
+    age: 24,
+    nationality: "Deutsche",
+    place: "Berlin",
+    height: "155cm",
+    code: 08,
+  },
 
-    {
-        name: 'Saifan Ayaan Rahman',
-        profession: 'Nothing',
-        age: 1,
-        nationality: 'Deutsche',
-        place: 'Berlin',
-        height: '70cm',
-        code: 09
-    },
-    {
-        name: 'Saharir Shaown',
-        profession: 'Job Holder',
-        age: 34,
-        nationality: 'Bangladeshi',
-        place: 'Berlin',
-        height: '175cm',
-        code: 10
-    }
-
+  {
+    name: "Saifan Ayaan Rahman",
+    profession: "Nothing",
+    age: 1,
+    nationality: "Deutsche",
+    place: "Berlin",
+    height: "70cm",
+    code: 09,
+  },
+  {
+    name: "Saharir Shaown",
+    profession: "Job Holder",
+    age: 34,
+    nationality: "Bangladeshi",
+    place: "Berlin",
+    height: "175cm",
+    code: 10,
+  },
 ];
 
 //showData : defining the tool
 function familyDetails(data, Display) {
-    Display.innerHTML = '';
-    for (let i = 0; i < data.length; i++) {
-        Display.innerHTML += `
+  Display.innerHTML = "";
+  for (let i = 0; i < data.length; i++) {
+    Display.innerHTML += `
               <table>
                <tr>
               	
@@ -117,8 +116,10 @@ function familyDetails(data, Display) {
             <style>
             table {
                 margin: 0 auto;
-                padding: 1rem;
+                padding: 2rem;
                 border-collapse: collapse;
+                border: 1px solid white;
+                text-align:centre;
     
             }
     
@@ -126,46 +127,43 @@ function familyDetails(data, Display) {
             td {
                 margin: 0 1rem;
                 padding: .5rem 1rem;
-                color: red;
-                border: 1px solid white;
+                color: yellow;
+                font-weight:bold;
+                
             }
             tr{
                 display:flex;
                 flex-direction:column;
+                border-bottom:1px;
             }
     
             
             </style>
-          `
-
-
-        ;
-    }
+          `;
+  }
 }
 
 function showDetails() {
-    familyDetails(familyMembers, document.getElementById('display'));
+  familyDetails(familyMembers, document.getElementById("display"));
 }
 
 // a filter function - tool for item.name
 function filterFamily(someArray, word) {
-    return someArray.filter(function (item) {
-        if (item.code == word) {
-            return item;
-        }
-    });
+  return someArray.filter(function (item) {
+    if (item.code == word) {
+      return item;
+    }
+  });
 
-    // newArray[] Created
+  // newArray[] Created
 }
 
-
-
 function filterDetails() {
-    let filterCode = document.getElementById("code").value; // get HTML Element
-    // use a filter tool
-    // change the original array and and make newArray
+  let filterCode = document.getElementById("code").value; // get HTML Element
+  // use a filter tool
+  // change the original array and and make newArray
 
-    familyMembers = filterFamily(familyMembers, filterCode);
+  familyMembers = filterFamily(familyMembers, filterCode);
 
-    familyDetails(familyMembers, document.getElementById("display"));
+  familyDetails(familyMembers, document.getElementById("display"));
 }

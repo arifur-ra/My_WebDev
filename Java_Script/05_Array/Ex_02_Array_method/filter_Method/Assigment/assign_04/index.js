@@ -1,3 +1,9 @@
+// making a safe copy using function
+function makeSafeCopy(original) {
+    //let safeCopy = original.slice();
+    return original.slice();
+}
+
 let courses = [{
         name: "ReactJS",
         type: "Web development FrontEnd",
@@ -45,7 +51,20 @@ let courses = [{
     },
 ];
 
-// please write the functions and uase them in the handlers
+
+// function setBack(copy, original) {
+//     copy = original;
+// }
+
+let filteredCourse = makeSafeCopy(courses);
+
+function dataToOriginal() {
+    //  setBack(filteredCourse, courses);
+
+    filteredCourse = makeSafeCopy(courses);
+    showData(filteredCourse, document.getElementById('display'));
+}
+// please write the functions and use them in the handlers
 
 /**
  * The displaying :
@@ -70,10 +89,10 @@ let courses = [{
  */
 
 //showData : defining the tool
-function showData(data, Display) {
-    Display.innerHTML = ``;
+function showData(data, display) {
+    display.innerHTML = ``;
     for (let i = 0; i < data.length; i++) {
-        Display.innerHTML += `<table>
+        display.innerHTML += `<table>
               <tr>
                  <td>${i + 1}</td>
                  <td>${data[i].name}</td>
@@ -86,8 +105,11 @@ function showData(data, Display) {
 
 function showDataHandler() {
     // using the tool
-    showData(courses, document.getElementById("display"));
+    showData(filteredCourse, document.getElementById("display"));
 }
+
+
+
 
 //..................sortByName() -- please create this tool
 
@@ -107,7 +129,8 @@ function sortByName(data) {
 // sortByNameHandler by using sortBYName()
 
 function sortByNameHandler() {
-    let sorted = sortByName(courses);
+    let sorted = makeSafeCopy(filteredCourse);
+    sortByName(sorted);
     showData(sorted, document.getElementById("display"));
 }
 
@@ -129,8 +152,9 @@ function sortByType(data) {
 // sortByTypeHandler by using sortBYName()
 
 function sortByTypeHandler() {
-    let sorted = sortByType(courses);
-    showData(sorted, document.getElementById("display"));
+    let sorted = makeSafeCopy(filteredCourse);
+    sortByType(sorted);
+    showData(sorted, document.getElementById("display"))
 }
 
 //...............................................
@@ -147,8 +171,11 @@ function sortByRank(data) {
 // sortByTypeHandler by using sortBYName()
 
 function sortByRankHandler() {
-    let sorted = sortByRank(courses);
-    showData(sorted, document.getElementById("display"));
+    let sorted = makeSafeCopy(filteredCourse);
+    sortByRank(sorted);
+
+    showData(sorted, document.getElementById("display"))
+
 }
 
 /**
@@ -170,16 +197,13 @@ function filterArrayNames(someArray, word) {
 
 // Handel the click event of filter button
 function dataFilterNames() {
-    let filterWord = document.getElementById("filter").value; // get HTML Element
+    let filterWord = document.getElementById("filter").value;
+    // get HTML Element
     // use a filter tool
-    // change the original array and and make newArray
-    if (filterWord == "") {
-        alert("Fill the Input Fields Please");
-    } else {
-        courses = filterArrayNames(courses, filterWord);
-    }
+    //change the original array and and make newArray
+    filteredCourse = filterArrayNames(courses, filterWord);
     // re-using the sort by  name tool
-    let sortedNameArray = sortByName(courses);
+    let sortedNameArray = sortByName(filteredCourse);
     // re-using the show data tool
     showData(sortedNameArray, document.getElementById("display"));
 }
@@ -203,13 +227,9 @@ function dataFilterTypes() {
     let filterWord = document.getElementById("filter").value;
     // change the original array and and make newArray
     // use a filter tool
-    if (filterWord == "") {
-        alert("Fill the Input Fields Please");
-    } else {
-        courses = filterArrayType(courses, filterWord);
-    }
+    filteredCourse = filterArrayType(courses, filterWord);
     // re-using the sort by type,tool
-    let sortedTypeArray = sortByType(courses);
+    let sortedTypeArray = sortByType(filteredCourse);
     // re-using the show data tool
     showData(sortedTypeArray, document.getElementById("display"));
 }
@@ -238,18 +258,17 @@ function dataFilterRanks() {
     if (filterWord == "") {
         alert("Fill the Input Fields Please");
     } else {
-        courses = filterArrayRank(courses, filterWord);
+        filteredCourse = filterArrayRank(courses, filterWord);
     }
-
     // re-using the sort by type, name rank tool
-    let sortedRankArray = sortByRank(courses);
+    let sortedRankArray = sortByRank(filteredCourse);
     showData(sortedRankArray, document.getElementById("display"));
 }
 
-function dataFilterRefresh() {
-    display.innerHTML = '';
-}
+// function dataFilterRefresh() {
+//     display.innerHTML = '';
+// }
 
-function dataFilterReset() {
-    showData(courses, document.getElementById("display"));
-}
+// function dataFilterReset() {
+//     showData(courses, document.getElementById("display"));
+// }

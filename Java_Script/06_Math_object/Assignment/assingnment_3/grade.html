@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade</title>
+
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(144, 148, 83);
+            border: 2px dotted red;
+            width: 30%;
+            margin: 0 auto;
+            padding: 2rem;
+            border-radius: .5rem;
+
+        }
+
+        input {
+            padding: .5rem;
+            text-align: center;
+            outline: none;
+        }
+
+        button {
+            text-align: center;
+            padding: .75rem 1.2rem;
+            cursor: pointer;
+            background-color: rgb(94, 9, 9);
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            outline: none;
+            border: none;
+            border-radius: .35rem;
+            transition: .9s;
+        }
+
+        button:hover {
+            background-color: rgb(116, 192, 45);
+            color: rgb(31, 4, 4);
+
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <input type="number" id="inputValue" placeholder="Write your Mark(1-100)"> <br> <br>
+
+        <button onclick="calculateGrade()">Click for result</button>
+
+        <h3 id="result"> </h3>
+    </div>
+
+
+    <script src="grade.js"></script>
+</body>
+
+</html>

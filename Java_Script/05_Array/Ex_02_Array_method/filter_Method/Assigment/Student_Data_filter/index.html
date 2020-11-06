@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignments B-Sorting-Filtering</title>
+    <title>Student Data Sorting & Filtering</title>
     <style>
         * {
             padding: 0;
@@ -14,7 +14,7 @@
         }
 
         .container {
-            width: 60%;
+            width: 50%;
             margin: 0 auto;
             padding: 2rem;
         }
@@ -104,53 +104,33 @@
             text-align: center;
 
         }
-
-
-        @media only screen and (max-width:768px) {
-
-            .container {
-                width: 100%;
-                margin: 0 auto;
-                padding: 2rem;
-            }
-
-            table {
-                border-collapse: collapse;
-                width: 100%;
-                margin: 0 auto;
-                padding: 1rem;
-
-            }
-
-            .control {
-                width: 100%;
-                margin: 1rem auto;
-                display: flex;
-                justify-content: space-between;
-            }
-
-            label {
-                font-size: 1.2rem;
-                margin: 2rem 0 0 4rem;
-            }
-
-        }
     </style>
-
 </head>
 
 <body>
-    <h1>Assignments</h1>
+    <h1>Assignments </h1>
+    <div class="container">
+        <label for="filter">Type a word to Filter</label>
+        <input type="text" id="filter">
+        <div class="control">
+            <button onclick="dataFilterNames()">Filter Name</button>
+            <button onclick="dataFilterGrade()">Filter Grade</button>
+            <!-- <button onclick="dataFilterRanks()">Filter Rank</button> -->
+            <button onclick="backToOriginal()">set to Original</button>
 
+
+        </div>
+    </div>
     <table id="table">
         <thead>
+
             <tr>
-                <th><button class="btn" onclick="showDataHandler()">ShowData</button></th>
-                <th><button class="btn" onclick="sortByNameHandler()">SortByName</button>
+                <th><button class="btn" onclick="showDataHandler()">Data</button></th>
+                <th><button class="btn" onclick="sortByNameHandler()">Sort By Name</button>
                 </th>
-                <th> <button class="btn" onclick="sortByTypeHandler()">SortBYType</button>
+                <th> <button class="btn" onclick="sortByGradeHandler()">Sort By Grade</button>
                 </th>
-                <th><button class="btn" onclick="sortByRankHandler()">SortByRank</button></th>
+                <!-- <th><button class="btn" onclick="sortByRankHandler()">Rank</button></th> -->
             </tr>
 
         </thead>
@@ -158,21 +138,6 @@
 
         </tbody>
     </table>
-    <div class="container">
-        <label for="filter">Type a word to Filter</label>
-        <input type="text" id="filter" placeholder="Type a word ">
-        <div class="control">
-            <button onclick="dataFilterNames()">Filter Name</button>
-            <button onclick="dataFilterTypes()">Filter Type</button>
-            <button onclick="dataFilterRanks()">Filter Rank</button> <br> <br>
-            <!-- <button onclick="dataFilterRefresh()">Refresh Data</button> -->
-
-            <button onclick="dataToOriginal()">Data to original</button> -->
-
-        </div>
-
-    </div>
-
 
 
 
