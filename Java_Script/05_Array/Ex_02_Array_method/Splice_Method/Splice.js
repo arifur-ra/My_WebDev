@@ -84,13 +84,13 @@ console.log('Deleted Item:',
 
 let users = ['Safwan', 'Gabor', 'Jon', 'Manon', 'Ljiljana', 'Nargiza', 'Santiago'];
 
-console.log('Initial array', users);
-// second case of splice use
+//console.log('Initial array', users);
+// second case of splice use delete jon manon ljijana and adding Roza saima ayan
 
-let changeElement = users.splice(2, 3, 'Roza', 'saim', 'Ayan');
+let changeElement = users.splice(2, 3, 'Roza', 'saima', 'Ayan');
 console.log('The New Element', users);
 
-// Third case of Splice use
+// Third case of Splice use adding 3 name after safwan.
 
 let deletedElements = users.splice(1, 0, 'Nils', 'Glauber', 'Rashad');
 console.log(users);

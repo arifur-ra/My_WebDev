@@ -16,25 +16,48 @@ console.table(sortedMonths);
 
 // Another way to solution
 
-let month = [{
-  name: 'march',
-  order: 3
-}, {
-  name: 'december',
-  order: 12
-}, {
-  name: 'january',
-  order: 1
-}, {
-  name: 'july',
-  order: 7
-}, {
-  name: 'september',
-  order: 9
-}, {
-  name: 'february',
-  order: 2
-}];
+let month = [
+
+  {
+    name: 'November',
+    order: 11
+  },
+
+
+  {
+    name: 'October',
+    order: 10
+  },
+
+  {
+    name: 'May',
+    order: 5
+  },
+
+  {
+    name: 'April',
+    order: 4
+  },
+  {
+    name: 'march',
+    order: 3
+  }, {
+    name: 'december',
+    order: 12
+  }, {
+    name: 'january',
+    order: 1
+  }, {
+    name: 'july',
+    order: 7
+  }, {
+    name: 'september',
+    order: 9
+  }, {
+    name: 'february',
+    order: 2
+  }
+];
 
 month.sort(function (a, b) {
   // if (a.order < b.order) {

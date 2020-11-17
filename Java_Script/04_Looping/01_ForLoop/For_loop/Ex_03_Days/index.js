@@ -12,8 +12,6 @@ function showDays(event) {
     event.preventDefault();
 
     let counter = 0;
-
-
     for (let i = 0; i < options.length; i++) {
         // the assignment says that if I check one day only one div would change both the color and the innerHTML :)
         if (options[i].checked) {

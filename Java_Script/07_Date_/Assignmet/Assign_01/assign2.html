@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date & Time</title>
+
+
+    <style>
+        h3 {
+            text-align: center;
+        }
+
+        .container {
+            width: 30%;
+            background-color: rgb(193, 219, 41);
+            box-shadow: 0 2px 4px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: .5rem 0;
+            margin: .5rem auto;
+        }
+
+        button {
+            cursor: pointer;
+            padding: .5rem 1rem;
+            margin-left: 7rem;
+            background-color: rgb(20, 0, 0);
+            color: white;
+            font-weight: bold;
+            outline: none;
+            border: none;
+            ;
+        }
+
+        ::placeholder {
+            text-align: center;
+            padding: .5rem;
+        }
+    </style>
+
+</head>
+
+<div class="container">
+    <h3>Assignment 2</h3>
+    <input type="text" id="input1" placeholder="Starting date"> <br>
+    <input type="text" id="input2" placeholder="Ending date"> <br>
+    <button onclick="showMonthOfTime()">Show Month duration</button>
+
+    <p id="result"></p>
+</div>
+
+
+
+<body>
+    <script src="assign2.js"></script>
+</body>
+
+</html>
