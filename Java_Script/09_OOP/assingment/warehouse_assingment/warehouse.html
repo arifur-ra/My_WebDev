@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Warehouse App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="maincontainer">
+        <div class="container">
+            <label for="productID">Product Id</label>
+            <input type="number" id="productID" placeholder="Product Id">
+            <label for="productName">Product Name</label>
+            <input type="text" id="productName" placeholder="Product Name">
+            <label for="arrivalDate">Arrival Date</label>
+            <input type="date" id="arrivalDate" placeholder="Product Arrival Date">
+            <label for="productSection">Section</label>
+            <input type="text" id="productSection" placeholder="Product Section">
+            <label for="productPrice">Price</label>
+            <input type="text" id="productPrice" placeholder="Product Price">
+        </div>
+        <div class="container1">
+            <h2 id="catagories">Category</h2> <br>
+            <input type="radio" id="electronics" value="electronics">
+            <label for="electronics">Electronics</label>
+
+            <input type="radio" id="books" value="books">
+            <label for="books">Books</label>
+
+            <input type="radio" id="clothes" value="clothes">
+            <label for="clothes">Clothes</label>
+
+            <input type="radio" id="furniture" value="furniture">
+            <label for="furniture">Furniture</label>
+
+            <input type="radio" id="appliance" value="appliance">
+            <label for="appliance">Appliance</label>
+
+        </div>
+
+        <div class="container2">
+            <label for="productBrand">Brand</label>
+            <input type="text" id="productBrand" placeholder="">
+            <label for="year">Year</label>
+            <input type="date" id="year" placeholder="Product Releaseing Year">
+            <label for="productDescription">Description</label>
+            <input type="text" id="productDescription" placeholder="Product Price"> <br>
+        </div>
+
+        <div>
+            <button type="submit" onclick="wareInfoSubmit()">Submit</button>
+        </div>
+    </div>
+
+
+
+    <div id="output"></div>
+
+
+
+
+
+
+
+
+
+    <script src="warehouse.js"></script>
+</body>
+
+</html>

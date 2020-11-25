@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.maincontainer {
+    padding: 2rem;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container,
+.container2 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container1 {
+    margin-bottom: 2rem;
+}
+
+.container1 input {
+    margin-left: 2rem;
+}
+
+input {
+    padding: .75rem 0;
+    margin: .5rem 0;
+
+}
+
+label {
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+::placeholder {
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1rem;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    font-weight: 900;
+    font-size: 1rem;
+    padding: .55rem 1.5rem;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+#output {
+    background-color: rgb(182, 172, 172);
+    width: 80%;
+    margin: 0 auto;
+}
