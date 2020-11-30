@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Book list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="#">
+            <h2> Add Booklist</h2>
+
+            <label for="title">Title</label>
+            <input type="text" id="title" placeholder="Enter Book Title">
+            <label for="author">Author</label>
+            <input type="text" id="author" placeholder="Enter Author Name">
+            <label for="isbn">ISBN#</label>
+            <input type="number" id="isbn" placeholder="Enter isbn Number">
+            <button type="submit" onclick="addBook(event)">Add Book</button>
+            <label for="removeBook"> Enter ISBN# to remove Book</label>
+            <input type="number" id="removeBook" placeholder="Enter isbn Number to remove book">
+            <button type="submit" onclick="removeBook(event)">Remove Book</button>
+
+        </form>
+
+    </div>
+    <hr>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                </tr>
+            </thead>
+            <tbody id="result">
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+    <script src="booklist.js"></script>
+</body>
+
+</html>
