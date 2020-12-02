@@ -43,37 +43,39 @@ class BookList {
 
   addBookToList(book) {
     let index = this.books.findIndex((item) => item.isbn == book.isbn);
-    if (index < 0) {
+    if (index >= 0) {
+      return "Book already exist, could not added";
+    } else {
       this.books.push(book);
-      return {
-        msg: `Book added Successfully`,
-        flag: true,
-      };
+      return "Book added Successfully";
     }
-
-    return {
-      msg: `Book already exist`,
-      flag: true,
-    };
   }
   deleteBook(isbn) {
-    let index = this.books.findIndex((item) => item.isbn == isbn);
-    if (index < 0) {
-      return {
-        msg: `Book is not in the list`,
-        flag: false,
-      };
-    }
-
-    this.books.splice(index, 1);
-    {
-      return {
-        msg: `Book deleted Successfully`,
-        flag: true,
-      };
-    }
+    // let index = this.books.findIndex((item) => item.isbn == isbn);
+    // if (index < 0) {
+    //   return {
+    //     msg: `Book is not in the list`,
+    //     flag: false,
+    //   };
+    // }
+    // this.books.splice(index, 1); {
+    //   return {
+    //     msg: `Book deleted Successfully`,
+    //     flag: true,
+    //   };
+    // }
+    this.books.forEach((item, index, object) => {
+      if (item.isbn == isbn) {
+        object.splice(index, 1);
+        document.getElementById("display-message").innerHTML =
+          "Book deleted Successfully.";
+        return index;
+      }
+    });
   }
 }
+
+let listOfBooks = new BookList([]);
 
 class UI {
   /**
@@ -98,9 +100,9 @@ class UI {
   /**
    * @param {HTML element} element
    */
-  deleteBookFromUI(element) {
-    //document.getElementById(`${book.isbn}`).remove();
-    element.remove();
+  deleteBookFromUI(isbn) {
+    document.getElementById(`${isbn}`).remove();
+    //element.remove();
   }
 }
 /*
@@ -121,21 +123,22 @@ function addBook(event) {
   let isbn = document.getElementById("isbn").value;
   let book = new Book(title, author, isbn);
 
-  let list = new BookList([]);
-  list.addBookToList(book);
-
   let ui = new UI();
-  ui.addBookToUI(book);
+
+  let message = document.getElementById("display-message");
+  message.innerHTML = listOfBooks.addBookToList(book);
+  if (message.innerHTML == "Book added Successfully") ui.addBookToUI(book);
+  console.log(listOfBooks);
 }
 // Remove the book
 
 function removeBook(event) {
   event.preventDefault();
-  let removeBook = document.getElementById("removeBook").value;
-  let book = new Book(title, author, isbn);
-
-  let list = new BookList([]);
-  list.deleteBookFromUI(book);
   let ui = new UI();
+  let removeBook = document.getElementById("removeBook").value;
+
+  //listOfBooks.deleteBook(removeBook);
   ui.deleteBookFromUI(removeBook);
+
+  console.log(listOfBooks);
 }

@@ -1,0 +1,98 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding: 0;
+
+    div.container {
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        padding: 5% 0;
+        background-color: rgb(241, 237, 237);
+
+        form {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: 20%;
+            justify-content: space-between;
+
+
+            div {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+
+                label {
+                    margin: 10px 0;
+                    font-family: fantasy;
+                    font-weight: bold;
+                }
+
+                input {
+                    height: 20px;
+                    border-radius: 5px;
+                    border: 0.2px solid lightgray;
+                    box-shadow: 1px 1px 0px 0px gray;
+                }
+
+            }
+
+            button {
+                height: 20px;
+                background-color: white;
+                border: 0.2px solid lightgray;
+                padding: 3px;
+                border-radius: 5px;
+                margin: 20px 0;
+                box-shadow: 1px 1px 0 0 gray;
+            }
+
+            button:hover {
+                background-color: lightgray;
+            }
+        }
+
+        table {
+            margin-top: 40px;
+            width: 100%;
+            margin: auto;
+            margin-left: auto;
+            margin-right: auto;
+
+            thead{
+                width: 33%;
+                font-size: large;
+            }
+
+            tr {
+                width: 100%;
+                td{
+                    width: 33%;
+                }
+            }
+
+            tbody {
+                width: 100%;
+
+                //     tr {
+                //         width: 100%;
+                //         margin: 0 auto;
+                //         padding: 0;
+
+                //         td {
+                //             width: 33%;
+                //             margin: 0 auto;
+                //             padding: 0;
+                //         }
+                //     }
+                // }
+            }
+        }
+    }
+}

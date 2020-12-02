@@ -88,6 +88,7 @@ table {
 
 th {
   color: rgb(183, 195, 5);
+  background-color: rgb(104, 3, 3);
   font-size: 1.1rem;
   padding: 1rem 0;
   /* border: 1px solid greenyellow; */
