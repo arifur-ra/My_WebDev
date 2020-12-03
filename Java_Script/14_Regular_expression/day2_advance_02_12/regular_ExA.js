@@ -9,10 +9,10 @@ let re = new RegExp('Pattern', 'i');
 re = /pattern/i; // g--global,i---case insensitive
 
 console.log(re.flags); // re.flags-- what kind of flags i used
-console.log(re.source) // to see the pattern of source
+console.log(re.source); // to see the pattern of source
 
 
-// Flags
+// // FlagsS
 
 // i ---Case insensitive
 

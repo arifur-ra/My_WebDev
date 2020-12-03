@@ -80,9 +80,27 @@ addName = (e) => {
 showItem = () => {
     let addName = document.getElementById('addingName');
     addName.innerHTML = ``;
-    nameOfList = JSON.parse(localStorage.getItem("ListName"));
 
-    nameOfList.forEach(element => {
-        addName.innerHTML += `<li>${element}</li>`;
-    });
-}
+    try {
+        nameOfList = JSON.parse(localStorage.getItem("ListName"));
+
+        if (!nameOfList) throw new Error('The Local Storage is Empty!');
+
+    } catch (error) {
+        document.getElementById('message').innerHTML = `${error.message}`;
+        document.getElementById('message').style.visibility = 'visible';
+
+        setTimeout(() => {
+            document.getElementById('message').style.visibility = 'hidden';
+        }, 3000);
+        return error;
+    }
+
+    if (!nameOfList) {
+        addName.innerHTML = ``;
+    } else {
+        nameOfList.forEach(element => {
+            addName.innerHTML += `<li>${element}</li>`;
+        });
+    }
+};

@@ -16,7 +16,7 @@ class User {
     constructor(name, age, author) {
         this.name = name;
         this.age = age;
-        this.author = Array.findIndex(author); // here Author is an Array
+        this.author = Array.from(author); // here Author is an Array
 
     }
 
@@ -56,7 +56,7 @@ info.seyMyName();
 info.addAuthority('delete');
 //info.setPassword('12345678');
 
-console.log(info.setPassword('12345678'));
+console.log(info.setPassword('123456790'));
 
 //console.log(info.addAuthority());
 info.removeAuthority('read');

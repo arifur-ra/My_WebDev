@@ -43,6 +43,7 @@ class BookList {
 
   addBookToList(book) {
     let index = this.books.findIndex((item) => item.isbn == book.isbn);
+
     if (index >= 0) {
       return "Book already exist, could not added";
     } else {

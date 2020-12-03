@@ -24,6 +24,7 @@ class Book {
         this[key] = value; // using bracket notation
     }
 }
+
 class BoolList {
     constructor(books) {
         this.books = Array.from(books); // 
@@ -36,10 +37,13 @@ class BoolList {
             this.books.findIndex(item => item.isbn == book), 1); // delete the isbn from book
     }
 
-    replace(oldbook, newbook) {
-        this.books.splice(this.books.indexOf(oldbook), 1, newbook);
+    replace(oldBook, newBook) {
+        let indexOfBook = this.books.indexOf(oldBook);
+        this.books.splice(indexOfBook, 1, newBook);
     }
 }
+
+
 let book = new Book('java', 'Ericson', 2222);
 let book1 = new Book('CSS', 'Ericson', 22422);
 let book2 = new Book('Javascript', 'cson', 22522);
