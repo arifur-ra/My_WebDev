@@ -14,7 +14,7 @@ str = '49017-621-649-289';
 //console.log('Using Single digit', str.match(re));
 
 
-// No digit Pattern
+// Non digit Pattern
 
 re = /\D+/; // its count only Character not number/digit
 str = '4road f';
@@ -23,7 +23,7 @@ str = '4road f';
 
 // Word character class
 
-// its bring Alphanumeric  Alphabet+Number;
+// its bring Alphanumeric  Alphabet+Number or _;
 
 re = /\w+/g;
 str = 'road to the school 4ck';
@@ -49,6 +49,12 @@ console.log('Using Space Character s', str.match(re));
 re = /\S+/g;
 str = '$road $to the!! school 4ck';
 console.log('Using Not Space Character s', str.match(re));
+
+
+//word boundary  // should be  exactly matching the boundary character
+re = /hell\b/i;
+str = 'Hell world';
+console.log('Word Boundary Character b', str.match(re)); // expected result true hell
 
 
 // Meta character Symbol
