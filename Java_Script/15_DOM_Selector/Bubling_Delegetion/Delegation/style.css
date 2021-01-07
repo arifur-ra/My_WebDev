@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(72, 80, 36);
+}
+h1 {
+  text-align: center;
+  padding: 1rem;
+  color: #f60;
+}
+table {
+  margin: 0 auto;
+}
+#courseTable th {
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: #ff0;
+}
+#courseTable td {
+  width: 15rem;
+  text-align: center;
+  padding: 1rem 0;
+  font-weight: bolder;
+  color: rgb(250, 244, 244);
+}
+strong {
+  color: rgb(59, 2, 2);
+  font-size: 1.5rem;
+}
+.text {
+  background-color: rgb(32, 61, 2);
+  color: rgb(54, 3, 3);
+  font-weight: bold;
+  width: 15rem;
+  height: 7.5rem;
+}
+.html {
+  background: #999;
+  padding: 1rem;
+}
+.css {
+  background: #03f;
+  padding: 1rem;
+}
+.jsOne {
+  background: rgb(131, 131, 51);
+  padding: 1rem;
+}
+
+.jstwo {
+  background: #ff0;
+  padding: 1rem;
+}
+
+.react {
+  background: #60c;
+  padding: 1rem;
+}
+.nodeJs {
+  background: #09f;
+  padding: 1rem;
+}
+.express {
+  background: #963;
+  padding: 1rem;
+}
+.mongoDb {
+  background: #f60;
+  padding: 1rem;
+}
+.fullstack {
+  background: #0c3;
+  padding: 1rem;
+}
+
+.highlights {
+  background-color: rgb(224, 59, 59, 0.7);
+}

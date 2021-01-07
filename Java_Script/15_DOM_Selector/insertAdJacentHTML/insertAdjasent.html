@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdJacent HTML</title>
+    <style>
+      #myH2 {
+        background-color: rgb(53, 189, 110);
+        color: brown;
+      }
+      .list {
+        background-color: rgb(129, 91, 9);
+      }
+      .myitem {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML DOM insertAdjacentHTML() Method</h1>
+
+    <p>
+      This method inserts a specified text as HTML, into a specified position.
+    </p>
+    <h2 id="myH2">My Header</h2>
+    <p>Click the button to insert a paragraph after the header</p>
+
+    <input
+      type="text"
+      id="adJacentText"
+      placeholder="Please write the adJacent position you want"
+    />
+    <br />
+    <br />
+    <button>Insert a text insertAdjacent after the h2 haeding</button>
+    <hr />
+    <ul class="list">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ul>
+    <button class="btn">Add a list item</button>
+
+    <script src="insertAdjacent.js"></script>
+  </body>
+</html>

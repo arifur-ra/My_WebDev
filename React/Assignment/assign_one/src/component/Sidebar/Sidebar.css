@@ -1,0 +1,9 @@
+#sidebar {
+  float: right;
+  width: 29%;
+  background-color: #333;
+  color: white;
+}
+#sidebar h3 {
+  color: yellowgreen;
+}

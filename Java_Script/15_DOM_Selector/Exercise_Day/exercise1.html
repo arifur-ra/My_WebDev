@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise One</title>
+    <style>
+      body {
+        background-color: rgb(78, 66, 66);
+        font-family: "Courier New", Courier, monospace;
+      }
+      input {
+        margin: 3rem 1rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+        background-color: rgb(99, 41, 2);
+
+        color: rgb(174, 243, 14);
+        outline: none;
+        border: none;
+        font-weight: bold;
+        border-radius: 0.25rem;
+        transition: 0.6s;
+      }
+      input:hover {
+        background-color: rgb(158, 156, 10);
+        color: white;
+      }
+      ul {
+        position: absolute;
+        top: 2rem;
+        right: 20rem;
+        /* list-style: none; */
+        display: none;
+        background-color: rgb(99, 41, 2);
+        color: rgb(255, 255, 255);
+        padding: 2rem 5rem;
+      }
+      li {
+        padding: 0.5rem 0;
+        font-size: 1.3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="submit" id="btn" value="Show favorite destinations" />
+
+    <ul>
+      <li>Berlin</li>
+      <li>Dhaka</li>
+      <li>Milan</li>
+      <li>Zurich</li>
+      <li>Munich</li>
+    </ul>
+
+    <script src="exercise1.js"></script>
+  </body>
+</html>

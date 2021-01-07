@@ -1,0 +1,22 @@
+.card {
+  border: 1px solid #ddd;
+  background: #f4f4f4;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.text-center {
+  display: block;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: white;
+}
+.article {
+  padding: 0.5rem 1rem;
+}

@@ -1,0 +1,49 @@
+.red {
+  color: red;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+
+ul li {
+  font-family: "Courier New", Courier, monospace;
+  padding: 0.5rem 0;
+  list-style: none;
+  color: rgb(224, 186, 20);
+  font-size: 1.5rem;
+}
+ul {
+  width: 30%;
+  text-align: center;
+  background-color: rgb(88, 67, 78);
+  border-radius: 0.5rem;
+}
+
+/* Styling Form */
+
+form {
+  width: 30%;
+  margin: 5rem auto;
+  background-color: khaki;
+  padding: 3rem;
+  border-radius: 0.5rem;
+}
+.ipt-box {
+  display: bock;
+}
+input {
+  padding: 0.35rem 1rem;
+  margin: 0.5rem 0;
+}
+
+button {
+  padding: 0.35rem 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.invalid {
+  border-bottom: 1px solid red;
+}

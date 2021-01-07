@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Window</title>
+    <style>
+      body {
+        background-color: rgb(109, 138, 106);
+      }
+      h2 {
+        text-align: center;
+      }
+      .hidden {
+        display: none;
+      }
+      .modal {
+        position: absolute;
+        background-color: rgb(230, 210, 210);
+        width: 30vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 3rem;
+        border-radius: 0.5rem;
+        box-shadow: 1rem 3rem 5rem 2rem;
+        z-index: 10;
+        transition: all 0.7s;
+      }
+      .close-modal {
+        position: absolute;
+        top: 0rem;
+        right: 0.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        background-color: rgb(230, 210, 210);
+        color: black;
+      }
+      button {
+        display: inline-block;
+        padding: 1rem 1rem;
+        margin: 1rem 2rem;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        border: none;
+        outline: none;
+        background-color: rgb(8, 6, 6);
+        color: yellowgreen;
+        font-weight: bold;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(0.5rem);
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      input {
+        padding: 0.5rem 1rem;
+        margin: 0.5rem 0;
+      }
+      #submit {
+        color: red;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      span {
+        color: red;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Modal Window</h1>
+    <button class="show-modal">Sing In</button>
+    <button class="show-modal">Show Modal 2</button>
+    <!-- <button class="show-modal">Show Modal 3</button> -->
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h2>Sign In</h2>
+
+      <form action="#">
+        <input
+          type="text"
+          name="fistName"
+          id="firstName"
+          placeholder="Enter your first Name"
+        />
+        <input
+          type="text"
+          name="LastName"
+          id="LastName"
+          placeholder="Enter your Last Name"
+        />
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Enter your Email"
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+        <input type="date" name="birthday" id="birthday" />
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+      <p>Close this window using key <span> Esc</span></p>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <script src="modalWindow1.js"></script>
+  </body>
+</html>

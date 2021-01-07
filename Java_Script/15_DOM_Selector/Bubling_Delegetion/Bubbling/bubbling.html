@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling</title>
+    <style>
+      body {
+        background-color: rgb(77, 12, 12);
+        line-height: 2rem;
+      }
+      h1 {
+        text-align: center;
+        color: cornsilk;
+      }
+      form {
+        background-color: rgb(85, 133, 38);
+        position: relative;
+        width: 20rem;
+        height: 15rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        margin: 0 auto;
+        padding: 0.5rem 0;
+        color: cornsilk;
+        font-weight: bold;
+      }
+      div {
+        background-color: blue;
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+        width: 14rem;
+        height: 10rem;
+        border-radius: 0.25rem;
+        color: cornsilk;
+        font-weight: bold;
+      }
+      p {
+        background-color: red;
+        position: absolute;
+        top: 1.5rem;
+        left: 2rem;
+        line-height: 5rem;
+        width: 10rem;
+        height: 6rem;
+        border-radius: 0.25rem;
+        color: cornsilk;
+        font-weight: bold;
+      }
+      p.demo {
+        position: relative;
+        background-color: rgb(206, 233, 193);
+        width: 18rem;
+        height: 3rem;
+        left: 37.5%;
+        padding: 1rem;
+        border-radius: 0.25rem;
+      }
+      button {
+        position: absolute;
+        top: 13rem;
+        left: 7rem;
+        padding: 0.5rem 1.5rem;
+        cursor: pointer;
+        border-radius: 0.25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Event Bubbling</h1>
+    <hr />
+    <form action="#">
+      Form
+      <div>
+        Div
+        <p>Paragraph</p>
+      </div>
+      <!-- <button>Submit</button> -->
+    </form>
+    <p class="demo"></p>
+    <br />
+
+    <script src="bubbling.js"></script>
+  </body>
+</html>
