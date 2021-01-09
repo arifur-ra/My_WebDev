@@ -31,9 +31,7 @@ form {
   padding: 3rem;
   border-radius: 0.5rem;
 }
-.ipt-box {
-  display: bock;
-}
+
 input {
   padding: 0.35rem 1rem;
   margin: 0.5rem 0;
@@ -44,6 +42,25 @@ button {
   margin: 0.5rem 0;
   cursor: pointer;
 }
-.invalid {
-  border-bottom: 1px solid red;
+
+.ipt-box {
+  margin: 1rem;
+  border-bottom: none;
+}
+
+.ipt-box label {
+  border-bottom: none;
+  transition: border-bottom linear 0.3s;
+}
+
+.ipt-box label.invalid {
+  border-bottom: 3px solid red;
+}
+
+.ipt-box input.invalid {
+  border-color: red;
+}
+
+.ipt-box input {
+  outline: none;
 }

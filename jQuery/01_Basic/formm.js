@@ -11,31 +11,33 @@ $('input[name="profession"]').on('change', function() {
 });
 
 
+
+
 $('#button-sub').on('click', function() {
     validateForm();
 });
 
 function validateForm() {
-    formValidateAgree();
-    formValidateProfession();
-    formValidateAge();
-    formValidateAddress();
-    formValidateEmail();
     formValidateName();
+    formValidateEmail();
+    formValidateAddress();
+    formValidateAge();
+    formValidateProfession();
+    formValidateAgree();
 }
 
 /**
  * Name should not be empty and should be at least 3 characters.
  */
 function formValidateName() {
-    const nameInpt = $('#name');
-    if(!nameInpt.val() || nameInpt.val().trim().length < 3) {
-        nameInpt.addClass('invalid');
-        nameInpt.trigger('focus');
-        $('span', nameInpt.parent()).text('Name should not be empty and should be at least 3 characters.');
+    const nameInput = $('#name');
+    if(!nameInput.val() || nameInput.val().trim().length < 3) {
+        nameInput.addClass('invalid');
+        nameInput.trigger('focus');
+        $('span', nameInput.parent()).text('Name should not be empty and should be at least 3 characters.');
     } else {
-        nameInpt.removeClass('invalid');
-        $('span', nameInpt.parent()).text('');
+        nameInput.removeClass('invalid');
+        $('span', nameInput.parent()).text('');
     }
 }
 
@@ -82,7 +84,7 @@ function formValidateAddress() {
 
 function formValidateAge() {
     const ageInput=('#age');
-    if(!ageInput.val()||parseInput(ageInput.val() < 18 )){
+    if(!ageInput.val()||parseInt(ageInput.val() < 18 )){
         ageInput.addClass('invalid');
         ageInput.trigger('focus');
         $('span', addInput.parent()).text('age should not be empty and should be at least 18 years old.');
@@ -123,11 +125,15 @@ function formValidateProfession() {
 }
 
 function formValidateAgree() {
-    const agreeInpt = $('#agree');
-    if(agreeInpt.is(':not(:checked)')) {
-        $('label', agreeInpt.parent()).addClass('invalid');
-        agreeInpt.trigger('focus');
+    const agreeInput = $('#agree');
+    if(agreeInput.is(':not(:checked)')) {
+        $('label', agreeInput.parent()).addClass('invalid');
+        agreeInput.trigger('focus');
+        $('span', agreeInput.parent()).text('Check the term and conditions');
+
     } else {
-        $('label', agreeInpt.parent()).removeClass('invalid');
+        $('label', agreeInput.parent()).removeClass('invalid');
+        $('span', agreeInput.parent()).text('');
+
     }
 }
