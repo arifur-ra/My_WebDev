@@ -1,0 +1,18 @@
+/* Article Styling */
+
+.Article {
+  width: 65vw;
+  padding: 20px;
+  flex: 1 50%;
+  /* border: 1px solid red; */
+}
+.Article input {
+  margin: 1rem 0;
+  padding: 0.35rem 0.5rem;
+  font-size: 1.2rem;
+  border: 2px solid #444;
+  border-radius: 3px;
+}
+p {
+  padding: 5px;
+}

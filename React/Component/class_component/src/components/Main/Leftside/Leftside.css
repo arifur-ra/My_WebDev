@@ -1,0 +1,13 @@
+.LeftSide {
+  width: 15vw;
+  background-color: rgb(83, 78, 63);
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+  color: whitesmoke;
+}
+h4 {
+  color: white;
+}
+p strong {
+  color: red;
+}

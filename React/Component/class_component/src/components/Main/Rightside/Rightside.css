@@ -1,0 +1,15 @@
+.RightSide {
+  width: 15vw;
+  text-align: justify;
+  background-color: rgb(83, 78, 63);
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+}
+h4 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: white;
+}
+h5 {
+  color: yellow;
+}
