@@ -1,6 +1,5 @@
 import { Component } from "react"
 import "./Article.css"
-import Input from "./Input/Input"
 
 class Article extends Component {
   // State Component
@@ -15,34 +14,38 @@ class Article extends Component {
     Another way to write state component
    */
   state = {
-    title: " This is My Title",
-    dynamicValue: "",
+    InputValue: " ",
   }
-  ClickHandler(e) {
-    console.log(this.state.dynamicValue)
 
-    // this.setState((oldState) => {
-    //   title: oldState.dynamicValue
+  ChangeTitle(e) {
+    console.log(e.target.value)
+    // this.state.InputValue = e.target.value  // Wrong way to do !!!
+    /**
+     * valid way is to do state
+     */
+    // this.setState({
+    //   InputValue: e.target.value,
     // })
-  }
-  assignValue = (text) => {
-    // text is called in Input Component: this.state.InputValue
-    this.setState({
-      dynamicValue: text,
+    this.setState(() => {
+      return { InputValue: e.target.value }
     })
+    console.log(this.state.InputValue)
   }
   render() {
     return (
       <div className={"Article"}>
-        <Input getValue={this.assignValue} />
-        <button
-          onClick={() => {
-            this.ClickHandler()
+        <input
+          type="text"
+          placeholder="Enter your Title"
+          onChange={(event) => {
+            this.ChangeTitle(event)
           }}
-        >
-          Submit
-        </button>
-        <h2>{this.state.title}</h2>
+        />
+        <button>Submit</button>
+        <h2>
+          Here is My Title
+          {this.state.InputValue}
+        </h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
           nostrum quidem ea veniam, optio exercitationem molestiae nobis magni
@@ -57,9 +60,6 @@ class Article extends Component {
           Accusantium et a eveniet quia aspernatur, ipsum obcaecati provident ea
           adipisci odit.
         </p>
-        <div className={"box"} style={{ background: this.state.title }}>
-          Color Me
-        </div>
       </div>
     )
   }

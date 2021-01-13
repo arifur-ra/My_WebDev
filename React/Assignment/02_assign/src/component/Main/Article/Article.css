@@ -1,7 +1,7 @@
 /* Article Styling */
 
 .Article {
-  width: 65vw;
+  width: 60%;
   padding: 20px;
   flex: 1 50%;
   /* border: 1px solid red; */
@@ -17,13 +17,8 @@ p {
   padding: 5px;
 }
 button {
-  padding: 0.35rem 0.5rem;
+  padding: 0.35rem 0.75rem;
   font-size: 1.2rem;
+  margin: 0 0.5rem;
   cursor: pointer;
-}
-
-.box {
-  width: 200px;
-  height: 200px;
-  padding: 60px;
 }

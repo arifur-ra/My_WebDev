@@ -1,0 +1,51 @@
+.Box {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.Light {
+  background-color: rgb(238, 236, 236);
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: justify;
+  word-spacing: 2px;
+}
+.Light p {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+}
+.Dark {
+  background-color: black;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin: 2rem 0;
+  border-radius: 0.25rem;
+  text-align: justify;
+  word-spacing: 2px;
+  color: whitesmoke;
+}
+.Dark p {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+}
+.Pink {
+  background-color: pink;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin: 2rem 0;
+  border-radius: 0.25rem;
+  text-align: justify;
+  word-spacing: 2px;
+  color: rgb(109, 8, 8);
+}
+.Pink p {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+}
+span {
+  color: red;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}

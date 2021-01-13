@@ -1,0 +1,12 @@
+.Header {
+  background-color: wheat;
+  padding: 1.5rem 0;
+}
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+}

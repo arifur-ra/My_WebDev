@@ -1,0 +1,9 @@
+.RightSide {
+  width: 15%;
+  padding: 1.5rem;
+}
+h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: red;
+}
