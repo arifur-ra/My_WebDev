@@ -1,0 +1,12 @@
+.cal {
+  padding: 1rem;
+  width: 30%;
+  margin: 5% auto;
+  box-shadow: 0px 1px 8px rgb(53, 19, 19);
+  border-radius: 0.25rem;
+}
+.cal h3 {
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 1.3rem;
+}

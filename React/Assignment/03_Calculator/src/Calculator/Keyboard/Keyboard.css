@@ -1,0 +1,7 @@
+.keyboard {
+  background-color: brown;
+  border-radius: 0.35rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+}

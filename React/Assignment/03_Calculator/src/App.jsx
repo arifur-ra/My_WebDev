@@ -1,6 +1,6 @@
 import { Component } from "react"
 import "./App.css"
-import Calculator from "./component/Calculator/Calculator"
+import Calculator from "./Calculator/Calculator"
 
 class App extends Component {
   render() {
