@@ -1,0 +1,16 @@
+.toDo {
+  width: 30%;
+  margin: 2rem auto;
+  /* background-color: rgb(177, 151, 73); */
+  background-color: rgb(216, 216, 207);
+  padding: 2rem;
+  box-shadow: 0 0 4px;
+}
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: red;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid rgb(59, 39, 1);
+}

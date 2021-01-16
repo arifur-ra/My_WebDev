@@ -1,0 +1,17 @@
+.tab {
+  width: 100%;
+  margin: 5rem auto;
+  background-color: rgb(145, 141, 127);
+  /* border-radius: 0.5rem; */
+}
+.tab th {
+  color: red;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+}
+
+td {
+  padding: 0.75rem 2.5rem;
+  background-color: rgb(80, 85, 69);
+  color: rgb(255, 253, 253);
+}
