@@ -1,6 +1,12 @@
 import React, { Component } from "react"
 import "./PersonalForm.css"
 class PersonalForm extends Component {
+  state = {
+    firstName: "",
+    lastName: "",
+    email: "",
+    age: "",
+  }
   addInformation = (e) => {
     e.preventDefault()
     let values = {
@@ -10,7 +16,7 @@ class PersonalForm extends Component {
       age: e.target.age.value,
       // msg: e.target.msg.value,
     }
-    this.props.getValues(values)
+    this.props.getValue(values)
   }
   render() {
     return (

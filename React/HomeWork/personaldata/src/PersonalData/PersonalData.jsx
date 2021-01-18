@@ -18,7 +18,7 @@ class PersonalData extends Component {
   render() {
     return (
       <div>
-        <PersonalForm getValues={(values) => this.addData(values)} />
+        <PersonalForm getValue={(values) => this.addData(values)} />
         <Display infoDetails={this.state.infoDetails} />
       </div>
     )

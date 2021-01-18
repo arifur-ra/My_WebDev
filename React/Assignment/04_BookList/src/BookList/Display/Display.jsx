@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import React, { Component } from "react"
 import "./Display.css"
 import TableRow from "./TableRow"
@@ -31,5 +32,7 @@ class Display extends Component {
     )
   }
 }
-
+Display.propTypes = {
+  bookList: PropTypes.array.isRequired,
+}
 export default Display

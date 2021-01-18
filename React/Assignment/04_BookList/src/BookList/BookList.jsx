@@ -1,8 +1,8 @@
 import React, { Component } from "react"
+import "./BookList.css"
 import Display from "./Display/Display"
 import Form from "./Form/Form"
-import "./ToDoList.css"
-class ToDoList extends Component {
+class BookList extends Component {
   state = {
     bookList: [],
   }
@@ -18,7 +18,6 @@ class ToDoList extends Component {
   render() {
     return (
       <div className="toDo">
-        <h1>Book-List</h1>
         <Form getValues={(values) => this.addRow(values)} />
         <Display bookList={this.state.bookList} />
       </div>
@@ -26,4 +25,4 @@ class ToDoList extends Component {
   }
 }
 
-export default ToDoList
+export default BookList

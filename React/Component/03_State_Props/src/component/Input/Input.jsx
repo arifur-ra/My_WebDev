@@ -6,7 +6,6 @@ export class Input extends Component {
     inputValue: "",
   }
   onChangeInput = (event) => {
-    // console.log("this is", event.target.value)
     this.setState({
       inputValue: event.target.value,
     })
