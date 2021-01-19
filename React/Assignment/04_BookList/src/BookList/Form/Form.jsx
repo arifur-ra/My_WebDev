@@ -46,7 +46,7 @@ class Form extends Component {
     return (
       <div>
         <Alert alert={this.state.alert} />
-        <h1>Book-List</h1>
+        <h1>BOOK-LIST</h1>
 
         <form action="#" onSubmit={this.addProperties}>
           <div className="input">

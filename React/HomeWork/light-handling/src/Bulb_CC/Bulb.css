@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(122, 111, 111);
+}
+.container {
+  margin: 10rem auto;
+  width: 30%;
+  padding: 2rem;
+  background-color: rgb(241, 237, 237);
+  box-shadow: 0px 0px 5px;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  padding: 0.65rem 2rem;
+  cursor: pointer;
+  font-weight: bolder;
+  margin: 1rem 0 1rem 9rem;
+  width: 30%;
+  border-radius: 0.35rem;
+  outline: none;
+  background-color: rgb(71, 4, 4);
+  color: white;
+  font-size: 1, 2rem;
+}
+h1 {
+  text-align: center;
+}
+span {
+  color: yellow;
+}
+b {
+  color: rgb(122, 111, 111);
+}

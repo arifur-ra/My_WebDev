@@ -1,11 +1,12 @@
 import React, { useState } from "react"
+import "./App.css"
 import Button from "./component/Button/Button"
 import Image from "./component/Images/Image"
 class Light {
-  imageAlt
-  imagePath
-  switchButton
-  lightOn
+  // imageAlt
+  // imagePath
+  // switchButton
+  // lightOn
   static on = () => {
     const light = new Light()
     light.lightOn = true
@@ -31,8 +32,11 @@ const App = () => {
   const switchLamp = () => updateLamp(lamp.switch())
   return (
     <div>
+      <h3>
+        Switching <span>ON</span> / <b>OFF</b>
+      </h3>
       <Image path={lamp.imagePath} alt={lamp.imageAlt} />
-      <Button value={lamp.switchButton} onClick={switchLamp} />
+      <Button value={lamp.switchButton} onclick={switchLamp} />
     </div>
   )
 }
