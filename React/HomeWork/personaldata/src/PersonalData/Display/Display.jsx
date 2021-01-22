@@ -10,10 +10,10 @@ class Display extends Component {
         <InfoDetails
           key={index}
           firstName={item.firstName}
-          lastName={item.lastName}
-          email={item.email}
-          age={item.age}
-          // msg={item.msg}
+          // lastName={item.lastName}
+          // email={item.email}
+          // age={item.age}
+          // // msg={item.msg}
         />
       )
     })
@@ -22,10 +22,10 @@ class Display extends Component {
         <thead>
           <tr>
             <th>First Name</th>
-            <th>Last Name</th>
+            {/* <th>Last Name</th>
             <th>Email</th>
             <th>Age</th>
-            {/* <th>Message</th> */}
+            <th>Message</th> */}
           </tr>
         </thead>
         <tbody>{finalInfoDetails}</tbody>

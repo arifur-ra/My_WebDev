@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import React, { Component } from "react"
 
 class Button extends Component {
@@ -10,5 +11,8 @@ class Button extends Component {
     )
   }
 }
-
+Button.propTypes = {
+  toggleButton: PropTypes.func.isRequired,
+  click: PropTypes.bool.isRequired,
+}
 export default Button

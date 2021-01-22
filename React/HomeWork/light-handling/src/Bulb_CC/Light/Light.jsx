@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import React, { Component } from "react"
 import "./Light.css"
 import LightOff from "./pic_bulboff.gif"
@@ -18,5 +19,7 @@ class Light extends Component {
     )
   }
 }
-
+Light.propTypes = {
+  switchLight: PropTypes.bool.isRequired,
+}
 export default Light

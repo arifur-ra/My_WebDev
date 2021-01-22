@@ -2,12 +2,13 @@ import React, { Component } from "react"
 
 class InfoDetails extends Component {
   render() {
+    const { firstName, lastName, email, age } = this.props
     return (
       <tr>
-        <td>{this.props.firstName}</td>
-        <td>{this.props.lastName}</td>
-        <td>{this.props.email}</td>
-        <td>{this.props.age}</td>
+        <td>{firstName}</td>
+        {/* <td>{lastName}</td>
+        <td>{email}</td>
+        <td>{age}</td> */}
         {/* <td>{this.props.msg}</td> */}
       </tr>
     )

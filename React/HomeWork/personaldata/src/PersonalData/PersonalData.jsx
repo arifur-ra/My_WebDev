@@ -4,6 +4,8 @@ import PersonalForm from "./PersonalForm/PersonalForm"
 
 class PersonalData extends Component {
   state = {
+    firstName: "",
+
     infoDetails: [],
   }
   addData = (values) => {
