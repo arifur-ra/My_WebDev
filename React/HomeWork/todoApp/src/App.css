@@ -1,0 +1,18 @@
+.todoApp {
+  width: 30vw;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgb(49, 45, 4);
+  border-radius: 0.35rem;
+  box-shadow: 0 0 10px;
+}
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 0.75rem;
+  color: rgb(247, 223, 11);
+  font-weight: bold;
+}
+.icon {
+  margin: 0 0.5rem;
+}

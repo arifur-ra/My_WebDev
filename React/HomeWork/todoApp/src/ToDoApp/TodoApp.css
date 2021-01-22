@@ -1,0 +1,49 @@
+.todo {
+  margin: 0 auto;
+}
+
+input {
+  padding: 0.75rem 1rem;
+  outline: none;
+  width: 50%;
+  margin: 0 1rem;
+  border-radius: 0.35rem;
+}
+button {
+  padding: 0.75rem 1rem;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.35rem;
+  background-color: rgb(165, 192, 15);
+  color: rgb(61, 3, 3);
+  font-weight: 900;
+}
+ul {
+  background-color: rgb(61, 3, 3);
+  padding: 0.5rem 2rem;
+}
+h3 {
+  text-align: center;
+  color: yellow;
+}
+.list {
+  width: 60wv;
+  /* border: 2px solid red; */
+  list-style: none;
+  /* height: 2rem; */
+  background-color: rgb(233, 240, 219);
+  border-radius: 0.15rem;
+}
+li {
+  margin: 0.5rem 0;
+  position: relative;
+  padding: 0.75rem 2rem;
+  box-shadow: 1px 0px 6px red;
+}
+.delete {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  /* color: red; */
+}
