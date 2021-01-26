@@ -10,6 +10,7 @@ const Webpoll = () => {
     arr.push(new PollItem("JavaScript"))
     arr.push(new PollItem("React"))
     arr.push(new PollItem("NodeJS"))
+
     return arr
   }
 
@@ -20,7 +21,8 @@ const Webpoll = () => {
     setPollitem((prev) => {
       const copy = [...prev]
       copy[idx].addVote()
-      return copy.sort((a, b) => b.count - a.count)
+      copy.sort((a, b) => b.count - a.count)
+      return copy
     })
     setWinner(pollitem[0])
     //research about the useEffect hook and try to use it!
@@ -38,14 +40,15 @@ const Webpoll = () => {
   })
 
   return (
-    <>
-      <span>Vote your favorite WebDev tool </span>
+    <div className="main">
+      <h1>Vote your favorite WebDev tool </h1>
       <div className="poll">{divItems}</div>
 
-      <span>
-        The tool {winner.title} is winning with {winner.count} votes for now.
-      </span>
-    </>
+      <h3>
+        The tool <span>[ {winner.title} ]</span> is winning with
+        <span> ( {winner.count} )</span> votes for now.
+      </h3>
+    </div>
   )
 }
 
