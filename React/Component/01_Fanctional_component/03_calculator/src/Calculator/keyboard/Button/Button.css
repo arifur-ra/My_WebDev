@@ -1,0 +1,22 @@
+/* Styling button */
+.btn {
+  margin: 1.5rem auto;
+}
+
+button {
+  padding: 0.55rem 1.5rem;
+  cursor: pointer;
+  border-radius: 0.35rem;
+  color: rgb(12, 0, 0);
+  font-size: 2rem;
+  /* width: 50%; */
+  outline: none;
+  transition: 0.5s ease-in-out;
+}
+button:hover {
+  background-color: rgb(104, 104, 4);
+  color: red;
+}
+button:active {
+  color: blue;
+}

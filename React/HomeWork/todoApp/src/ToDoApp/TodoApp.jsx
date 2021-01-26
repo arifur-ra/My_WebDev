@@ -1,6 +1,8 @@
 import DeleteIcon from "@material-ui/icons/Delete"
 import React, { useState } from "react"
+import Input from "./Input/Input"
 import "./TodoApp.css"
+
 const TodoApp = () => {
   const [name, setName] = useState("")
   const [nameList, setNameList] = useState([])
@@ -19,6 +21,7 @@ const TodoApp = () => {
       }
 
       setNameList([...nameList, nameDetails])
+      e.target.value = ""
     }
   }
   const deleteName = (e, id) => {
@@ -27,16 +30,7 @@ const TodoApp = () => {
   }
   return (
     <div className="todo">
-      <input
-        type="text"
-        name="text"
-        id="text"
-        placeholder="Add Item"
-        onChange={(e) => changeInput(e)}
-      />
-      <button className="addBtn" onClick={(e) => addName(e)}>
-        Add Item
-      </button>
+      <Input changeInput={changeInput} addName={addName} />
       <br />
       {nameList !== [] ? (
         <ul>
@@ -44,12 +38,14 @@ const TodoApp = () => {
           {nameList.map((item, index) => (
             <li key={index} className="list">
               {item.value}
-              {/* <button
-                className="delete"
-                onClick={(e) => deleteName(e, item.id)}
-              >
-                Delete
-              </button> */}
+              {
+                // <button
+                //   className="delete"
+                //   onClick={(e) => deleteName(e, item.id)}
+                // >
+                //   Delete
+                // </button>
+              }
               <DeleteIcon
                 className="delete"
                 onClick={(e) => deleteName(e, item.id)}

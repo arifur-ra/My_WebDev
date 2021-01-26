@@ -1,0 +1,16 @@
+/* Styling Input */
+.inp {
+  display: flex;
+  margin: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  padding: 1rem 0;
+  border-radius: 50%;
+  outline: none;
+  color: rgb(41, 35, 2);
+  text-align: center;
+  width: 60%;
+  font-size: 1.4rem;
+}

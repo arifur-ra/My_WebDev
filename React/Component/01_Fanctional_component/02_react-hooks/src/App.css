@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: chocolate;
+}
+
+.App {
+  width: 50vw;
+  text-align: center;
+  margin: 10vw auto;
+  /* border: 5px solid red; */
+  padding: 0.5rem;
+  border-radius: 0.35rem;
+  /* background-color: black; */
+  color: white;
+}
+
+.display {
+  /* background-color: rgb(51, 10, 2); */
+  background-color: black;
+
+  padding: 2rem;
+  border-radius: 0.35rem;
+}
+h4 {
+  margin: 1rem 0;
+}
+.App span {
+  color: red;
+  padding: 1rem 0;
+}
+p {
+  color: red;
+}
+h5 {
+  background-color: rgb(243, 198, 16);
+  padding: 0.5rem 1rem;
+  color: rgb(153, 6, 6);
+}
+button {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  margin: 0.35rem 0;
+  font-weight: bold;
+  border-radius: 0.35rem;
+  outline: none;
+  background-color: rgb(1, 70, 82);
+  color: white;
+}
+input {
+  padding: 1.5rem 1rem;
+  border-radius: 0.35rem;
+  outline: none;
+  margin: 1rem 0;
+}
+/* Styling for Keybord */
+.keyboard {
+  width: 50%;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(51, 10, 2); */
+  background-color: black;
+
+  padding: 2rem;
+  border-radius: 0.35rem;
+}
+::placeholder {
+  text-align: center;
+  color: black;
+  font-size: 1.2rem;
+}
