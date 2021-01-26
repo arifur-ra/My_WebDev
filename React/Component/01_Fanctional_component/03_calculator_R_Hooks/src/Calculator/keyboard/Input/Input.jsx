@@ -1,13 +1,12 @@
 import React from "react"
 import "./Input.css"
 
-const Input = ({ seq, getValue }) => {
+const Input = ({ seqInput, inputHandler }) => {
   return (
     <div className="inp">
       <input
-        onChange={(e) => getValue(e.target.value, seq)}
+        onChange={(e) => inputHandler(e.target.value, seqInput)}
         type="text"
-        className={seq}
       />
     </div>
   )

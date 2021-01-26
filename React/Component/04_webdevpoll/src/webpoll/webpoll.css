@@ -1,0 +1,22 @@
+.poll {
+  width: 30vw;
+  margin: 2rem auto;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.child {
+  margin: 0.5rem 0;
+  background-color: gold;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.5rem;
+}

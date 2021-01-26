@@ -1,4 +1,3 @@
-import React from "react"
 import "./Button.css"
 
 const Button = ({ v1, v2, operation, getResult }) => {
