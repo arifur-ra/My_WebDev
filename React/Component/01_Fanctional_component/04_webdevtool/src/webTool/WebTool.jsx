@@ -1,3 +1,4 @@
+import ThumbUpIcon from "@material-ui/icons/ThumbUp"
 import React, { useState } from "react"
 import ChildWebTool from "./ChildWebTool"
 import ToolItem from "./ToolItem"
@@ -41,7 +42,10 @@ const Webpoll = () => {
 
   return (
     <div className="main">
-      <h1>Vote your favorite WebDev tool </h1>
+      <h1>
+        Vote(
+        <ThumbUpIcon />) your favorite WebDev tool
+      </h1>
       <div className="poll">{divItems}</div>
 
       <h3>

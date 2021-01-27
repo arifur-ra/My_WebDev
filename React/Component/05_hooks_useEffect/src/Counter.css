@@ -1,0 +1,39 @@
+#card {
+  width: 40vw;
+  margin: 2rem auto;
+  /* background-color: black; */
+  padding: 2rem;
+  box-shadow: 0 0 4px;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+
+span {
+  color: red;
+  font-size: 1, 5rem;
+  font-weight: bold;
+}
+
+p {
+  text-align: center;
+  background-color: rgb(94, 80, 2);
+  padding: 1rem;
+  color: white;
+}
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  padding: 0.75rem 1rem;
+  width: 20vw;
+  margin: 0.35rem 0;
+  cursor: pointer;
+  font-weight: bold;
+}
