@@ -1,4 +1,4 @@
-export default class PollItem{
+export default class ToolItem{
     
     constructor(title){
         this.title=title;

@@ -1,6 +1,6 @@
 import "./App.css"
-import Webpoll from "./webpoll/Webpoll"
+import WebTool from "./webTool/WebTool"
 
-const App = () => <Webpoll />
+const App = () => <WebTool />
 
 export default App

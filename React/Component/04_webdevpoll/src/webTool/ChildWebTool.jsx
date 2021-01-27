@@ -1,7 +1,7 @@
 import React from "react"
-import "./webpoll.css"
+import "./WebTool.css"
 
-const Childpoll = ({ count, title, onClickHandler }) => {
+const ChildWebTool = ({ count, title, onClickHandler }) => {
   return (
     <div className="child">
       <span className="span">{count}</span>
@@ -11,4 +11,4 @@ const Childpoll = ({ count, title, onClickHandler }) => {
   )
 }
 
-export default Childpoll
+export default ChildWebTool
