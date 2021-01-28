@@ -126,7 +126,7 @@ h1 {
 .btn {
   position: absolute;
   top: 4.5rem;
-  left: 35rem;
+  right: 35rem;
   width: 15vw;
 }
 
