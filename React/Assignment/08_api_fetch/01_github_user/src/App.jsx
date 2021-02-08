@@ -26,13 +26,13 @@ const App = () => {
     </div>
   ))
   return (
-    <div>
+    <>
       <h1>
+        <span> User Search </span>
         <GitHubIcon />
-        <span> User Search</span>
       </h1>
       <div className="card">{userList}</div>
-    </div>
+    </>
   )
 }
 
