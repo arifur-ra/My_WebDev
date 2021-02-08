@@ -4,7 +4,7 @@ import ChildWebTool from "./ChildWebTool"
 import ToolItem from "./ToolItem"
 import "./WebTool.css"
 
-const Webpoll = () => {
+const WebTool = () => {
   const initializePollItem = () => {
     const arr = []
     arr.push(new ToolItem("HTML"))
@@ -37,8 +37,9 @@ const Webpoll = () => {
         title={value.title}
         key={idx}
       />
-    )
-  })
+      })
+
+  // Using Local Storage
 
   return (
     <div className="main">
@@ -56,4 +57,4 @@ const Webpoll = () => {
   )
 }
 
-export default Webpoll
+export default WebTool

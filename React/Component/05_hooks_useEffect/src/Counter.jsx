@@ -28,8 +28,8 @@ const Counter = () => {
   return (
     <div id="card">
       <p>
-        Hello good People, I am <span>{name}</span> and I am
-        <span>{count}</span> years old
+        Hello good People, I am <span> {name} </span> and I am
+        <span> {count} </span> years old
       </p>
       <div className="btn">
         <button onClick={increment}>Increment</button>
