@@ -16,7 +16,7 @@
   /* box-shadow: 0 0 4px; */
   background-color: rgb(133, 129, 81);
 }
-.info:nth-child(even) {
+.info:nth-child(odd) {
   border-radius: 0.5rem;
   background-color: white;
   box-shadow: 0 0 4px;
