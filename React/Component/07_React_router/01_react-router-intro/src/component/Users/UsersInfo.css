@@ -1,0 +1,37 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  box-shadow: 0 0 14px;
+}
+.card:nth-child(odd) {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 4px;
+}
+img {
+  width: 18vw;
+  height: 15vw;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+}
+
+h3 {
+  text-transform: capitalize;
+  padding: 0.5rem 0;
+  color: red;
+  margin: 0.5rem 0;
+}
+a {
+  background-color: rgb(29, 1, 1);
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.2rem;
+}
