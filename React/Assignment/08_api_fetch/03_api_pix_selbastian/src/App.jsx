@@ -1,10 +1,11 @@
 import React from "react"
-import Pixabay from "./api_pixabay/Pixabay"
+import "./App.css"
+import Main from "./Component/Main"
 
 const App = () => {
   return (
     <div>
-      <Pixabay />
+      <Main />
     </div>
   )
 }

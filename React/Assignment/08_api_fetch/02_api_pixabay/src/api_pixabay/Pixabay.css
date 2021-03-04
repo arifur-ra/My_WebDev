@@ -1,0 +1,79 @@
+/* styling the main  component */
+.main {
+  width: 70vw;
+  margin: 1rem auto;
+  padding: 3rem;
+  background-color: rgb(36, 1, 1);
+  box-shadow: 0 0 10px;
+}
+input {
+  padding: 0.75rem 1rem;
+  margin: 1rem 0.5rem;
+  width: 20vw;
+  outline: none;
+}
+.img-list {
+  max-width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.in-img {
+  width: 20vw;
+  margin: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid rgb(248, 8, 8); */
+  box-shadow: 0 0 15px;
+  background-color: white;
+  cursor: pointer;
+}
+.in-img:nth-child(odd) {
+  border-radius: 0.35rem;
+  background-color: rgb(228, 220, 199);
+}
+
+.img {
+  width: 13rem;
+  height: 12rem;
+  border-radius: 0.25rem;
+}
+.img:hover {
+  opacity: 0.7;
+}
+.limg {
+  display: none;
+}
+/* .limg:hover {
+  display: block;
+} */
+::placeholder {
+  color: black;
+}
+h3 {
+  text-transform: capitalize;
+}
+h1 {
+  color: yellow;
+  padding: 0.5rem;
+  font-size: 2.5rem;
+}
+label {
+  color: white;
+  margin: 0 0.5rem;
+  color: yellow;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+button,
+select {
+  padding: 0.5rem 1.2rem;
+  margin: 1rem 0.5rem;
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
