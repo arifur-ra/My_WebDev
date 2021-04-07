@@ -5,9 +5,16 @@
  * req.signed cookies || req.secure
  *
  */
-
+const handler = require("./handler");
 const express = require("express");
+const cookieParser = require("cookie-parser");
 const app = express();
+app.use(express.json()); // using the parser the for req.body
+app.use(cookieParser()); // using for req.cookies parser
+
+// different file Handler
+
+app.get("/user/:id", handler);
 
 //.................. req.baseUrl..................
 
@@ -52,13 +59,6 @@ const app = express();
 //   res.send("Request");
 // });
 
-// ...............req.path.................
-
-// app.get("/user/:id", (req, res) => {
-//   console.log(req.path);
-
-//   res.send("Request.path");
-// });
 // ...............req.hostname.................
 
 // app.get("/user/:id", (req, res) => {
@@ -69,11 +69,40 @@ const app = express();
 
 // // ...............req.ip// protocol.................
 
-app.get("/user/:id", (req, res) => {
-  console.log(req.ip);
-  console.log(req.protocol);
+// app.get("/user/:id", (req, res) => {
+//   console.log(req.ip);
+//   // console.log(req.protocol);
 
-  res.send("Request.ip");
+//   res.send("Request.ip");
+// });
+
+// // // ...............req.param //req.query.................
+
+// app.get("/user/:id", (req, res) => {
+//   // console.log(req.params);
+//   console.log(req.query);
+//   //res.send("Request.param");
+//   res.send("Request.query");
+// });
+// // // ...............req.body.................
+
+// app.post("/user/:id", (req, res) => {
+//   console.log(req.body);
+//   res.send("Request.body");
+// });
+
+// // // ...............req.cookie.................
+
+// app.get("/user/:id", (req, res) => {
+//   console.log(req.cookies);
+//   res.send("Request.cookie");
+// });
+
+// // // ...............req.route.................
+
+app.post("/user/:id", (req, res) => {
+  console.log(req.route);
+  res.send("Request.route");
 });
 
 app.listen(4000, () => {
