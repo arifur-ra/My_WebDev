@@ -15,7 +15,11 @@ app.use(express.json());
 
 const uri = process.env.ATLAS_URI;
 
-mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true });
+mongoose.connect(uri, {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true,
+});
 
 const connection = mongoose.connection;
 connection.once("open", () => {
@@ -23,11 +27,11 @@ connection.once("open", () => {
 });
 
 // Importing the router and use it in server
-// const exercisesRouter = require("./routes/exercise");
-// const userRouter = require("./routes/users");
+const exercisesRouter = require("./routes/exercise");
+const userRouter = require("./routes/users");
 
-// app.use("/exercise", exercisesRouter);
-// app.use("/users", userRouter);
+app.use("/exercise", exercisesRouter);
+app.use("/users", userRouter);
 
 // listening the server
 app.listen(port, () => {
