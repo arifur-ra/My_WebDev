@@ -1,4 +1,3 @@
-import ThumbUpIcon from "@material-ui/icons/ThumbUp"
 import React, { useState } from "react"
 import ChildWebTool from "./ChildWebTool"
 import ToolItem from "./ToolItem"
@@ -37,24 +36,9 @@ const WebTool = () => {
         title={value.title}
         key={idx}
       />
-      })
+    )
+  }
 
-  // Using Local Storage
 
-  return (
-    <div className="main">
-      <h1>
-        Vote(
-        <ThumbUpIcon />) your favorite WebDev tool
-      </h1>
-      <div className="poll">{divItems}</div>
-
-      <h3>
-        The tool <span>[ {winner.title} ]</span> is winning with
-        <span> ( {winner.count} )</span> votes for now.
-      </h3>
-    </div>
-  )
-}
 
 export default WebTool
